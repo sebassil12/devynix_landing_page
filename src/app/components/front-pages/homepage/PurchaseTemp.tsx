@@ -1,10 +1,14 @@
+"use client";
 import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
 import { Button } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "@/i18n/provider";
 
 const PurchaseTemp = () => {
+  const { t, locale } = useTranslation();
+
   return (
     <>
       <div className="bg-primary lg:py-24 py-12 relative">
@@ -13,7 +17,7 @@ const PurchaseTemp = () => {
             src="/images/front-pages/background/left-widget.png"
             height={420}
             width={420}
-            alt="widget"
+            alt=""
           />
         </div>
         <div className="container-1218 mx-auto relative z-1">
@@ -22,14 +26,18 @@ const PurchaseTemp = () => {
               <Logo />
             </div>
             <h3 className="sm:text-44 text-3xl font-bold !leading-[48px] text-white lg:px-20 py-6">
-              Focus on what truly matters—creating stunning, functional designs.
+              {t("home.purchase.heading")}
             </h3>
             <p className="text-lg text-white lg:px-64 leading-8">
-              Designed for ease of use and customization, this template help you
-              build professional dashboards faster.
+              {t("home.purchase.description")}
             </p>
-            <Button color={"outlinewhite"} as={Link} href="/" target="_blank" className="mt-5 px-4 sm:w-auto w-full">
-              Register
+            <Button
+              color={"outlinewhite"}
+              as={Link}
+              href={`/${locale}`}
+              className="mt-5 px-4 sm:w-auto w-full"
+            >
+              {t("home.purchase.cta")}
             </Button>
           </div>
         </div>
@@ -38,8 +46,7 @@ const PurchaseTemp = () => {
             src="/images/front-pages/background/right-widget.png"
             height={420}
             width={420}
-            alt="widget"
-            
+            alt=""
           />
         </div>
       </div>

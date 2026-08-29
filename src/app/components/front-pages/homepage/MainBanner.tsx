@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import user1 from "@public/images/profile/user-2.jpg";
 import user2 from "@public/images/profile/user-3.jpg";
@@ -14,50 +15,24 @@ import mainbanner from "@public/images/front-pages/background/main-banner.webp";
 import Image from "next/image";
 import { Button, Tooltip } from "flowbite-react";
 import Link from "next/link";
+import { useTranslation } from "@/i18n/provider";
 
 const MainBanner = () => {
-  const userImg = [
-    {
-      user: user1,
-    },
-    {
-      user: user2,
-    },
-    {
-      user: user3,
-    },
+  const { t, locale } = useTranslation();
+
+  const userImg = [{ user: user1 }, { user: user2 }, { user: user3 }];
+
+  // Product names — not translated on purpose.
+  const Technology = [
+    { tech: tech1, tooltip: "React" },
+    { tech: tech2, tooltip: "Flowbite React" },
+    { tech: tech3, tooltip: "Next.js" },
+    { tech: tech4, tooltip: "TypeScript" },
+    { tech: tech5, tooltip: "Tailwind CSS" },
+    { tech: tech6, tooltip: "Headless UI" },
+    { tech: tech7, tooltip: "shadcn/ui" },
   ];
 
-  const Technology = [
-    {
-      tech: tech1,
-      tooltip: "React",
-    },
-    {
-      tech: tech2,
-      tooltip: "Flowbite React",
-    },
-    {
-      tech: tech3,
-      tooltip: "Next.js",
-    },
-    {
-      tech: tech4,
-      tooltip: "Typescript",
-    },
-    {
-      tech: tech5,
-      tooltip: "Tailwind css",
-    },
-    {
-      tech: tech6,
-      tooltip: "Headless Ui",
-    },
-    {
-      tech: tech7,
-      tooltip: "Shadcn Ui",
-    },
-  ];
   return (
     <>
       <div className="bg-lightgray dark:bg-darkgray">
@@ -65,7 +40,8 @@ const MainBanner = () => {
           <div className="grid grid-cols-12 gap-30 items-center ">
             <div className="xl:col-span-6 col-span-12 lg:text-start text-center">
               <h1 className="lg:text-56 text-4xl text-dark dark:text-white font-medium lg:leading-[64px] leading-[50px]">
-                <b className="font-bold" >A Feature-packed Dashboard</b> Built For Developers' Needs.
+                <b className="font-bold">{t("home.banner.titleStrong")}</b>{" "}
+                {t("home.banner.titleRest")}
               </h1>
               <div className="sm:flex text-center mx-auto block items-center gap-3 lg:justify-start justify-center py-6">
                 <div className="flex flex-row-reverse lg:justify-start justify-center ps-3">
@@ -80,7 +56,7 @@ const MainBanner = () => {
                   ))}
                 </div>
                 <h5 className="text-17 text-darklink md:pt-0 pt-3">
-                  52,589+ developers & agencies using our templates
+                  {t("home.banner.socialProof")}
                 </h5>
               </div>
               <ul className="flex flex-wrap lg:justify-start justify-center gap-5 pb-7 md:pt-4 ml-0">
@@ -91,10 +67,13 @@ const MainBanner = () => {
                     className="!text-xs"
                     placement="bottom"
                   >
-                    <li
-                      className="md:h-14 md:w-14 h-10 w-10 bg-white dark:bg-darkmuted rounded-[16px] flex justify-center items-center shadow-elevation1"
-                    >
-                      <Image src={item.tech} alt="icon" height={28} className="md:h-7 h-5" />
+                    <li className="md:h-14 md:w-14 h-10 w-10 bg-white dark:bg-darkmuted rounded-[16px] flex justify-center items-center shadow-elevation1">
+                      <Image
+                        src={item.tech}
+                        alt={item.tooltip}
+                        height={28}
+                        className="md:h-7 h-5"
+                      />
                     </li>
                   </Tooltip>
                 ))}
@@ -103,16 +82,20 @@ const MainBanner = () => {
                 <Button
                   color={"primary"}
                   as={Link}
-                  href="/"
+                  href={`/${locale}`}
                   className="px-4 font-bold sm:w-fit w-full"
                 >
-                  Log in
+                  {t("home.banner.cta")}
                 </Button>
               </div>
             </div>
             <div className="lg:col-span-6 col-span-12 xl:block hidden">
               <div className="min-w-[1300px] max-h-[700px] h-[calc(100vh_-_100px)] overflow-hidden ">
-                <Image src={mainbanner} className="rtl:scale-x-[-1]" alt="banner" />
+                <Image
+                  src={mainbanner}
+                  className="rtl:scale-x-[-1]"
+                  alt="banner"
+                />
               </div>
             </div>
           </div>

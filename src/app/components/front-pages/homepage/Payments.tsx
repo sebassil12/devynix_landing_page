@@ -1,3 +1,4 @@
+"use client";
 import visa from "@public/images/front-pages/payments/visa.svg";
 import mastercard from "@public/images/front-pages/payments/master.svg";
 import express from "@public/images/front-pages/payments/american-exp.svg";
@@ -7,8 +8,11 @@ import maaestro from "@public/images/front-pages/payments/maesro.svg";
 import jcb from "@public/images/front-pages/payments/jcb.svg";
 import dinners from "@public/images/front-pages/payments/dinners-clb.svg";
 import Image from "next/image";
+import { useTranslation } from "@/i18n/provider";
 
 export const PaymentOptions = () => {
+  const { t } = useTranslation();
+
   const paymentOptions = [
     {
       key: "option1",
@@ -47,7 +51,7 @@ export const PaymentOptions = () => {
     <>
       <div className="px-4 pt-12 dark:bg-dark">
         <p className="text-base text-ld opacity-90 text-center mb-8">
-          Secured payment with PayPal & Razorpay
+          {t("home.payments.securedBy")}
         </p>
         <div className="flex flex-wrap items-center justify-center md:gap-14 gap-7">
           {paymentOptions.map((item) => {

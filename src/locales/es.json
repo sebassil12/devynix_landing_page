@@ -1,0 +1,585 @@
+{
+  "meta": {
+    "site": {
+      "title": "Devynix",
+      "description": "Devynix — una plataforma repleta de funcionalidades creada para las necesidades de los desarrolladores."
+    },
+    "home": {
+      "title": "Devynix — Inicio"
+    },
+    "about": {
+      "title": "Sobre nosotros — Devynix"
+    },
+    "blog": {
+      "title": "Blog — Devynix"
+    },
+    "blogDetail": {
+      "title": "Detalle del artículo — Devynix"
+    },
+    "contact": {
+      "title": "Contacto — Devynix"
+    },
+    "portfolio": {
+      "title": "Portafolio — Devynix"
+    },
+    "pricing": {
+      "title": "Precios — Devynix"
+    },
+    "landing": {
+      "title": "Devynix"
+    },
+    "notFound": {
+      "title": "Página no encontrada — Devynix"
+    }
+  },
+  "common": {
+    "brand": "Devynix",
+    "actions": {
+      "signUp": "Registrarse",
+      "signIn": "Iniciar sesión",
+      "logIn": "Iniciar sesión",
+      "register": "Crear cuenta",
+      "accept": "Aceptar",
+      "cancel": "Cancelar",
+      "revoke": "Revocar",
+      "submit": "Enviar",
+      "close": "Cerrar",
+      "learnMore": "Saber más",
+      "backToHome": "Volver al inicio",
+      "requestCallback": "Solicitar una llamada",
+      "contactUsNow": "Contáctanos ahora",
+      "purchaseNow": "Empezar ahora"
+    },
+    "states": {
+      "loading": "Cargando…",
+      "empty": "Todavía no hay nada que mostrar",
+      "error": "Algo ha salido mal. Inténtalo de nuevo."
+    },
+    "badges": {
+      "new": "Nuevo",
+      "popular": "Popular"
+    }
+  },
+  "nav": {
+    "aboutUs": "Sobre nosotros",
+    "blog": "Blog",
+    "portfolio": "Portafolio",
+    "dashboard": "Panel",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "features": "Funcionalidades",
+    "documentation": "Documentación",
+    "support": "Soporte"
+  },
+  "announcement": {
+    "badge": "Nuevo",
+    "message": "Nuevas páginas disponibles",
+    "dismiss": "Cerrar el aviso"
+  },
+  "auth": {
+    "signUp": {
+      "title": "Crea tu cuenta de Devynix",
+      "submit": "Registrarse",
+      "haveAccount": "¿Ya tienes una cuenta?"
+    },
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellidos",
+      "email": "Correo electrónico",
+      "password": "Contraseña"
+    }
+  },
+  "consents": {
+    "documents": {
+      "privacyPolicy": "Política de Privacidad de Devynix",
+      "termsAndConditions": "Términos y Condiciones de Devynix"
+    },
+    "labels": {
+      "privacyPolicy": "He leído y acepto la Política de Privacidad de Devynix",
+      "termsAndConditions": "He leído y acepto los Términos y Condiciones de Devynix"
+    },
+    "states": {
+      "granted": "Otorgado",
+      "revoked": "Revocado",
+      "pending": "Pendiente"
+    },
+    "grantedAt": "Aceptado el {date}",
+    "revokedAt": "Revocado el {date}",
+    "version": "Versión {version}",
+    "revoke": {
+      "action": "Revocar",
+      "confirm": "¿Seguro que quieres revocar este consentimiento?",
+      "success": "Se ha revocado tu consentimiento.",
+      "error": "No se pudo revocar tu consentimiento. Inténtalo de nuevo.",
+      "alreadyRevoked": "Este consentimiento ya había sido revocado.",
+      "notFound": "No se encontró el consentimiento que intentas revocar."
+    },
+    "validation": {
+      "required": "Debes aceptar los Términos y Condiciones para continuar."
+    }
+  },
+  "documents": {
+    "types": {
+      "charge": "Cargo",
+      "subrogation": "Subrogación"
+    },
+    "signature": {
+      "signedBy": "Firmado por",
+      "signedByName": "Firmado por {name}",
+      "signedAt": "Firmado el {date}",
+      "signedByOn": "Firmado por {name} el {date}",
+      "unsigned": "Sin firmar",
+      "pending": "Pendiente de firma",
+      "systemUser": "Sistema"
+    }
+  },
+  "subrogations": {
+    "title": "Subrogación",
+    "charge": "Cargo",
+    "signedBy": "Firmado por"
+  },
+  "issues": {
+    "statusLabel": "Estado",
+    "statuses": {
+      "open": "Abierta",
+      "inProgress": "En progreso",
+      "pending": "Pendiente",
+      "resolved": "Resuelta",
+      "closed": "Cerrada",
+      "cancelled": "Cancelada"
+    }
+  },
+  "home": {
+    "banner": {
+      "titleStrong": "Una plataforma repleta de funcionalidades",
+      "titleRest": "creada para las necesidades de los desarrolladores.",
+      "socialProof": "Más de 52.589 desarrolladores y agencias construyen con Devynix",
+      "cta": "Iniciar sesión"
+    },
+    "clients": {
+      "title": "Más de 45.000 clientes y sumando.",
+      "description": "Pellentesque varius semper odio non pretium. Nullam sagittis neque orci, eu elementum enim.",
+      "cta": "Solicitar una llamada",
+      "features": [
+        {
+          "title": "Asesoramiento experto",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Soporte eficaz",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Comisiones bajas",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Facilidad de financiación",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        }
+      ]
+    },
+    "featureTabs": {
+      "heading": "Protege tu concentración.",
+      "cta": "Saber más",
+      "tabs": [
+        {
+          "label": "Planificación de equipos",
+          "items": [
+            {
+              "title": "Combina las agendas del equipo",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Incluye a colegas externos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Asignación por turnos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            }
+          ]
+        },
+        {
+          "label": "Pagos",
+          "items": [
+            {
+              "title": "Cobra por adelantado",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Incluye a colegas externos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Asignación por turnos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            }
+          ]
+        },
+        {
+          "label": "Integración",
+          "items": [
+            {
+              "title": "Intégralo donde quieras",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Incluye a colegas externos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Asignación por turnos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            }
+          ]
+        },
+        {
+          "label": "Flujos de trabajo",
+          "items": [
+            {
+              "title": "Automatiza tu flujo de trabajo",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Incluye a colegas externos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            },
+            {
+              "title": "Asignación por turnos",
+              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+            }
+          ]
+        }
+      ]
+    },
+    "team": {
+      "title": "Conoce a nuestro equipo",
+      "description": "Nuestras analíticas ofrecen información detallada sobre lo que buscan los compradores y orientan a los equipos",
+      "members": [
+        {
+          "name": "Alex Martinez",
+          "position": "CEO y cofundador"
+        },
+        {
+          "name": "Jordan Nguyen",
+          "position": "CTO y cofundador"
+        },
+        {
+          "name": "Taylor Roberts",
+          "position": "Responsable de producto"
+        },
+        {
+          "name": "Morgan Patel",
+          "position": "Desarrollador principal"
+        }
+      ]
+    },
+    "contactBar": {
+      "message": "Ahorra tiempo y esfuerzo buscando una solución.",
+      "cta": "Contáctanos ahora"
+    },
+    "reviews": {
+      "title": "Lo que dicen nuestros clientes.",
+      "description": "Pellentesque varius semper odio non pretium.",
+      "previous": "Reseña anterior",
+      "next": "Reseña siguiente",
+      "counter": "{current} / {total}",
+      "items": [
+        {
+          "title": "Jenny Wilson",
+          "subtitle": "CEO de Comp Inc.",
+          "review": "Devynix es excelente, con una interfaz muy completa y actualizada. Aunque está prácticamente terminado, sugiero mejorar un poco la documentación. ¡Gracias y muy recomendable!"
+        },
+        {
+          "title": "Josh Cui",
+          "subtitle": "CEO de Comp Inc.",
+          "review": "Devynix es excelente, con una interfaz muy completa y actualizada. Aunque está prácticamente terminado, sugiero mejorar un poco la documentación. ¡Gracias y muy recomendable!"
+        },
+        {
+          "title": "Eminson Mendoza",
+          "subtitle": "CEO de Comp Inc.",
+          "review": "Devynix es excelente, con una interfaz muy completa y actualizada. Aunque está prácticamente terminado, sugiero mejorar un poco la documentación. ¡Gracias y muy recomendable!"
+        }
+      ]
+    },
+    "highlights": {
+      "row1": [
+        "6 colores de tema",
+        "NextAuth",
+        "Firebase",
+        "Más de 90 plantillas de página",
+        "Más de 45 componentes de UI",
+        "Tailwind",
+        "Más de 3400 iconos"
+      ],
+      "row2": [
+        "SWR",
+        "i18n React",
+        "Flowbite React",
+        "Fácil de personalizar"
+      ],
+      "row3": [
+        "Múltiples opciones de gráficos",
+        "Múltiples ejemplos de tablas",
+        "Actualizaciones periódicas",
+        "Documentación detallada",
+        "Diseño de calendario",
+        "Soporte dedicado"
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "stillHaveQuestion": "¿Todavía tienes alguna duda?",
+      "askOnDiscord": "Pregunta en Discord",
+      "or": "o",
+      "submitTicket": "Envía un ticket",
+      "items": [
+        {
+          "question": "¿Qué incluye mi plan?",
+          "answer": "Adapta Devynix a tus necesidades. Personaliza diseños, combinaciones de colores y widgets sin esfuerzo para una experiencia a tu medida."
+        },
+        {
+          "question": "¿Hay cuotas recurrentes?",
+          "answer": "Aprovecha todo el potencial de tus datos con nuestras herramientas de analítica avanzada. Obtén información valiosa y toma decisiones basadas en datos con facilidad."
+        },
+        {
+          "question": "¿Puedo usar Devynix en varios proyectos?",
+          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+        },
+        {
+          "question": "¿Puedo personalizar Devynix con mi marca?",
+          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+        },
+        {
+          "question": "¿Hay restricciones para usar Devynix?",
+          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+        },
+        {
+          "question": "¿Cómo puedo obtener soporte?",
+          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+        }
+      ]
+    },
+    "packages": {
+      "title": "Precios justos para todos.",
+      "description": "Nuestras analíticas ofrecen información detallada sobre lo que buscan los compradores y orientan a los equipos.",
+      "perOneTime": "/ pago único",
+      "cta": "Empezar ahora",
+      "included": {
+        "fullSourceCode": "Código fuente completo",
+        "documentation": "Documentación",
+        "saasUse": "Uso en aplicaciones SaaS",
+        "oneProjectStrong": "Un",
+        "unlimitedProjectStrong": "Ilimitados",
+        "projectSuffix": "proyecto",
+        "oneYearStrong": "Un año",
+        "technicalSupportSuffix": "de soporte técnico"
+      },
+      "tiers": [
+        {
+          "licenseType": "Uso individual",
+          "licenseDesc": "Para un único producto final por el que no se pueda cobrar a los usuarios.",
+          "price": "49 $"
+        },
+        {
+          "licenseType": "Uso múltiple",
+          "licenseDesc": "Para productos finales ilimitados por los que no se pueda cobrar a los usuarios.",
+          "price": "89 $"
+        },
+        {
+          "licenseType": "Uso extendido",
+          "licenseDesc": "Para un único producto final por el que sí se pueda cobrar a los usuarios.",
+          "price": "299 $"
+        },
+        {
+          "licenseType": "Uso ilimitado",
+          "licenseDesc": "Para productos finales ilimitados por los que sí se pueda cobrar a los usuarios.",
+          "price": "499 $"
+        }
+      ]
+    },
+    "payments": {
+      "securedBy": "Pago seguro con PayPal y Razorpay"
+    },
+    "purchase": {
+      "heading": "Céntrate en lo que de verdad importa: crear diseños atractivos y funcionales.",
+      "description": "Diseñado para ser fácil de usar y personalizar, Devynix te ayuda a crear productos profesionales más rápido.",
+      "cta": "Crear cuenta"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Conoce Devynix",
+      "lead": "¿Necesitas una plataforma premium, altamente personalizable y pensada para desarrolladores, repleta de funcionalidades?",
+      "brandPhrase": "Devynix",
+      "leadRest": "tiene todo lo que necesitas. Está diseñado conforme a los estándares del sector y las mejores prácticas para ofrecerte lo mejor.",
+      "primaryCta": "Crear una cuenta",
+      "secondaryCta": "Ver ofertas de empleo",
+      "titleSuffix": "la plataforma"
+    },
+    "achievement": {
+      "title": "Una historia única en cada cifra",
+      "stats": [
+        {
+          "value": "2019",
+          "label": "Cuando fundamos Devynix"
+        },
+        {
+          "value": "300k+",
+          "label": "Clientes en Devynix"
+        },
+        {
+          "value": "25k+",
+          "label": "Productos creados con Devynix"
+        }
+      ]
+    },
+    "setupProcess": {
+      "title": "Un proceso de configuración sin complicaciones",
+      "steps": [
+        {
+          "title": "Soporte eficaz",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Asesoramiento experto",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Comisiones bajas",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Facilidad de financiación",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        }
+      ]
+    }
+  },
+  "blog": {
+    "breadcrumbTitle": "Últimas noticias y artículos",
+    "breadcrumbLink": "Blog",
+    "detailBreadcrumbLink": "Detalle del artículo",
+    "readMore": "Leer más",
+    "relatedPosts": "Artículos relacionados",
+    "comments": "Comentarios",
+    "commentsCount": "{count} comentarios",
+    "reply": "Responder",
+    "postComment": "Publicar comentario",
+    "commentPlaceholder": "Escribe tu comentario aquí…",
+    "notFound": "No hemos encontrado ese artículo."
+  },
+  "portfolio": {
+    "breadcrumbTitle": "Descubre nuestros últimos trabajos",
+    "breadcrumbLink": "Portafolio"
+  },
+  "pricing": {
+    "breadcrumbTitle": "Elige tu plan",
+    "breadcrumbLink": "Precios"
+  },
+  "contact": {
+    "breadcrumbTitle": "Nos encantaría saber de ti",
+    "breadcrumbLink": "Contacto",
+    "reachOut": {
+      "title": "Contáctanos hoy",
+      "description": "¿Tienes preguntas o necesitas ayuda? Estamos a un mensaje de distancia."
+    },
+    "location": {
+      "title": "Nuestra ubicación",
+      "description": "Visítanos en persona o consulta nuestros datos de contacto para hablar directamente con nosotros."
+    },
+    "form": {
+      "firstName": "Nombre",
+      "firstNamePlaceholder": "Nombre",
+      "lastName": "Apellidos",
+      "lastNamePlaceholder": "Apellidos",
+      "phone": "Teléfono",
+      "phonePlaceholder": "xxx xxx xxxx",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Dirección de correo electrónico",
+      "enquiryType": "Motivo de la consulta",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí…",
+      "submit": "Enviar"
+    },
+    "enquiryTypes": {
+      "general": "Consulta general",
+      "other": "Otra consulta"
+    }
+  },
+  "footer": {
+    "columns": {
+      "product": "Producto",
+      "features": "Funcionalidades",
+      "resources": "Recursos",
+      "followUs": "Síguenos"
+    },
+    "links": {
+      "home": "Inicio",
+      "aboutUs": "Sobre nosotros",
+      "pricing": "Precios",
+      "contact": "Contacto",
+      "blog": "Blog",
+      "portfolio": "Portafolio",
+      "faq": "Preguntas frecuentes",
+      "privacyPolicy": "Política de Privacidad",
+      "termsAndConditions": "Términos y Condiciones"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "rights": "Todos los derechos reservados por Devynix.",
+    "producedBy": "Desarrollado por",
+    "producer": "Devynix"
+  },
+  "landing": {
+    "banner": {
+      "titleTop": "La plataforma más",
+      "titleBottom": "elegante",
+      "stats": [
+        {
+          "value": "90+",
+          "label": "Páginas de demo"
+        },
+        {
+          "value": "12+",
+          "label": "Aplicaciones"
+        },
+        {
+          "value": "45+",
+          "label": "Componentes de UI"
+        }
+      ],
+      "primaryCta": "Iniciar sesión",
+      "secondaryCta": "Ver demo"
+    },
+    "features": {
+      "eyebrow": "Prácticamente todo cubierto",
+      "title": "Otras funcionalidades y flexibilidad que ofrecemos"
+    },
+    "reviews": {
+      "title": "Lo que dicen nuestros clientes"
+    },
+    "ticket": {
+      "title": "¿No has encontrado respuesta a tu pregunta?",
+      "description": "Contacta con nosotros por Discord o envíanos un correo",
+      "discordCta": "Pregunta en Discord",
+      "ticketCta": "Enviar ticket"
+    },
+    "header": {
+      "documentation": "Documentación",
+      "support": "Soporte",
+      "login": "Iniciar sesión",
+      "features": "Funcionalidades",
+      "openMenu": "Abrir menú"
+    }
+  },
+  "notFound": {
+    "heading": "¡Vaya!",
+    "message": "No se ha encontrado la página que buscas.",
+    "backToHome": "Volver al inicio"
+  }
+}

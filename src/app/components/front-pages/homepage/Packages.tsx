@@ -1,49 +1,23 @@
 "use client";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Badge, Button } from "flowbite-react";
+import { useTranslation } from "@/i18n/provider";
+
+type Tier = { licenseType: string; licenseDesc: string; price: string };
+
+// Which tier allows SaaS use / unlimited projects / is highlighted — structural,
+// not translatable, so it stays in code and lines up with the dictionary array.
+const tierFlags = [
+  { isSaasUse: false, unlimited: false, isPopular: false },
+  { isSaasUse: false, unlimited: true, isPopular: false },
+  { isSaasUse: true, unlimited: false, isPopular: true },
+  { isSaasUse: true, unlimited: true, isPopular: false },
+];
+
 export const Packages = () => {
-  const Licenses = [
-    {
-      key: "license1",
-      licenseType: "Single Use",
-      licenseDesc:
-        "Use for single end product which end users can’t be charged for.",
-      price: "$49",
-      isSaasUse: false,
-      feature: "One Project",
-      isPopular: false,
-    },
-    {
-      key: "license2",
-      licenseType: "Multiple Use",
-      licenseDesc:
-        "Use for unlimited end products end users can’t be charged for.",
-      price: "$89",
-      isSaasUse: false,
-      feature: "Unlimited Project",
-      isPopular: false,
-    },
-    {
-      key: "license3",
-      licenseType: "Extended Use",
-      licenseDesc:
-        "Use for single end product which end users can be charged for.",
-      price: "$299",
-      isSaasUse: true,
-      feature: "One Project",
-      isPopular: true,
-    },
-    {
-      key: "license4",
-      licenseType: "Unlimited Use",
-      licenseDesc:
-        "Use in unlimited end products end users can be charged for.",
-      price: "$499",
-      isSaasUse: true,
-      feature: "Unlimited Project",
-      isPopular: false,
-    },
-  ];
+  const { t, tList } = useTranslation();
+  const tiers = tList<Tier>("home.packages.tiers");
+
   return (
     <>
       <div className="dark:bg-dark">
@@ -51,29 +25,32 @@ export const Packages = () => {
           <div className="flex w-full justify-center mb-12">
             <div className="text-center">
               <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white text-center">
-                Fair pricing for everyone.
+                {t("home.packages.title")}
               </h2>
               <p className="text-17 leading-[32px] pt-4 text-darklink">
-                Our robust analytics offer rich insights into the information
-                buyers want, informing where teams.
+                {t("home.packages.description")}
               </p>
             </div>
           </div>
           <div className="grid grid-cols-12 gap-6">
-            {Licenses.map((item,index) => {
+            {tiers.map((item, index) => {
+              const flags = tierFlags[index] ?? tierFlags[0];
               return (
-                <div className="xl:col-span-3 md:col-span-6 col-span-12" key={index}>
+                <div
+                  className="xl:col-span-3 md:col-span-6 col-span-12"
+                  key={item.licenseType}
+                >
                   <div className="p-6 rounded-tw border border-ld">
                     <div className="pb-8">
                       <h6 className="text-xl font-semibold text-ld mb-4 flex items-center gap-2">
                         {item.licenseType}
-                        {item.isPopular ? (
+                        {flags.isPopular ? (
                           <Badge
                             color={"lightprimary"}
                             className="text-xs font-bold rounded-full"
                             size={"small"}
                           >
-                            Popular
+                            {t("common.badges.popular")}
                           </Badge>
                         ) : null}
                       </h6>
@@ -86,7 +63,7 @@ export const Packages = () => {
                         {item.price}
                       </div>
                       <p className="text-base self-end text-ld opacity-90 relative -top-1">
-                        / one time pay
+                        {t("home.packages.perOneTime")}
                       </p>
                     </div>
                     <div className="mt-8 flex flex-col gap-3.5">
@@ -96,7 +73,7 @@ export const Packages = () => {
                           className="text-xl text-secondary"
                         />
                         <p className="text-15 text-ld font-medium tracking-wide">
-                          Full source code
+                          {t("home.packages.included.fullSourceCode")}
                         </p>
                       </div>
                       <div className="flex items-center gap-2">
@@ -105,68 +82,61 @@ export const Packages = () => {
                           className="text-xl text-secondary"
                         />
                         <p className="text-15 text-ld font-medium tracking-wide">
-                          Documentation
+                          {t("home.packages.included.documentation")}
                         </p>
                       </div>
                       <div className="flex items-center gap-2">
-                        {item.isSaasUse ? (
-                          <>
-                            <Icon
-                              icon="tabler:circle-check"
-                              className="text-xl text-secondary dark:text-dar-secondary "
-                            />
-                            <p className="text-15 text-ld font-medium tracking-wide">
-                              Use in SaaS app
-                            </p>
-                          </>
-                        ) : (
-                          <>
-                            <Icon
-                              icon="tabler:circle-x"
-                              className="text-xl text-error"
-                            />
-                            <p className="text-15 text-ld font-medium tracking-wide opacity-90">
-                              Use in SaaS app
-                            </p>
-                          </>
-                        )}
+                        <Icon
+                          icon={
+                            flags.isSaasUse
+                              ? "tabler:circle-check"
+                              : "tabler:circle-x"
+                          }
+                          className={`text-xl ${
+                            flags.isSaasUse ? "text-secondary" : "text-error"
+                          }`}
+                        />
+                        <p
+                          className={`text-15 text-ld font-medium tracking-wide ${
+                            flags.isSaasUse ? "" : "opacity-90"
+                          }`}
+                        >
+                          {t("home.packages.included.saasUse")}
+                        </p>
                       </div>
                       <div className="flex items-center gap-2">
                         <p className="text-15 text-ld flex items-center gap-1 font-medium tracking-wide">
-                        <Icon
-                              icon="tabler:circle-check"
-                              className="text-xl text-secondary dark:text-dar-secondary "
-                            />
-                          {item.feature === "One Project" ? (
-                            <>
-                              <span className="font-bold">One</span> Project
-                            </>
-                          ) : (
-                            <>
-                              <span className="font-bold">Unlimited</span>{" "}
-                              Project
-                            </>
-                          )}
+                          <Icon
+                            icon="tabler:circle-check"
+                            className="text-xl text-secondary"
+                          />
+                          <span className="font-bold">
+                            {flags.unlimited
+                              ? t("home.packages.included.unlimitedProjectStrong")
+                              : t("home.packages.included.oneProjectStrong")}
+                          </span>{" "}
+                          {t("home.packages.included.projectSuffix")}
                         </p>
                       </div>
                       <div className="flex items-center gap-1">
-                      <Icon
-                              icon="tabler:circle-check"
-                              className="text-xl text-secondary dark:text-dar-secondary shrink-0"
-                            />
+                        <Icon
+                          icon="tabler:circle-check"
+                          className="text-xl text-secondary shrink-0"
+                        />
                         <p className="text-15 text-ld font-medium tracking-wide whitespace-nowrap">
-                          <span className="font-bold">One Year</span> Technical
-                          Support
+                          <span className="font-bold">
+                            {t("home.packages.included.oneYearStrong")}
+                          </span>{" "}
+                          {t("home.packages.included.technicalSupportSuffix")}
                         </p>
                       </div>
-                     
                     </div>
                     <div className="mt-8">
                       <Button
                         size={"lg"}
                         className="text-lg py-0 bg-dark hover:bg-primaryemphasis text-white font-medium rounded-md w-full"
                       >
-                        Purchase Now
+                        {t("home.packages.cta")}
                       </Button>
                     </div>
                   </div>

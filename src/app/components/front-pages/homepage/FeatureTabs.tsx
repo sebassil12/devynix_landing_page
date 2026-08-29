@@ -7,72 +7,26 @@ import mainbanner2 from "@public/images/front-pages/background/widget_materialM_
 import mainbanner3 from "@public/images/front-pages/background/widget_materialM_3.png";
 import mainbanner4 from "@public/images/front-pages/background/widget_materialM_4.png";
 import { Accordion, Button, HR } from "flowbite-react";
+import { useTranslation } from "@/i18n/provider";
+
+type Tab = { label: string; items: { title: string; desc: string }[] };
+
+// ponytail: the template repeated the same markup four times, differing only by
+// image and data. One data-driven render instead.
+const tabVisuals = [
+  { icon: "material-symbols:groups-outline-rounded", image: mainbanner },
+  { icon: "material-symbols:account-balance-outline", image: mainbanner2 },
+  { icon: "material-symbols-light:photo-frame-outline-sharp", image: mainbanner3 },
+  { icon: "material-symbols:widgets-outline-rounded", image: mainbanner4 },
+];
+
 const FeatureTabs = () => {
-  // Custom Tab
-  const [activeTab, setActiveTab] = useState("Team Scheduling");
-  const handleTabClick = (tab: React.SetStateAction<string>) => {
-    setActiveTab(tab);
-  };
+  const { t, tList } = useTranslation();
+  const tabs = tList<Tab>("home.featureTabs.tabs");
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const Tab1 = [
-    {
-      title: "Combine teammate schedules",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Factor in outside colleagues",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Round robin pooling",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-  ];
-
-  const Tab2 = [
-    {
-      title: "Combine teammate schedules 2",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Factor in outside colleagues",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Round robin pooling",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-  ];
-
-  const Tab3 = [
-    {
-      title: "Combine teammate schedules 3",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Factor in outside colleagues",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Round robin pooling",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-  ];
-
-  const Tab4 = [
-    {
-      title: "Combine teammate schedules 4",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Factor in outside colleagues",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-    {
-      title: "Round robin pooling",
-      desc: "Factor in availability for required attendees, and skip checking for conflicts for optional attendees.",
-    },
-  ];
+  const active = tabs[activeIndex];
+  const visual = tabVisuals[activeIndex] ?? tabVisuals[0];
 
   return (
     <>
@@ -81,202 +35,52 @@ const FeatureTabs = () => {
           {/* Tabs */}
           <div className="overflow-x-auto ">
             <div className="flex shrink-0 gap-4 md:pb-14 pb-8">
-              <div
-                onClick={() => handleTabClick("Team Scheduling")}
-                className={` py-4 px-6 whitespace-nowrap w-full rounded-tw cursor-pointer text-dark text-base font-semibold text-center flex gap-2 justify-center items-center  md:hover:bg-lightprimary md:dark:hover:bg-lightprimary md:hover:text-primary shadow-elevation2 ${
-                  activeTab == "Team Scheduling"
-                    ? "text-white bg-primary dark:bg-primary shadow-elevation3"
-                    : "dark:text-white bg-white dark:bg-dark"
-                }`}
-              >
-                <Icon
-                  icon="material-symbols:groups-outline-rounded"
-                  height={22}
-                />
-                Team Scheduling
-              </div>
-              <div
-                onClick={() => handleTabClick("Payments")}
-                className={`py-4 px-6 whitespace-nowrap w-full rounded-tw cursor-pointer text-dark text-base font-semibold text-center flex gap-2 justify-center items-center  md:hover:bg-lightprimary md:dark:hover:bg-lightprimary md:hover:text-primary shadow-elevation2 ${
-                  activeTab == "Payments"
-                    ? "text-white bg-primary dark:bg-primary shadow-elevation3"
-                    : "dark:text-white bg-white dark:bg-dark"
-                }`}
-              >
-                <Icon
-                  icon="material-symbols:account-balance-outline"
-                  height={22}
-                />{" "}
-                Payments
-              </div>
-              <div
-                onClick={() => handleTabClick("Embedding")}
-                className={`py-4 px-6 whitespace-nowrap w-full rounded-tw cursor-pointer text-dark text-base font-semibold text-center flex gap-2 justify-center items-center   md:hover:bg-lightprimary md:dark:hover:bg-lightprimary md:hover:text-primary shadow-elevation2 ${
-                  activeTab == "Embedding"
-                    ? "text-white bg-primary dark:bg-primary shadow-elevation3"
-                    : "dark:text-white bg-white dark:bg-dark"
-                }`}
-              >
-                <Icon
-                  icon="material-symbols-light:photo-frame-outline-sharp"
-                  height={22}
-                />{" "}
-                Embedding
-              </div>
-              <div
-                onClick={() => handleTabClick("Workflows")}
-                className={`py-4 px-6 whitespace-nowrap w-full rounded-tw cursor-pointer text-dark text-base font-semibold text-center flex gap-2 justify-center items-center  md:hover:bg-lightprimary md:dark:hover:bg-lightprimary md:hover:text-primary shadow-elevation2  ${
-                  activeTab == "Workflows"
-                    ? "text-white bg-primary dark:bg-primary shadow-elevation3"
-                    : "dark:text-white bg-white dark:bg-dark"
-                }`}
-              >
-                <Icon
-                  icon="material-symbols:widgets-outline-rounded"
-                  height={22}
-                />{" "}
-                Workflows
-              </div>
+              {tabs.map((tab, index) => (
+                <div
+                  key={tab.label}
+                  onClick={() => setActiveIndex(index)}
+                  className={`py-4 px-6 whitespace-nowrap w-full rounded-tw cursor-pointer text-dark text-base font-semibold text-center flex gap-2 justify-center items-center md:hover:bg-lightprimary md:dark:hover:bg-lightprimary md:hover:text-primary shadow-elevation2 ${
+                    activeIndex === index
+                      ? "text-white bg-primary dark:bg-primary shadow-elevation3"
+                      : "dark:text-white bg-white dark:bg-dark"
+                  }`}
+                >
+                  <Icon
+                    icon={tabVisuals[index]?.icon ?? tabVisuals[0].icon}
+                    height={22}
+                  />
+                  {tab.label}
+                </div>
+              ))}
             </div>
           </div>
           <div className="grid grid-cols-12 gap-30">
-              {/* Tabs Content */}
-              {activeTab === "Team Scheduling" && (
-                 <>
             <div className="lg:col-span-6 col-span-12">
-              <Image src={mainbanner} className="w-full" alt="banner" />
+              <Image src={visual.image} className="w-full" alt="banner" />
             </div>
             <div className="lg:col-span-6 col-span-12 lg:ps-7">
-                  <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white pb-6">
-                    Protect your focus.
-                  </h2>
-                  <Accordion className="shadow-none dark:shadow-none divide-y-0 !rounded-none">
-                    {Tab1.map((item, i) => (
-                      <Accordion.Panel
-                        key={i}
-                        className="bg-white dark:bg-dark"
-                      >
-                        <Accordion.Title className="focus:ring-0 px-0 text-17 font-semibold text-ld py-5 ">
-                          {item.title}
-                        </Accordion.Title>
-                        <Accordion.Content className="px-0 pt-0 !rounded-none">
-                          <p className="text-base text-darklink leading-7 ">
-                            {item.desc}
-                          </p>
-                        </Accordion.Content>
-                        <HR className="my-0" />
-                      </Accordion.Panel>
-                    ))}
-                  </Accordion>
-                  <Button color={"primary"} className="font-bold mt-6">
-                    Learn More
-                  </Button>
-                </div>
-                 </>
-
-              )}
-              {activeTab === "Payments" && (
-                 <>
-            <div className="lg:col-span-6 col-span-12">
-              <Image src={mainbanner2} className="w-full" alt="banner" />
+              <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white pb-6">
+                {t("home.featureTabs.heading")}
+              </h2>
+              <Accordion className="shadow-none dark:shadow-none divide-y-0 !rounded-none">
+                {(active?.items ?? []).map((item) => (
+                  <Accordion.Panel key={item.title} className="bg-white dark:bg-dark">
+                    <Accordion.Title className="focus:ring-0 px-0 text-17 font-semibold text-ld py-5 ">
+                      {item.title}
+                    </Accordion.Title>
+                    <Accordion.Content className="px-0 pt-0 !rounded-none">
+                      <p className="text-base text-darklink leading-7 ">
+                        {item.desc}
+                      </p>
+                    </Accordion.Content>
+                    <HR className="my-0" />
+                  </Accordion.Panel>
+                ))}
+              </Accordion>
+              <Button color={"primary"} className="font-bold mt-6">
+                {t("home.featureTabs.cta")}
+              </Button>
             </div>
-            <div className="lg:col-span-6 col-span-12 lg:ps-7">
-                  <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white pb-6">
-                    Protect your focus.
-                  </h2>
-                  <Accordion className="shadow-none dark:shadow-none divide-y-0 !rounded-none">
-                    {Tab2.map((item, i) => (
-                      <Accordion.Panel
-                        key={i}
-                        className="bg-white dark:bg-dark"
-                      >
-                        <Accordion.Title className="focus:ring-0 px-0 text-17 font-semibold text-ld py-5 ">
-                          {item.title}
-                        </Accordion.Title>
-                        <Accordion.Content className="px-0 pt-0 !rounded-none">
-                          <p className="text-base text-darklink leading-7 ">
-                            {item.desc}
-                          </p>
-                        </Accordion.Content>
-                        <HR className="my-0" />
-                      </Accordion.Panel>
-                    ))}
-                  </Accordion>
-                  <Button color={"primary"} className="font-bold mt-6">
-                    Learn More
-                  </Button>
-                </div>
-                 </>
-
-              )}
-              {activeTab === "Embedding" && (
-                 <>
-            <div className="lg:col-span-6 col-span-12">
-              <Image src={mainbanner3} className="w-full" alt="banner" />
-            </div>
-            <div className="lg:col-span-6 col-span-12 lg:ps-7">
-                  <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white pb-6">
-                    Protect your focus.
-                  </h2>
-                  <Accordion className="shadow-none dark:shadow-none divide-y-0 !rounded-none">
-                    {Tab3.map((item, i) => (
-                      <Accordion.Panel
-                        key={i}
-                        className="bg-white dark:bg-dark"
-                      >
-                        <Accordion.Title className="focus:ring-0 px-0 text-17 font-semibold text-ld py-5 ">
-                          {item.title}
-                        </Accordion.Title>
-                        <Accordion.Content className="px-0 pt-0 !rounded-none">
-                          <p className="text-base text-darklink leading-7 ">
-                            {item.desc}
-                          </p>
-                        </Accordion.Content>
-                        <HR className="my-0" />
-                      </Accordion.Panel>
-                    ))}
-                  </Accordion>
-                  <Button color={"primary"} className="font-bold mt-6">
-                    Learn More
-                  </Button>
-                </div>
-                 </>
-
-              )}
-              {activeTab === "Workflows" && (
-                 <>
-            <div className="lg:col-span-6 col-span-12">
-              <Image src={mainbanner4} className="w-full" alt="banner" />
-            </div>
-            <div className="lg:col-span-6 col-span-12 lg:ps-7">
-                  <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white pb-6">
-                    Protect your focus.
-                  </h2>
-                  <Accordion className="shadow-none dark:shadow-none divide-y-0 !rounded-none">
-                    {Tab4.map((item, i) => (
-                      <Accordion.Panel
-                        key={i}
-                        className="bg-white dark:bg-dark"
-                      >
-                        <Accordion.Title className="focus:ring-0 px-0 text-17 font-semibold text-ld py-5 ">
-                          {item.title}
-                        </Accordion.Title>
-                        <Accordion.Content className="px-0 pt-0 !rounded-none">
-                          <p className="text-base text-darklink leading-7 ">
-                            {item.desc}
-                          </p>
-                        </Accordion.Content>
-                        <HR className="my-0" />
-                      </Accordion.Panel>
-                    ))}
-                  </Accordion>
-                  <Button color={"primary"} className="font-bold mt-6">
-                    Learn More
-                  </Button>
-                </div>
-                 </>
-
-              )}
           </div>
         </div>
       </div>

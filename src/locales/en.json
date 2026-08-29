@@ -1,0 +1,585 @@
+{
+  "meta": {
+    "site": {
+      "title": "Devynix",
+      "description": "Devynix — a feature-packed platform built for developers' needs."
+    },
+    "home": {
+      "title": "Devynix — Home"
+    },
+    "about": {
+      "title": "About Us — Devynix"
+    },
+    "blog": {
+      "title": "Blog — Devynix"
+    },
+    "blogDetail": {
+      "title": "Blog Detail — Devynix"
+    },
+    "contact": {
+      "title": "Contact Us — Devynix"
+    },
+    "portfolio": {
+      "title": "Portfolio — Devynix"
+    },
+    "pricing": {
+      "title": "Pricing — Devynix"
+    },
+    "landing": {
+      "title": "Devynix"
+    },
+    "notFound": {
+      "title": "Page Not Found — Devynix"
+    }
+  },
+  "common": {
+    "brand": "Devynix",
+    "actions": {
+      "signUp": "Sign Up",
+      "signIn": "Sign In",
+      "logIn": "Log in",
+      "register": "Register",
+      "accept": "Accept",
+      "cancel": "Cancel",
+      "revoke": "Revoke",
+      "submit": "Submit",
+      "close": "Close",
+      "learnMore": "Learn More",
+      "backToHome": "Go Back to Home",
+      "requestCallback": "Request a Callback",
+      "contactUsNow": "Contact us now",
+      "purchaseNow": "Get Started"
+    },
+    "states": {
+      "loading": "Loading…",
+      "empty": "Nothing to show yet",
+      "error": "Something went wrong. Please try again."
+    },
+    "badges": {
+      "new": "New",
+      "popular": "Popular"
+    }
+  },
+  "nav": {
+    "aboutUs": "About Us",
+    "blog": "Blog",
+    "portfolio": "Portfolio",
+    "dashboard": "Dashboard",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "features": "Features",
+    "documentation": "Documentation",
+    "support": "Support"
+  },
+  "announcement": {
+    "badge": "New",
+    "message": "Frontend Pages Added",
+    "dismiss": "Dismiss announcement"
+  },
+  "auth": {
+    "signUp": {
+      "title": "Create your Devynix account",
+      "submit": "Sign Up",
+      "haveAccount": "Already have an account?"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password"
+    }
+  },
+  "consents": {
+    "documents": {
+      "privacyPolicy": "Devynix Privacy Policy",
+      "termsAndConditions": "Devynix Terms and Conditions"
+    },
+    "labels": {
+      "privacyPolicy": "I have read and accept the Devynix Privacy Policy",
+      "termsAndConditions": "I have read and accept the Devynix Terms and Conditions"
+    },
+    "states": {
+      "granted": "Granted",
+      "revoked": "Revoked",
+      "pending": "Pending"
+    },
+    "grantedAt": "Accepted on {date}",
+    "revokedAt": "Revoked on {date}",
+    "version": "Version {version}",
+    "revoke": {
+      "action": "Revoke",
+      "confirm": "Are you sure you want to revoke this consent?",
+      "success": "Your consent has been revoked.",
+      "error": "We couldn't revoke your consent. Please try again.",
+      "alreadyRevoked": "This consent was already revoked.",
+      "notFound": "We couldn't find the consent you're trying to revoke."
+    },
+    "validation": {
+      "required": "You must accept the Terms and Conditions to continue."
+    }
+  },
+  "documents": {
+    "types": {
+      "charge": "Charge",
+      "subrogation": "Subrogation"
+    },
+    "signature": {
+      "signedBy": "Signed by",
+      "signedByName": "Signed by {name}",
+      "signedAt": "Signed on {date}",
+      "signedByOn": "Signed by {name} on {date}",
+      "unsigned": "Not signed",
+      "pending": "Pending signature",
+      "systemUser": "System"
+    }
+  },
+  "subrogations": {
+    "title": "Subrogation",
+    "charge": "Charge",
+    "signedBy": "Signed by"
+  },
+  "issues": {
+    "statusLabel": "Status",
+    "statuses": {
+      "open": "Open",
+      "inProgress": "In Progress",
+      "pending": "Pending",
+      "resolved": "Resolved",
+      "closed": "Closed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "home": {
+    "banner": {
+      "titleStrong": "A Feature-packed Platform",
+      "titleRest": "Built For Developers' Needs.",
+      "socialProof": "52,589+ developers & agencies building with Devynix",
+      "cta": "Log in"
+    },
+    "clients": {
+      "title": "Over 45,000 clients and counting.",
+      "description": "Pellentesque varius semper odio non pretium. Nullam sagittis neque orci, eu elementum enim.",
+      "cta": "Request a Callback",
+      "features": [
+        {
+          "title": "Expert Advisor",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Effective Support",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Low Fees",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Loan Facility",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        }
+      ]
+    },
+    "featureTabs": {
+      "heading": "Protect your focus.",
+      "cta": "Learn More",
+      "tabs": [
+        {
+          "label": "Team Scheduling",
+          "items": [
+            {
+              "title": "Combine teammate schedules",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Factor in outside colleagues",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Round robin pooling",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            }
+          ]
+        },
+        {
+          "label": "Payments",
+          "items": [
+            {
+              "title": "Collect payments up front",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Factor in outside colleagues",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Round robin pooling",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            }
+          ]
+        },
+        {
+          "label": "Embedding",
+          "items": [
+            {
+              "title": "Embed anywhere",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Factor in outside colleagues",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Round robin pooling",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            }
+          ]
+        },
+        {
+          "label": "Workflows",
+          "items": [
+            {
+              "title": "Automate your workflow",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Factor in outside colleagues",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            },
+            {
+              "title": "Round robin pooling",
+              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+            }
+          ]
+        }
+      ]
+    },
+    "team": {
+      "title": "Meet our team",
+      "description": "Our robust analytics offer rich insights into the information buyers want, informing where teams",
+      "members": [
+        {
+          "name": "Alex Martinez",
+          "position": "CEO & Co-Founder"
+        },
+        {
+          "name": "Jordan Nguyen",
+          "position": "CTO & Co-Founder"
+        },
+        {
+          "name": "Taylor Roberts",
+          "position": "Product Manager"
+        },
+        {
+          "name": "Morgan Patel",
+          "position": "Lead Developer"
+        }
+      ]
+    },
+    "contactBar": {
+      "message": "Save valuable time and effort spent searching for a solution.",
+      "cta": "Contact us now"
+    },
+    "reviews": {
+      "title": "Words from customers.",
+      "description": "Pellentesque varius semper odio non pretium.",
+      "previous": "Previous review",
+      "next": "Next review",
+      "counter": "{current} / {total}",
+      "items": [
+        {
+          "title": "Jenny Wilson",
+          "subtitle": "CEO & Head of Comp Inc.",
+          "review": "Devynix is great, UI-rich and up-to-date. Although it is pretty much complete, I suggest to improve a bit of documentation. Thanks & Highly recommended!"
+        },
+        {
+          "title": "Josh Cui",
+          "subtitle": "CEO & Head of Comp Inc.",
+          "review": "Devynix is great, UI-rich and up-to-date. Although it is pretty much complete, I suggest to improve a bit of documentation. Thanks & Highly recommended!"
+        },
+        {
+          "title": "Eminson Mendoza",
+          "subtitle": "CEO & Head of Comp Inc.",
+          "review": "Devynix is great, UI-rich and up-to-date. Although it is pretty much complete, I suggest to improve a bit of documentation. Thanks & Highly recommended!"
+        }
+      ]
+    },
+    "highlights": {
+      "row1": [
+        "6 Theme Colors",
+        "NextAuth",
+        "Firebase",
+        "90+ Page Templates",
+        "45+ UI Components",
+        "Tailwind",
+        "3400+ Font Icons"
+      ],
+      "row2": [
+        "SWR",
+        "i18n React",
+        "Flowbite React",
+        "Easy to Customize"
+      ],
+      "row3": [
+        "Lots of Chart Options",
+        "Lots of Table Examples",
+        "Regular Updates",
+        "Detailed Documentation",
+        "Calendar Design",
+        "Dedicated Support"
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "stillHaveQuestion": "Still have a question?",
+      "askOnDiscord": "Ask On Discord",
+      "or": "or",
+      "submitTicket": "Submit A Ticket",
+      "items": [
+        {
+          "question": "What is included with my plan?",
+          "answer": "Tailor Devynix to your exact needs. Customize layouts, color schemes, and widgets effortlessly for a personalized user experience."
+        },
+        {
+          "question": "Are there any recurring fees?",
+          "answer": "Unlock the true potential of your data with our advanced analytics tools. Gain valuable insights and make data-driven decisions with ease."
+        },
+        {
+          "question": "Can I use Devynix on multiple projects?",
+          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+        },
+        {
+          "question": "Can I customize Devynix to match my brand?",
+          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+        },
+        {
+          "question": "Are there any restrictions on using Devynix?",
+          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+        },
+        {
+          "question": "How can I get support?",
+          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+        }
+      ]
+    },
+    "packages": {
+      "title": "Fair pricing for everyone.",
+      "description": "Our robust analytics offer rich insights into the information buyers want, informing where teams.",
+      "perOneTime": "/ one time pay",
+      "cta": "Get Started",
+      "included": {
+        "fullSourceCode": "Full source code",
+        "documentation": "Documentation",
+        "saasUse": "Use in SaaS app",
+        "oneProjectStrong": "One",
+        "unlimitedProjectStrong": "Unlimited",
+        "projectSuffix": "Project",
+        "oneYearStrong": "One Year",
+        "technicalSupportSuffix": "Technical Support"
+      },
+      "tiers": [
+        {
+          "licenseType": "Single Use",
+          "licenseDesc": "Use for single end product which end users can't be charged for.",
+          "price": "$49"
+        },
+        {
+          "licenseType": "Multiple Use",
+          "licenseDesc": "Use for unlimited end products end users can't be charged for.",
+          "price": "$89"
+        },
+        {
+          "licenseType": "Extended Use",
+          "licenseDesc": "Use for single end product which end users can be charged for.",
+          "price": "$299"
+        },
+        {
+          "licenseType": "Unlimited Use",
+          "licenseDesc": "Use in unlimited end products end users can be charged for.",
+          "price": "$499"
+        }
+      ]
+    },
+    "payments": {
+      "securedBy": "Secured payment with PayPal & Razorpay"
+    },
+    "purchase": {
+      "heading": "Focus on what truly matters—creating stunning, functional designs.",
+      "description": "Designed for ease of use and customization, Devynix helps you build professional products faster.",
+      "cta": "Register"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Get to know Devynix",
+      "lead": "Do you need a highly customizable and developer friendly premium platform packed with numerous features?",
+      "brandPhrase": "Devynix",
+      "leadRest": "has everything you need. It is designed in accordance with industry standards and best practices to provide you.",
+      "primaryCta": "Create an Account",
+      "secondaryCta": "View Open Positions",
+      "titleSuffix": "Platform"
+    },
+    "achievement": {
+      "title": "A unique story in every number",
+      "stats": [
+        {
+          "value": "2019",
+          "label": "When we founded Devynix"
+        },
+        {
+          "value": "300k+",
+          "label": "Customers on Devynix"
+        },
+        {
+          "value": "25k+",
+          "label": "Products built using Devynix"
+        }
+      ]
+    },
+    "setupProcess": {
+      "title": "The hassle-free setup process",
+      "steps": [
+        {
+          "title": "Effective Support",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Expert Advisor",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Low Fees",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        },
+        {
+          "title": "Loan Facility",
+          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+        }
+      ]
+    }
+  },
+  "blog": {
+    "breadcrumbTitle": "Latest blog & news",
+    "breadcrumbLink": "Blog Page",
+    "detailBreadcrumbLink": "Blog Detail",
+    "readMore": "Read More",
+    "relatedPosts": "Related Posts",
+    "comments": "Comments",
+    "commentsCount": "{count} Comments",
+    "reply": "Reply",
+    "postComment": "Post Comment",
+    "commentPlaceholder": "Write your comment here…",
+    "notFound": "We couldn't find that post."
+  },
+  "portfolio": {
+    "breadcrumbTitle": "Explore Our Latest Works",
+    "breadcrumbLink": "Portfolio"
+  },
+  "pricing": {
+    "breadcrumbTitle": "Choose Your Plan",
+    "breadcrumbLink": "Pricing Page"
+  },
+  "contact": {
+    "breadcrumbTitle": "We'd love to hear from you",
+    "breadcrumbLink": "Contact Us",
+    "reachOut": {
+      "title": "Reach Out Today",
+      "description": "Have questions or need assistance? We're just a message away."
+    },
+    "location": {
+      "title": "Our Location",
+      "description": "Visit us in person or find our contact details to connect with us directly."
+    },
+    "form": {
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Last Name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "xxx xxx xxxx",
+      "email": "Email",
+      "emailPlaceholder": "Email address",
+      "enquiryType": "Enquire related to",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here…",
+      "submit": "Submit"
+    },
+    "enquiryTypes": {
+      "general": "General Enquiry",
+      "other": "Other Enquiry"
+    }
+  },
+  "footer": {
+    "columns": {
+      "product": "Product",
+      "features": "Features",
+      "resources": "Resources",
+      "followUs": "Follow us"
+    },
+    "links": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "pricing": "Pricing",
+      "contact": "Contact",
+      "blog": "Blog",
+      "portfolio": "Portfolio",
+      "faq": "FAQ",
+      "privacyPolicy": "Privacy Policy",
+      "termsAndConditions": "Terms and Conditions"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "rights": "All rights reserved by Devynix.",
+    "producedBy": "Produced by",
+    "producer": "Devynix"
+  },
+  "landing": {
+    "banner": {
+      "titleTop": "Most Elegant",
+      "titleBottom": "Platform",
+      "stats": [
+        {
+          "value": "90+",
+          "label": "Demo Pages"
+        },
+        {
+          "value": "12+",
+          "label": "Apps"
+        },
+        {
+          "value": "45+",
+          "label": "UI Components"
+        }
+      ],
+      "primaryCta": "Login",
+      "secondaryCta": "Live Preview"
+    },
+    "features": {
+      "eyebrow": "Almost covered everything",
+      "title": "Other Amazing Features & Flexibility Provided"
+    },
+    "reviews": {
+      "title": "What our clients say"
+    },
+    "ticket": {
+      "title": "Haven't found an answer to your question?",
+      "description": "Connect with us either on Discord or email us",
+      "discordCta": "Ask on Discord",
+      "ticketCta": "Submit Ticket"
+    },
+    "header": {
+      "documentation": "Documentation",
+      "support": "Support",
+      "login": "Login",
+      "features": "Features",
+      "openMenu": "Open menu"
+    }
+  },
+  "notFound": {
+    "heading": "Oops!",
+    "message": "The page you are looking for could not be found.",
+    "backToHome": "Go Back to Home"
+  }
+}

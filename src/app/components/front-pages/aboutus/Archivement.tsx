@@ -1,6 +1,13 @@
+"use client";
 import React from "react";
+import { useTranslation } from "@/i18n/provider";
 
 const Archivement = () => {
+  const { t, tList } = useTranslation();
+  const stats = tList<{ value: string; label: string }>(
+    "about.achievement.stats"
+  );
+
   return (
     <>
       <div className="dark:bg-dark border-t border-ld">
@@ -8,25 +15,21 @@ const Archivement = () => {
           <div className="grid grid-cols-12 gap-6">
             <div className="xl:col-span-5 col-span-12">
               <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white">
-                A unique story in every number
+                {t("about.achievement.title")}
               </h2>
             </div>
             <div className="xl:col-span-7 col-span-12">
               <div className="flex flex-wrap lg:gap-8 gap-6">
-                <div>
-                  <h3 className="text-primary lg:text-64 text-5xl leading-tight font-normal">2019</h3>
-                  <span className="text-sm text-dark opacity-90">When we founded Modernize</span>
-                </div>
-                <div>
-                  <h3 className="text-primary lg:text-64 text-5xl leading-tight font-normal">300k+</h3>
-                  <span className="text-sm text-dark opacity-90">Customers on Modernize</span>
-                </div>
-                <div>
-                  <h3 className="text-primary lg:text-64 text-5xl leading-tight font-normal">25k+</h3>
-                  <span className="text-sm text-dark opacity-90">
-                    Dashboards built using MaterialM
-                  </span>
-                </div>
+                {stats.map((stat) => (
+                  <div key={stat.value}>
+                    <h3 className="text-primary lg:text-64 text-5xl leading-tight font-normal">
+                      {stat.value}
+                    </h3>
+                    <span className="text-sm text-dark opacity-90">
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

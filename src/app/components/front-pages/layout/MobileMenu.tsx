@@ -5,7 +5,9 @@ import { IconMenu2 } from "@tabler/icons-react";
 import Link from "next/link";
 import FullLogo from "@/app/(DashboardLayout)/layout/shared/logo/FullLogo";
 import Navigation from "./Navigation";
+import { useTranslation } from "@/i18n/provider";
 const MobileMenu = () => {
+  const { t, locale } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
@@ -27,11 +29,11 @@ const MobileMenu = () => {
           <Navigation />
           <Button
             as={Link}
-            href="/"
+            href={`/${locale}`}
             className="font-bold w-full mt-6"
             color={"sky"}
           >
-            Log in
+            {t("common.actions.logIn")}
           </Button>
         </Drawer.Items>
       </Drawer>

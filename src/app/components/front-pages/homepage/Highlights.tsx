@@ -1,214 +1,80 @@
 "use client";
 import { Icon } from "@iconify/react";
+import { useTranslation } from "@/i18n/provider";
+
+// Icon + colour per marquee row; labels come from the dictionary arrays.
+const rowVisuals = {
+  row1: [
+    { icon: "tabler:wand", bg: "bg-lightprimary", text: "text-primary" },
+    { icon: "tabler:shield-lock", bg: "bg-lightsecondary", text: "text-secondary" },
+    { icon: "tabler:brand-firebase", bg: "bg-lighterror", text: "text-error" },
+    { icon: "tabler:archive", bg: "bg-lightsuccess", text: "text-success" },
+    { icon: "tabler:adjustments", bg: "bg-lightinfo", text: "text-info" },
+    { icon: "tabler:brand-tailwind", bg: "bg-lightprimary", text: "text-primary" },
+    { icon: "tabler:diamond", bg: "bg-lightwarning", text: "text-warning" },
+  ],
+  row2: [
+    { icon: "tabler:database", bg: "bg-lightprimary", text: "text-primary" },
+    { icon: "tabler:tags", bg: "bg-lighterror", text: "text-error" },
+    { icon: "tabler:hexagons", bg: "bg-lightinfo", text: "text-info" },
+    { icon: "tabler:arrows-shuffle", bg: "bg-lightsuccess", text: "text-success" },
+  ],
+  row3: [
+    { icon: "tabler:chart-pie", bg: "bg-lightsecondary", text: "text-secondary" },
+    { icon: "tabler:layers-intersect", bg: "bg-lightwarning", text: "text-warning" },
+    { icon: "tabler:refresh", bg: "bg-lightsuccess", text: "text-success" },
+    { icon: "tabler:book", bg: "bg-lightwarning", text: "text-warning" },
+    { icon: "tabler:calendar", bg: "bg-lightinfo", text: "text-info" },
+    { icon: "tabler:user-screen", bg: "bg-lightprimary", text: "text-primary" },
+  ],
+} as const;
+
 export const Highlights = () => {
-  const ThemeFeature1 = [
-    {
-      key: "feature1",
-      icon: "tabler:wand",
-      title: "6 Theme Colors",
-      bg: "bg-lightprimary",
-      text: "text-primary",
-    },
-    {
-      key: "feature2",
-      icon: "tabler:shield-lock",
-      title: "NextAuth",
-      bg: "bg-lightsecondary",
-      text: "text-secondary",
-    },
-    {
-      key: "feature3",
-      icon: "tabler:brand-firebase",
-      title: "Firebase",
-      bg: "bg-lighterror",
-      text: "text-error",
-    },
-    {
-      key: "feature4",
-      icon: "tabler:archive",
-      title: "90+ Page Templates",
-      bg: "bg-lightsuccess",
-      text: "text-success",
-    },
-    {
-      key: "feature5",
-      icon: "tabler:adjustments",
-      title: "45+ UI Components",
-      bg: "bg-lightinfo",
-      text: "text-info",
-    },
-    {
-      key: "feature6",
-      icon: "tabler:brand-tailwind",
-      title: "Tailwind",
-      bg: "bg-lightprimary",
-      text: "text-primary",
-    },
-    {
-      key: "feature7",
-      icon: "tabler:diamond",
-      title: "3400+ Font Icons",
-      bg: "bg-lightwarning",
-      text: "text-warning",
-    },
-  ];
-  const ThemeFeature2 = [
-    {
-      key: "feature1",
-      icon: "tabler:database",
-      title: "SWR",
-      bg: "bg-lightprimary",
-      text: "text-primary",
-    },
-    {
-      key: "feature2",
-      icon: "tabler:tags",
-      title: "i18 React",
-      bg: "bg-lighterror",
-      text: "text-error",
-    },
-    {
-      key: "feature3",
-      icon: "tabler:hexagons",
-      title: "Flowbite React",
-      bg: "bg-lightinfo",
-      text: "text-info",
-    },
-    {
-      key: "feature4",
-      icon: "tabler:arrows-shuffle",
-      title: "Easy to Customize",
-      bg: "bg-lightsuccess",
-      text: "text-success",
-    },
-  ];
-  const ThemeFeature3 = [
-    {
-      key: "feature1",
-      icon: "tabler:chart-pie",
-      title: "Lots of Chart Options",
-      bg: "bg-lightsecondary",
-      text: "text-secondary",
-    },
-    {
-      key: "feature2",
-      icon: "tabler:layers-intersect",
-      title: "Lots of Table Examples",
-      bg: "bg-lightwarning",
-      text: "text-warning",
-    },
-    {
-      key: "feature3",
-      icon: "tabler:refresh",
-      title: "Regular Updates",
-      bg: "bg-lightsuccess",
-      text: "text-success",
-    },
-    {
-      key: "feature4",
-      icon: "tabler:book",
-      title: "Detailed Documentation",
-      bg: "bg-lightwarning",
-      text: "text-warning",
-    },
-    {
-      key: "feature5",
-      icon: "tabler:calendar",
-      title: "Calendar Design",
-      bg: "bg-lightinfo",
-      text: "text-info",
-    },
-    {
-      key: "feature6",
-      icon: "tabler:user-screen",
-      title: "Dedicated Support",
-      bg: "bg-lightprimary",
-      text: "text-primary",
-    },
-  ];
+  const { tList } = useTranslation();
+
+  const rows = [
+    { key: "row1", repeat: 4, labels: tList<string>("home.highlights.row1") },
+    { key: "row2", repeat: 6, labels: tList<string>("home.highlights.row2") },
+    { key: "row3", repeat: 4, labels: tList<string>("home.highlights.row3") },
+  ] as const;
+
   return (
     <>
       <div className="dark:bg-dark">
         <div className="container-1218 mx-auto ">
           <div className=" lg:pt-24 pt-12 rounded-md overflow-hidden">
-            <div className="marquee1-group flex gap-6">
-              {[0, 1, 2, 3].map((item,index) => {
-                return (
-                  <div key={index} className="flex gap-6 mb-6">
-                    {ThemeFeature1.map((item) => {
-                      return (
-                        <div
-                          key={item.key}
-                          className={`py-5 px-8 rounded-[16px] flex gap-3 items-center ${item.bg}`}
-                        >
-                          <Icon
-                            icon={item.icon}
-                            className={`text-2xl shrink-0 ${item.text}`}
-                          />
-                          <p
-                            className={`text-15 font-semibold whitespace-nowrap ${item.text}`}
+            {rows.map((row) => {
+              const visuals = rowVisuals[row.key as keyof typeof rowVisuals];
+              const marquee =
+                row.key === "row2" ? "marquee2-group" : "marquee1-group";
+              return (
+                <div key={row.key} className={`${marquee} flex gap-6`}>
+                  {Array.from({ length: row.repeat }).map((_, cycle) => (
+                    <div key={cycle} className="flex gap-6 mb-6">
+                      {row.labels.map((label, index) => {
+                        const visual = visuals[index] ?? visuals[0];
+                        return (
+                          <div
+                            key={label}
+                            className={`py-5 px-8 rounded-[16px] flex gap-3 items-center ${visual.bg}`}
                           >
-                            {item.title}
-                          </p>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            </div>
-            <div className="marquee2-group flex gap-6">
-              {[0, 1, 2, 3, 4, 5].map((feature,index) => {
-                return (
-                  <div key={index} className="flex gap-6 mb-6">
-                    {ThemeFeature2.map((item) => {
-                      return (
-                        <div
-                          key={item.key}
-                          className={`py-5 px-8 rounded-[16px] flex gap-3 items-center ${item.bg}`}
-                        >
-                          <Icon
-                            icon={item.icon}
-                            className={`text-2xl shrink-0 ${item.text}`}
-                          />
-                          <p
-                            className={`text-15 font-semibold whitespace-nowrap ${item.text}`}
-                          >
-                            {item.title}
-                          </p>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            </div>
-            <div className="marquee1-group flex gap-6">
-              {[0, 1, 2, 3].map((item,index) => {
-                return (
-                  <div key={index} className="flex gap-6 mb-6">
-                    {ThemeFeature3.map((item) => {
-                      return (
-                        <div
-                          key={item.key}
-                          className={`py-5 px-8 rounded-[16px] flex gap-3 items-center ${item.bg}`}
-                        >
-                          <Icon
-                            icon={item.icon}
-                            className={`text-2xl shrink-0 ${item.text}`}
-                          />
-                          <p
-                            className={`text-15 font-semibold whitespace-nowrap ${item.text}`}
-                          >
-                            {item.title}
-                          </p>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            </div>
+                            <Icon
+                              icon={visual.icon}
+                              className={`text-2xl shrink-0 ${visual.text}`}
+                            />
+                            <p
+                              className={`text-15 font-semibold whitespace-nowrap ${visual.text}`}
+                            >
+                              {label}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

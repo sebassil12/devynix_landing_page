@@ -1,93 +1,50 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+"use client";
 import { Tooltip } from "flowbite-react";
 import Link from "next/link";
-import logo from "@public/images/front-pages/background/white-icon-logo.svg";
 import Image from "next/image";
 import FullLogo from "@public/images/logos/light-logo.svg";
 import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
+import { useTranslation } from "@/i18n/provider";
+
+// ponytail: the template's three columns pointed at dashboard routes that no
+// longer exist (/widgets/cards, /react-tables/basic, ...). Repointed at the
+// pages this site actually has.
+const columns = [
+  {
+    headingKey: "footer.columns.product",
+    links: [
+      { key: "footer.links.home", href: "" },
+      { key: "footer.links.aboutUs", href: "/aboutus" },
+      { key: "footer.links.pricing", href: "/pricing" },
+      { key: "footer.links.contact", href: "/contact" },
+    ],
+  },
+  {
+    headingKey: "footer.columns.resources",
+    links: [
+      { key: "footer.links.blog", href: "/blog" },
+      { key: "footer.links.portfolio", href: "/portfolio" },
+      { key: "footer.links.faq", href: "/#faq" },
+    ],
+  },
+  {
+    headingKey: "footer.columns.features",
+    links: [
+      { key: "footer.links.privacyPolicy", href: "/privacy-policy" },
+      { key: "footer.links.termsAndConditions", href: "/terms" },
+    ],
+  },
+];
+
+const socials = [
+  { key: "footer.social.facebook", img: "facebook" },
+  { key: "footer.social.twitter", img: "twitter" },
+  { key: "footer.social.instagram", img: "instagram" },
+];
 
 export const Footer = () => {
-  const navLinks1 = [
-    {
-      key: "link1",
-      title: "Cards",
-      link: "/widgets/cards",
-    },
-    {
-      key: "link2",
-      title: "Pricing",
-      link: "/theme-pages/pricing",
-    },
-    {
-      key: "link3",
-      title: "Account Settings",
-      link: "/theme-pages/account-settings",
-    },
-    {
-      key: "link4",
-      title: "FAQ",
-      link: "/theme-pages/faq",
-    },
-    {
-      key: "link5",
-      title: "Casl",
-      link: "/theme-pages/casl",
-    },
-  ];
-  const navLinks2 = [
-    {
-      key: "link1",
-      title: "Banners",
-      link: "/widgets/banners",
-    },
-    {
-      key: "link2",
-      title: "Charts",
-      link: "/widgets/charts",
-    },
-    {
-      key: "link3",
-      title: "Headless Radio",
-      link: "/headless-form/radiogroup",
-    },
-    {
-      key: "link4",
-      title: "Gallery",
-      link: "/apps/user-profile/gallery",
-    },
-    {
-      key: "link5",
-      title: "Buttons",
-      link: "/ui-components/buttons",
-    },
-  ];
-  const navLinks3 = [
-    {
-      key: "link1",
-      title: "Form Layouts",
-      link: "/forms/form-layouts",
-    },
-    {
-      key: "link2",
-      title: "Tables",
-      link: "/tables/basic",
-    },
-    {
-      key: "link3",
-      title: "React Table",
-      link: "/react-tables/basic",
-    },
-    {
-      key: "link4",
-      title: "Form Elements",
-      link: "/forms/form-elements",
-    },
-    {
-      key: "link5",
-      title: "Validation",
-      link: "/forms/form-validation",
-    },
-  ];
+  const { t, locale } = useTranslation();
+
   return (
     <>
       <div className="bg-dark">
@@ -96,103 +53,50 @@ export const Footer = () => {
             <div className="grid grid-cols-12 gap-30 ">
               <div className="lg:col-span-3 sm:col-span-6 col-span-12">
                 <Image src={FullLogo} alt="logo" className="mb-8" />
-                <div className="flex flex-col gap-4">
-                  {navLinks1.map((item) => {
-                    return (
+              </div>
+              {columns.map((column) => (
+                <div
+                  key={column.headingKey}
+                  className="lg:col-span-3 sm:col-span-6 col-span-12"
+                >
+                  <h4 className="text-17 text-white font-semibold mb-8">
+                    {t(column.headingKey)}
+                  </h4>
+                  <div className="flex flex-col gap-4">
+                    {column.links.map((item) => (
                       <Link
                         key={item.key}
-                        href={item.link}
+                        href={`/${locale}${item.href}`}
                         className="text-sm text-lightmuted hover:text-primary block"
                       >
-                        {item.title}
+                        {t(item.key)}
                       </Link>
-                    );
-                  })}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ))}
               <div className="lg:col-span-3 sm:col-span-6 col-span-12">
                 <h4 className="text-17 text-white font-semibold mb-8">
-                  Features
-                </h4>
-                <div className="flex flex-col gap-4">
-                  {navLinks2.map((item) => {
-                    return (
-                      <Link
-                        key={item.key}
-                        href={item.link}
-                        className="text-sm text-lightmuted hover:text-primary block"
-                      >
-                        {item.title}
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="lg:col-span-3 sm:col-span-6 col-span-12">
-                <h4 className="text-17 text-white font-semibold mb-8">
-                  Resources
-                </h4>
-                <div className="flex flex-col gap-4">
-                  {navLinks3.map((item) => {
-                    return (
-                      <Link
-                        key={item.key}
-                        href={item.link}
-                        className="text-sm text-lightmuted hover:text-primary block"
-                      >
-                        {item.title}
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="lg:col-span-3 sm:col-span-6 col-span-12">
-                <h4 className="text-17 text-white font-semibold mb-8">
-                  Follow us
+                  {t("footer.columns.followUs")}
                 </h4>
                 <div className="flex items-center gap-5">
-                  <Tooltip
-                    content="Facebook"
-                    placement="bottom"
-                    className="shrink-0"
-                  >
-                    <Link href="/">
-                      <Image
-                        src="/images/front-pages/background/facebook.svg"
-                        height={22}
-                        width={22}
-                        alt="icon"
-                      />
-                    </Link>
-                  </Tooltip>
-                  <Tooltip
-                    content="Twitter"
-                    placement="bottom"
-                    className="shrink-0"
-                  >
-                    <Link href="/">
-                      <Image
-                        src="/images/front-pages/background/twitter.svg"
-                        height={22}
-                        width={22}
-                        alt="icon"
-                      />
-                    </Link>
-                  </Tooltip>
-                  <Tooltip
-                    content="Instagram"
-                    placement="bottom"
-                    className="shrink-0"
-                  >
-                    <Link href="/">
-                      <Image
-                        src="/images/front-pages/background/instagram.svg"
-                        height={22}
-                        width={22}
-                        alt="icon"
-                      />
-                    </Link>
-                  </Tooltip>
+                  {socials.map((social) => (
+                    <Tooltip
+                      key={social.key}
+                      content={t(social.key)}
+                      placement="bottom"
+                      className="shrink-0"
+                    >
+                      <Link href="/" aria-label={t(social.key)}>
+                        <Image
+                          src={`/images/front-pages/background/${social.img}.svg`}
+                          height={22}
+                          width={22}
+                          alt={t(social.key)}
+                        />
+                      </Link>
+                    </Tooltip>
+                  ))}
                 </div>
               </div>
             </div>
@@ -201,18 +105,13 @@ export const Footer = () => {
         <div className="container-1218 mx-auto ">
           <div className="flex md:justify-between justify-center items-center flex-wrap md:py-10 py-8">
             <div className="flex items-center gap-3">
-               <Logo/>
-              <p className="text-15 text-lightmuted ">
-                All rights reserved by MaterialM.
-              </p>
+              <Logo />
+              <p className="text-15 text-lightmuted ">{t("footer.rights")}</p>
             </div>
             <p className="text-15 text-lightmuted  flex items-center gap-1 md:pt-0 pt-3">
-              Produced by{" "}
-              <Link
-                className="text-white text-primary-ld"
-                href="https://www.wrappixel.com/"
-              >
-                Wrappixel
+              {t("footer.producedBy")}{" "}
+              <Link className="text-white text-primary-ld" href={`/${locale}`}>
+                {t("footer.producer")}
               </Link>{" "}
             </p>
           </div>

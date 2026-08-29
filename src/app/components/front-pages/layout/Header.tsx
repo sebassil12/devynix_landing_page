@@ -6,8 +6,10 @@ import { Button, Navbar } from "flowbite-react";
 import FullLogo from "@/app/(DashboardLayout)/layout/shared/logo/FullLogo";
 import Navigation from "./Navigation";
 import MobileMenu from "./MobileMenu";
+import { useTranslation } from "@/i18n/provider";
 
 const FrontHeader = () => {
+  const { t, locale } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +43,8 @@ const FrontHeader = () => {
           <div className="xl:block hidden">
             <Navigation />
           </div>
-          <Button as={Link} href="/" className="font-bold xl:flex hidden bg-primary hover:bg-primaryemphasis text-white" color={"sky"}>
-            Log in
+          <Button as={Link} href={`/${locale}`} className="font-bold xl:flex hidden bg-primary hover:bg-primaryemphasis text-white" color={"sky"}>
+            {t("common.actions.logIn")}
           </Button>
           <MobileMenu/>
         </div>
