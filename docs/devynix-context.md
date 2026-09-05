@@ -6,6 +6,19 @@ and this project does not need one.
 
 Last updated: 2026-09-05
 
+**Skills kept (uncertain)** — pruned `.claude/skills/` down to this stack; these were
+left in place deliberately:
+
+- `go-testing`, `gentle-ai-bench` — removed from this repo, but still indexed from
+  `~/.config/opencode/skills/`. That path is machine-global and shared with every
+  other project, so pruning it is not this repo's call.
+- `rdd-defect-workflow` — gentle-ai's own receipt-driven-development workflow.
+  Language-agnostic, but oriented at the gentle-ai repo rather than this site.
+- `branch-pr`, `issue-creation`, `systemic-issue-triage`, `comment-writer` — general
+  GitHub workflow skills, authored by gentle-ai but not tied to its stack.
+- `sdd-*` — several carry Go, Python and Rust snippets as *examples*; the skills
+  themselves are language-agnostic.
+
 ---
 
 ## Purpose
