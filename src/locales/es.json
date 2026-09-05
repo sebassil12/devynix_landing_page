@@ -2,7 +2,7 @@
   "meta": {
     "site": {
       "title": "Devynix",
-      "description": "Devynix — una plataforma repleta de funcionalidades creada para las necesidades de los desarrolladores."
+      "description": "Devynix — productos tecnológicos enfocados en la industria. Desarrollamos software especializado para industrias específicas."
     },
     "home": {
       "title": "Devynix — Inicio"
@@ -10,51 +10,16 @@
     "about": {
       "title": "Sobre nosotros — Devynix"
     },
-    "blog": {
-      "title": "Blog — Devynix"
-    },
-    "blogDetail": {
-      "title": "Detalle del artículo — Devynix"
-    },
     "contact": {
       "title": "Contacto — Devynix"
     },
-    "portfolio": {
-      "title": "Portafolio — Devynix"
-    },
-    "pricing": {
-      "title": "Precios — Devynix"
-    },
-    "landing": {
-      "title": "Devynix"
-    },
     "notFound": {
-      "title": "Página no encontrada — Devynix"
+      "title": "Página no encontrada — Devynix",
+      "description": "La página que buscas no existe o ha cambiado de dirección."
     }
   },
   "common": {
     "brand": "Devynix",
-    "actions": {
-      "signUp": "Registrarse",
-      "signIn": "Iniciar sesión",
-      "logIn": "Iniciar sesión",
-      "register": "Crear cuenta",
-      "accept": "Aceptar",
-      "cancel": "Cancelar",
-      "revoke": "Revocar",
-      "submit": "Enviar",
-      "close": "Cerrar",
-      "learnMore": "Saber más",
-      "backToHome": "Volver al inicio",
-      "requestCallback": "Solicitar una llamada",
-      "contactUsNow": "Contáctanos ahora",
-      "purchaseNow": "Empezar ahora"
-    },
-    "states": {
-      "loading": "Cargando…",
-      "empty": "Todavía no hay nada que mostrar",
-      "error": "Algo ha salido mal. Inténtalo de nuevo."
-    },
     "badges": {
       "new": "Nuevo",
       "popular": "Popular"
@@ -62,350 +27,218 @@
   },
   "nav": {
     "aboutUs": "Sobre nosotros",
-    "blog": "Blog",
-    "portfolio": "Portafolio",
-    "dashboard": "Panel",
-    "pricing": "Precios",
-    "contact": "Contacto",
-    "features": "Funcionalidades",
-    "documentation": "Documentación",
-    "support": "Soporte"
+    "contact": "Contacto"
   },
   "announcement": {
     "badge": "Nuevo",
     "message": "Nuevas páginas disponibles",
     "dismiss": "Cerrar el aviso"
   },
-  "auth": {
-    "signUp": {
-      "title": "Crea tu cuenta de Devynix",
-      "submit": "Registrarse",
-      "haveAccount": "¿Ya tienes una cuenta?"
-    },
-    "fields": {
-      "firstName": "Nombre",
-      "lastName": "Apellidos",
-      "email": "Correo electrónico",
-      "password": "Contraseña"
-    }
-  },
-  "consents": {
-    "documents": {
-      "privacyPolicy": "Política de Privacidad de Devynix",
-      "termsAndConditions": "Términos y Condiciones de Devynix"
-    },
-    "labels": {
-      "privacyPolicy": "He leído y acepto la Política de Privacidad de Devynix",
-      "termsAndConditions": "He leído y acepto los Términos y Condiciones de Devynix"
-    },
-    "states": {
-      "granted": "Otorgado",
-      "revoked": "Revocado",
-      "pending": "Pendiente"
-    },
-    "grantedAt": "Aceptado el {date}",
-    "revokedAt": "Revocado el {date}",
-    "version": "Versión {version}",
-    "revoke": {
-      "action": "Revocar",
-      "confirm": "¿Seguro que quieres revocar este consentimiento?",
-      "success": "Se ha revocado tu consentimiento.",
-      "error": "No se pudo revocar tu consentimiento. Inténtalo de nuevo.",
-      "alreadyRevoked": "Este consentimiento ya había sido revocado.",
-      "notFound": "No se encontró el consentimiento que intentas revocar."
-    },
-    "validation": {
-      "required": "Debes aceptar los Términos y Condiciones para continuar."
-    }
-  },
-  "documents": {
-    "types": {
-      "charge": "Cargo",
-      "subrogation": "Subrogación"
-    },
-    "signature": {
-      "signedBy": "Firmado por",
-      "signedByName": "Firmado por {name}",
-      "signedAt": "Firmado el {date}",
-      "signedByOn": "Firmado por {name} el {date}",
-      "unsigned": "Sin firmar",
-      "pending": "Pendiente de firma",
-      "systemUser": "Sistema"
-    }
-  },
-  "subrogations": {
-    "title": "Subrogación",
-    "charge": "Cargo",
-    "signedBy": "Firmado por"
-  },
-  "issues": {
-    "statusLabel": "Estado",
-    "statuses": {
-      "open": "Abierta",
-      "inProgress": "En progreso",
-      "pending": "Pendiente",
-      "resolved": "Resuelta",
-      "closed": "Cerrada",
-      "cancelled": "Cancelada"
-    }
-  },
   "home": {
     "banner": {
-      "titleStrong": "Una plataforma repleta de funcionalidades",
-      "titleRest": "creada para las necesidades de los desarrolladores.",
-      "socialProof": "Más de 52.589 desarrolladores y agencias construyen con Devynix",
-      "cta": "Iniciar sesión"
+      "titleStrong": "Productos tecnológicos",
+      "titleRest": "enfocados en la industria.",
+      "socialProof": "Desarrollamos software especializado para industrias específicas.",
+      "cta": "Conocer más"
     },
     "clients": {
-      "title": "Más de 45.000 clientes y sumando.",
-      "description": "Pellentesque varius semper odio non pretium. Nullam sagittis neque orci, eu elementum enim.",
-      "cta": "Solicitar una llamada",
+      "title": "Organizaciones de distintos sectores confían en nosotros.",
+      "description": "Nos enfocamos en resolver problemas importantes de industrias específicas con software especializado.",
+      "cta": "Contáctanos",
       "features": [
         {
-          "title": "Asesoramiento experto",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "La industria primero",
+          "subtitle": "Partimos de flujos de trabajo y normativas reales, no de tendencias tecnológicas."
         },
         {
-          "title": "Soporte eficaz",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Desarrollo basado en evidencia",
+          "subtitle": "Validamos las ideas con clientes reales antes de escalar."
         },
         {
-          "title": "Comisiones bajas",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Productos enfocados",
+          "subtitle": "Cada producto tiene un cliente, un problema y un rol claro dentro del portafolio."
         },
         {
-          "title": "Facilidad de financiación",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Soluciones adaptables",
+          "subtitle": "Pivotamos, retiramos o reforzamos según el aprendizaje validado."
         }
       ]
     },
     "featureTabs": {
-      "heading": "Protege tu concentración.",
-      "cta": "Saber más",
+      "heading": "Creado para industrias específicas.",
+      "cta": "Ver nuestros productos",
       "tabs": [
         {
-          "label": "Planificación de equipos",
+          "label": "GeoNix",
           "items": [
             {
-              "title": "Combina las agendas del equipo",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Inteligencia geoespacial para territorio y medio ambiente",
+              "desc": "Datos GIS y de uso del suelo convertidos en decisiones accionables, sin necesitar a un especialista en GIS para interpretarlos."
             },
             {
-              "title": "Incluye a colegas externos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Funciona con los sistemas que ya existen",
+              "desc": "Se integra con los ERP, sistemas documentales y fuentes de datos actuales en lugar de reemplazarlos."
             },
             {
-              "title": "Asignación por turnos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Pensado para cómo reporta el sector",
+              "desc": "Diseñado en torno a los requisitos de trazabilidad y reporte que ya deben cumplir las organizaciones vinculadas al sector público."
             }
           ]
         },
         {
-          "label": "Pagos",
+          "label": "FinNix",
           "items": [
             {
-              "title": "Cobra por adelantado",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Finanzas personales que reflejan el gasto real",
+              "desc": "Presupuestos construidos según cómo se mueve el dinero de personas y microemprendedores, no según un árbol de categorías idealizado."
             },
             {
-              "title": "Incluye a colegas externos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Claridad antes que consejos",
+              "desc": "Primero mostrar a dónde fue el dinero. Recomendaciones solo cuando cambian una decisión."
             },
             {
-              "title": "Asignación por turnos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Pensado para la realidad latinoamericana",
+              "desc": "Múltiples monedas, ingresos informales y flujo de caja irregular tratados como la norma, no como casos excepcionales."
             }
           ]
         },
         {
-          "label": "Integración",
+          "label": "Próximamente",
           "items": [
             {
-              "title": "Intégralo donde quieras",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Nuevos sectores en evaluación",
+              "desc": "Una línea de producto se abre cuando el problema está validado con clientes reales de esa industria."
             },
             {
-              "title": "Incluye a colegas externos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Cómo elegimos",
+              "desc": "Descubrir, construir, validar y luego escalar o pivotar. Un sector se gana un producto al superar esa secuencia."
             },
             {
-              "title": "Asignación por turnos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
+              "title": "Cuéntanos sobre tu industria",
+              "desc": "Si trabajas en un sector donde el software enfocado generaría una ventaja duradera, queremos conversar."
             }
           ]
-        },
-        {
-          "label": "Flujos de trabajo",
-          "items": [
-            {
-              "title": "Automatiza tu flujo de trabajo",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
-            },
-            {
-              "title": "Incluye a colegas externos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
-            },
-            {
-              "title": "Asignación por turnos",
-              "desc": "Ten en cuenta la disponibilidad de los asistentes obligatorios y omite la comprobación de conflictos para los opcionales."
-            }
-          ]
-        }
-      ]
-    },
-    "team": {
-      "title": "Conoce a nuestro equipo",
-      "description": "Nuestras analíticas ofrecen información detallada sobre lo que buscan los compradores y orientan a los equipos",
-      "members": [
-        {
-          "name": "Alex Martinez",
-          "position": "CEO y cofundador"
-        },
-        {
-          "name": "Jordan Nguyen",
-          "position": "CTO y cofundador"
-        },
-        {
-          "name": "Taylor Roberts",
-          "position": "Responsable de producto"
-        },
-        {
-          "name": "Morgan Patel",
-          "position": "Desarrollador principal"
-        }
-      ]
-    },
-    "contactBar": {
-      "message": "Ahorra tiempo y esfuerzo buscando una solución.",
-      "cta": "Contáctanos ahora"
-    },
-    "reviews": {
-      "title": "Lo que dicen nuestros clientes.",
-      "description": "Pellentesque varius semper odio non pretium.",
-      "previous": "Reseña anterior",
-      "next": "Reseña siguiente",
-      "counter": "{current} / {total}",
-      "items": [
-        {
-          "title": "Jenny Wilson",
-          "subtitle": "CEO de Comp Inc.",
-          "review": "Devynix es excelente, con una interfaz muy completa y actualizada. Aunque está prácticamente terminado, sugiero mejorar un poco la documentación. ¡Gracias y muy recomendable!"
-        },
-        {
-          "title": "Josh Cui",
-          "subtitle": "CEO de Comp Inc.",
-          "review": "Devynix es excelente, con una interfaz muy completa y actualizada. Aunque está prácticamente terminado, sugiero mejorar un poco la documentación. ¡Gracias y muy recomendable!"
-        },
-        {
-          "title": "Eminson Mendoza",
-          "subtitle": "CEO de Comp Inc.",
-          "review": "Devynix es excelente, con una interfaz muy completa y actualizada. Aunque está prácticamente terminado, sugiero mejorar un poco la documentación. ¡Gracias y muy recomendable!"
         }
       ]
     },
     "highlights": {
       "row1": [
-        "6 colores de tema",
-        "NextAuth",
-        "Firebase",
-        "Más de 90 plantillas de página",
-        "Más de 45 componentes de UI",
-        "Tailwind",
-        "Más de 3400 iconos"
+        "Arquitectura modular",
+        "Componentes preparados para IA",
+        "Patrones de SaaS vertical",
+        "Experiencia en GIS y geoespacial",
+        "Soporte a decisiones basado en datos",
+        "Tailwind CSS",
+        "Stack con tipado seguro"
       ],
       "row2": [
-        "SWR",
-        "i18n React",
+        "Next.js App Router",
+        "React 19",
         "Flowbite React",
         "Fácil de personalizar"
       ],
       "row3": [
-        "Múltiples opciones de gráficos",
-        "Múltiples ejemplos de tablas",
+        "Compatible con analítica",
+        "Diseño orientado a flujos de trabajo",
         "Actualizaciones periódicas",
-        "Documentación detallada",
-        "Diseño de calendario",
+        "Enfoque en documentación",
+        "Orientado a la experimentación",
         "Soporte dedicado"
       ]
+    },
+    "packages": {
+      "title": "Colaboración simple y transparente.",
+      "description": "Nos enfocamos en el desarrollo de producto a largo plazo, no en proyectos puntuales.",
+      "perOneTime": "",
+      "cta": "Contáctanos",
+      "included": {
+        "fullSourceCode": "Código fuente completo (cuando aplica)",
+        "documentation": "Documentación",
+        "saasUse": "Compatible con SaaS",
+        "oneProjectStrong": "Enfocadas",
+        "unlimitedProjectStrong": "Escalables",
+        "projectSuffix": "colaboraciones",
+        "oneYearStrong": "Continuo",
+        "technicalSupportSuffix": "soporte"
+      },
+      "tiers": [
+        {
+          "licenseType": "Colaboración de producto",
+          "licenseDesc": "Trabaja con nosotros en un producto Devynix existente o nuevo.",
+          "price": "Contáctanos"
+        },
+        {
+          "licenseType": "Piloto de producto",
+          "licenseDesc": "Colaboración corta y acotada para validar un producto Devynix específico en tu contexto.",
+          "price": "Contáctanos"
+        },
+        {
+          "licenseType": "Alianza estratégica",
+          "licenseDesc": "Colaboración de largo plazo en una línea de producto o vertical de Devynix.",
+          "price": "Contáctanos"
+        }
+      ]
+    },
+    "about": {
+      "title": "Sobre Devynix",
+      "description": "Devynix es un equipo técnico pequeño que identifica problemas importantes en industrias específicas y los resuelve con productos de software enfocados. Estamos empezando: dos productos en el portafolio y cada afirmación de esta página es una que podemos sostener.",
+      "points": [
+        {
+          "title": "La industria primero",
+          "subtitle": "Partimos de flujos de trabajo y normativas reales, no de tendencias tecnológicas."
+        },
+        {
+          "title": "Basados en evidencia",
+          "subtitle": "Validamos un problema con clientes reales antes de escalar un producto alrededor de él."
+        },
+        {
+          "title": "Adaptables",
+          "subtitle": "Los productos se crean, pivotan, retiran o reemplazan a medida que cambian las industrias."
+        }
+      ],
+      "cta": "Más sobre nosotros"
+    },
+    "contactBar": {
+      "message": "¿Buscas software especializado para tu industria?",
+      "cta": "Contáctanos"
     },
     "faq": {
       "title": "Preguntas frecuentes",
       "stillHaveQuestion": "¿Todavía tienes alguna duda?",
-      "askOnDiscord": "Pregunta en Discord",
+      "contactCta": "Contáctanos",
       "or": "o",
-      "submitTicket": "Envía un ticket",
+      "emailCta": "Escríbenos un correo",
       "items": [
         {
-          "question": "¿Qué incluye mi plan?",
-          "answer": "Adapta Devynix a tus necesidades. Personaliza diseños, combinaciones de colores y widgets sin esfuerzo para una experiencia a tu medida."
+          "question": "¿En qué industrias se enfocan?",
+          "answer": "Nos enfocamos en industrias específicas donde el software puede crear una ventaja competitiva sólida, como agricultura, monitoreo ambiental, logística, manufactura y flujos de trabajo vinculados al sector público."
         },
         {
-          "question": "¿Hay cuotas recurrentes?",
-          "answer": "Aprovecha todo el potencial de tus datos con nuestras herramientas de analítica avanzada. Obtén información valiosa y toma decisiones basadas en datos con facilidad."
+          "question": "¿Desarrollan software a medida?",
+          "answer": "Desarrollamos principalmente productos reutilizables. Podemos tomar proyectos puntuales que nos ayuden a conocer nuevas industrias, pero no operamos como una agencia de software genérica."
         },
         {
-          "question": "¿Puedo usar Devynix en varios proyectos?",
-          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+          "question": "¿Cómo trabajan con IA?",
+          "answer": "Usamos IA (incluidos modelos de lenguaje pequeños, RAG y ML predictivo) donde genera valor económico medible, no como argumento de marketing."
         },
         {
-          "question": "¿Puedo personalizar Devynix con mi marca?",
-          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+          "question": "¿Pueden trabajar con nuestros sistemas actuales?",
+          "answer": "Sí. Diseñamos productos e integraciones que funcionan con los ERP, sistemas documentales y fuentes de datos existentes, especialmente en América Latina."
         },
         {
-          "question": "¿Hay restricciones para usar Devynix?",
-          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+          "question": "¿Cómo trabajan con sus clientes?",
+          "answer": "Mediante pilotos y experimentos acotados. Validamos el encaje problema-solución antes de escalar y nos adaptamos cuando cambian las circunstancias."
         },
         {
           "question": "¿Cómo puedo obtener soporte?",
-          "answer": "Visualiza conjuntos de datos complejos con nuestros gráficos interactivos. Detecta tendencias y patrones rápidamente para un análisis más inteligente."
+          "answer": "Puedes contactarnos mediante el formulario de contacto o por correo electrónico. Para consultas sobre productos, ofrecemos canales de soporte dedicados."
         }
       ]
-    },
-    "packages": {
-      "title": "Precios justos para todos.",
-      "description": "Nuestras analíticas ofrecen información detallada sobre lo que buscan los compradores y orientan a los equipos.",
-      "perOneTime": "/ pago único",
-      "cta": "Empezar ahora",
-      "included": {
-        "fullSourceCode": "Código fuente completo",
-        "documentation": "Documentación",
-        "saasUse": "Uso en aplicaciones SaaS",
-        "oneProjectStrong": "Un",
-        "unlimitedProjectStrong": "Ilimitados",
-        "projectSuffix": "proyecto",
-        "oneYearStrong": "Un año",
-        "technicalSupportSuffix": "de soporte técnico"
-      },
-      "tiers": [
-        {
-          "licenseType": "Uso individual",
-          "licenseDesc": "Para un único producto final por el que no se pueda cobrar a los usuarios.",
-          "price": "49 $"
-        },
-        {
-          "licenseType": "Uso múltiple",
-          "licenseDesc": "Para productos finales ilimitados por los que no se pueda cobrar a los usuarios.",
-          "price": "89 $"
-        },
-        {
-          "licenseType": "Uso extendido",
-          "licenseDesc": "Para un único producto final por el que sí se pueda cobrar a los usuarios.",
-          "price": "299 $"
-        },
-        {
-          "licenseType": "Uso ilimitado",
-          "licenseDesc": "Para productos finales ilimitados por los que sí se pueda cobrar a los usuarios.",
-          "price": "499 $"
-        }
-      ]
-    },
-    "payments": {
-      "securedBy": "Pago seguro con PayPal y Razorpay"
     },
     "purchase": {
-      "heading": "Céntrate en lo que de verdad importa: crear diseños atractivos y funcionales.",
-      "description": "Diseñado para ser fácil de usar y personalizar, Devynix te ayuda a crear productos profesionales más rápido.",
-      "cta": "Crear cuenta"
+      "heading": "Enfócate en lo que de verdad importa: resolver problemas reales de la industria.",
+      "description": "Diseñado para la experimentación y la escala, Devynix te ayuda a construir productos de software especializados más rápido.",
+      "cta": "Contáctanos"
     }
   },
   "about": {
@@ -419,64 +252,43 @@
       "titleSuffix": "la plataforma"
     },
     "achievement": {
-      "title": "Una historia única en cada cifra",
+      "title": "Nuestro portafolio hoy",
       "stats": [
         {
-          "value": "2019",
-          "label": "Cuando fundamos Devynix"
+          "value": "2",
+          "label": "Productos activos"
         },
         {
-          "value": "300k+",
-          "label": "Clientes en Devynix"
+          "value": "2",
+          "label": "Sectores atendidos"
         },
         {
-          "value": "25k+",
-          "label": "Productos creados con Devynix"
+          "value": "LATAM",
+          "label": "Dónde construimos"
         }
       ]
     },
     "setupProcess": {
-      "title": "Un proceso de configuración sin complicaciones",
+      "title": "Cómo trabajamos",
       "steps": [
         {
-          "title": "Soporte eficaz",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Descubrir",
+          "subtitle": "Identificar problemas importantes en industrias específicas."
         },
         {
-          "title": "Asesoramiento experto",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Construir",
+          "subtitle": "Crear soluciones de software enfocadas."
         },
         {
-          "title": "Comisiones bajas",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Validar",
+          "subtitle": "Probar con clientes y datos reales."
         },
         {
-          "title": "Facilidad de financiación",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Escalar o pivotar",
+          "subtitle": "Reforzar lo que funciona y adaptarnos cuando haga falta."
         }
       ]
     }
-  },
-  "blog": {
-    "breadcrumbTitle": "Últimas noticias y artículos",
-    "breadcrumbLink": "Blog",
-    "detailBreadcrumbLink": "Detalle del artículo",
-    "readMore": "Leer más",
-    "relatedPosts": "Artículos relacionados",
-    "comments": "Comentarios",
-    "commentsCount": "{count} comentarios",
-    "reply": "Responder",
-    "postComment": "Publicar comentario",
-    "commentPlaceholder": "Escribe tu comentario aquí…",
-    "notFound": "No hemos encontrado ese artículo."
-  },
-  "portfolio": {
-    "breadcrumbTitle": "Descubre nuestros últimos trabajos",
-    "breadcrumbLink": "Portafolio"
-  },
-  "pricing": {
-    "breadcrumbTitle": "Elige tu plan",
-    "breadcrumbLink": "Precios"
   },
   "contact": {
     "breadcrumbTitle": "Nos encantaría saber de ti",
@@ -511,20 +323,14 @@
   "footer": {
     "columns": {
       "product": "Producto",
-      "features": "Funcionalidades",
       "resources": "Recursos",
       "followUs": "Síguenos"
     },
     "links": {
       "home": "Inicio",
       "aboutUs": "Sobre nosotros",
-      "pricing": "Precios",
       "contact": "Contacto",
-      "blog": "Blog",
-      "portfolio": "Portafolio",
-      "faq": "Preguntas frecuentes",
-      "privacyPolicy": "Política de Privacidad",
-      "termsAndConditions": "Términos y Condiciones"
+      "faq": "Preguntas frecuentes"
     },
     "social": {
       "facebook": "Facebook",
@@ -535,51 +341,9 @@
     "producedBy": "Desarrollado por",
     "producer": "Devynix"
   },
-  "landing": {
-    "banner": {
-      "titleTop": "La plataforma más",
-      "titleBottom": "elegante",
-      "stats": [
-        {
-          "value": "90+",
-          "label": "Páginas de demo"
-        },
-        {
-          "value": "12+",
-          "label": "Aplicaciones"
-        },
-        {
-          "value": "45+",
-          "label": "Componentes de UI"
-        }
-      ],
-      "primaryCta": "Iniciar sesión",
-      "secondaryCta": "Ver demo"
-    },
-    "features": {
-      "eyebrow": "Prácticamente todo cubierto",
-      "title": "Otras funcionalidades y flexibilidad que ofrecemos"
-    },
-    "reviews": {
-      "title": "Lo que dicen nuestros clientes"
-    },
-    "ticket": {
-      "title": "¿No has encontrado respuesta a tu pregunta?",
-      "description": "Contacta con nosotros por Discord o envíanos un correo",
-      "discordCta": "Pregunta en Discord",
-      "ticketCta": "Enviar ticket"
-    },
-    "header": {
-      "documentation": "Documentación",
-      "support": "Soporte",
-      "login": "Iniciar sesión",
-      "features": "Funcionalidades",
-      "openMenu": "Abrir menú"
-    }
-  },
   "notFound": {
-    "heading": "¡Vaya!",
-    "message": "No se ha encontrado la página que buscas.",
-    "backToHome": "Volver al inicio"
+    "heading": "No encontramos esa página",
+    "backToHome": "Ir al inicio",
+    "contactCta": "Contáctanos"
   }
 }

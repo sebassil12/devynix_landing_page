@@ -30,7 +30,10 @@ const FeatureTabs = () => {
 
   return (
     <>
-      <div className="bg-lightgray dark:bg-darkgray lg:py-24 py-12">
+      <div
+        id="products"
+        className="bg-lightgray dark:bg-darkgray lg:py-24 py-12"
+      >
         <div className="container-1218 mx-auto">
           {/* Tabs */}
           <div className="overflow-x-auto ">

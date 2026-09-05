@@ -2,12 +2,10 @@
 import React, { useState } from "react";
 import { Button, Drawer } from "flowbite-react";
 import { IconMenu2 } from "@tabler/icons-react";
-import Link from "next/link";
-import FullLogo from "@/app/(DashboardLayout)/layout/shared/logo/FullLogo";
+import FullLogo from "@/app/components/shared/logo/FullLogo";
 import Navigation from "./Navigation";
-import { useTranslation } from "@/i18n/provider";
+
 const MobileMenu = () => {
-  const { t, locale } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
@@ -27,14 +25,6 @@ const MobileMenu = () => {
             <FullLogo />
           </div>
           <Navigation />
-          <Button
-            as={Link}
-            href={`/${locale}`}
-            className="font-bold w-full mt-6"
-            color={"sky"}
-          >
-            {t("common.actions.logIn")}
-          </Button>
         </Drawer.Items>
       </Drawer>
     </>

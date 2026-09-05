@@ -1,14 +1,11 @@
-import ClientReviews from "@/app/components/front-pages/homepage/ClientReviews";
-import Companies from "@/app/components/front-pages/homepage/Companies";
+import { AboutDevynix } from "@/app/components/front-pages/homepage/AboutDevynix";
 import ContactBar from "@/app/components/front-pages/homepage/ContactBar";
 import { FAQ } from "@/app/components/front-pages/homepage/FAQ";
 import FeatureTabs from "@/app/components/front-pages/homepage/FeatureTabs";
 import { Highlights } from "@/app/components/front-pages/homepage/Highlights";
 import MainBanner from "@/app/components/front-pages/homepage/MainBanner";
 import OurClients from "@/app/components/front-pages/homepage/OurClients";
-import OurTeam from "@/app/components/front-pages/homepage/OurTeam";
 import { Packages } from "@/app/components/front-pages/homepage/Packages";
-import { PaymentOptions } from "@/app/components/front-pages/homepage/Payments";
 import PurchaseTemp from "@/app/components/front-pages/homepage/PurchaseTemp";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
@@ -24,19 +21,19 @@ export async function generateMetadata({
   return { title: dict.meta.home.title };
 }
 
+// Section order mirrors the `home.*` key order in src/locales/*.json:
+// banner -> clients -> featureTabs -> highlights -> packages -> about
+// -> contactBar -> faq -> purchase.
 const page = () => {
   return (
     <>
       <MainBanner />
       <OurClients />
       <FeatureTabs />
-      <OurTeam />
-      <ContactBar />
-      <ClientReviews />
-      <Companies />
       <Highlights />
       <Packages />
-      <PaymentOptions />
+      <AboutDevynix />
+      <ContactBar />
       <FAQ />
       <PurchaseTemp />
     </>

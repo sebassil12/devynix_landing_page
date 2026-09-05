@@ -4,10 +4,17 @@ import { locales, defaultLocale, isLocale } from "@/i18n/config";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const hasLocale = locales.some(
+  const matched = locales.find(
     (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
   );
-  if (hasLocale) return;
+  if (matched) {
+    // not-found.tsx renders outside the [lang] layout, so it cannot read the
+    // route params or the TranslationProvider. This header is how it learns
+    // which locale the visitor asked for.
+    const headers = new Headers(request.headers);
+    headers.set("x-locale", matched);
+    return NextResponse.next({ request: { headers } });
+  }
 
   // ponytail: first Accept-Language tag is enough; no full RFC 4647 negotiation
   // until someone actually needs quality-value weighting.

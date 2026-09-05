@@ -18,7 +18,7 @@ import Link from "next/link";
 import { useTranslation } from "@/i18n/provider";
 
 const MainBanner = () => {
-  const { t, locale } = useTranslation();
+  const { t } = useTranslation();
 
   const userImg = [{ user: user1 }, { user: user2 }, { user: user3 }];
 
@@ -82,7 +82,7 @@ const MainBanner = () => {
                 <Button
                   color={"primary"}
                   as={Link}
-                  href={`/${locale}`}
+                  href="#products"
                   className="px-4 font-bold sm:w-fit w-full"
                 >
                   {t("home.banner.cta")}

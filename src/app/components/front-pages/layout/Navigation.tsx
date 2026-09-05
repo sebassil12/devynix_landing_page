@@ -6,9 +6,6 @@ import { useTranslation } from "@/i18n/provider";
 
 const FrontNav = [
   { key: "nav.aboutUs", href: "/aboutus", badge: false },
-  { key: "nav.blog", href: "/blog", badge: false },
-  { key: "nav.portfolio", href: "/portfolio", badge: true },
-  { key: "nav.pricing", href: "/pricing", badge: false },
   { key: "nav.contact", href: "/contact", badge: false },
 ];
 

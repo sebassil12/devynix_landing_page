@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": "geonix",
+      "name": "GeoNix",
+      "description": "GIS/geospatial technology branch focused on environmental and land‑use intelligence for organizations and public‑sector adjacent workflows.",
+      "status": "active",
+      "audience": "SMEs, public-sector organizations, and industry players in Latin America."
+    },
+    {
+      "id": "finnix",
+      "name": "FinNix",
+      "description": "Personal finance and budgeting application for individuals and micro‑entrepreneurs in Latin America.",
+      "status": "active",
+      "audience": "Individuals and micro-entrepreneurs in Latin America."
+    }
+  ]
+}

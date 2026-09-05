@@ -3,7 +3,7 @@ import { Tooltip } from "flowbite-react";
 import Link from "next/link";
 import Image from "next/image";
 import FullLogo from "@public/images/logos/light-logo.svg";
-import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
+import Logo from "@/app/components/shared/logo/Logo";
 import { useTranslation } from "@/i18n/provider";
 
 // ponytail: the template's three columns pointed at dashboard routes that no
@@ -15,24 +15,12 @@ const columns = [
     links: [
       { key: "footer.links.home", href: "" },
       { key: "footer.links.aboutUs", href: "/aboutus" },
-      { key: "footer.links.pricing", href: "/pricing" },
       { key: "footer.links.contact", href: "/contact" },
     ],
   },
   {
     headingKey: "footer.columns.resources",
-    links: [
-      { key: "footer.links.blog", href: "/blog" },
-      { key: "footer.links.portfolio", href: "/portfolio" },
-      { key: "footer.links.faq", href: "/#faq" },
-    ],
-  },
-  {
-    headingKey: "footer.columns.features",
-    links: [
-      { key: "footer.links.privacyPolicy", href: "/privacy-policy" },
-      { key: "footer.links.termsAndConditions", href: "/terms" },
-    ],
+    links: [{ key: "footer.links.faq", href: "/#faq" }],
   },
 ];
 

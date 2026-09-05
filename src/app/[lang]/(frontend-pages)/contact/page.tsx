@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ContactMap from "@/app/components/front-pages/contactus/ContactMap";
 import ContactForm from "@/app/components/front-pages/contactus/ContactForm";
 import PurchaseTemp from "@/app/components/front-pages/homepage/PurchaseTemp";
-import FrontEndBreadcrumb from "@/app/(DashboardLayout)/layout/shared/breadcrumb/FrontBreadcrumb";
+import FrontEndBreadcrumb from "@/app/components/shared/breadcrumb/FrontBreadcrumb";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 

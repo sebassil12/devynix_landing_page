@@ -1,23 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import "flowbite";
-import { Button, Navbar } from "flowbite-react";
-import FullLogo from "@/app/(DashboardLayout)/layout/shared/logo/FullLogo";
+import FullLogo from "@/app/components/shared/logo/FullLogo";
 import Navigation from "./Navigation";
 import MobileMenu from "./MobileMenu";
-import { useTranslation } from "@/i18n/provider";
 
 const FrontHeader = () => {
-  const { t, locale } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
+      setIsSticky(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,28 +20,21 @@ const FrontHeader = () => {
   }, []);
 
   return (
-    <>
-      <header
-        className={` top-0 z-50 ${
-          isSticky
-            ? "bg-white dark:bg-dark shadow-md fixed w-full py-5"
-            : "bg-lightgray dark:bg-darkgray lg:py-9 py-5 "
-        }`}
-      >
-       
-        <div className="container-1218 mx-auto  flex justify-between items-center">
-          <FullLogo />
-          {/* <MobileDrawer/> */}
-          <div className="xl:block hidden">
-            <Navigation />
-          </div>
-          <Button as={Link} href={`/${locale}`} className="font-bold xl:flex hidden bg-primary hover:bg-primaryemphasis text-white" color={"sky"}>
-            {t("common.actions.logIn")}
-          </Button>
-          <MobileMenu/>
+    <header
+      className={` top-0 z-50 ${
+        isSticky
+          ? "bg-white dark:bg-dark shadow-md fixed w-full py-5"
+          : "bg-lightgray dark:bg-darkgray lg:py-9 py-5 "
+      }`}
+    >
+      <div className="container-1218 mx-auto flex justify-between items-center">
+        <FullLogo />
+        <div className="xl:block hidden">
+          <Navigation />
         </div>
-      </header>
-    </>
+        <MobileMenu />
+      </div>
+    </header>
   );
 };
 

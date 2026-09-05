@@ -1,5 +1,5 @@
 "use client";
-import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
+import Logo from "@/app/components/shared/logo/Logo";
 import { Button } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +34,7 @@ const PurchaseTemp = () => {
             <Button
               color={"outlinewhite"}
               as={Link}
-              href={`/${locale}`}
+              href={`/${locale}/contact`}
               className="mt-5 px-4 sm:w-auto w-full"
             >
               {t("home.purchase.cta")}

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "@/i18n/provider";
 
 export const FAQ = () => {
-  const { t, tList } = useTranslation();
+  const { t, tList, locale } = useTranslation();
   const questions = tList<{ question: string; answer: string }>(
     "home.faq.items"
   );
@@ -33,18 +33,17 @@ export const FAQ = () => {
           <p className="mt-14 text-sm font-medium justify-center text-darklink flex flex-wrap items-center gap-1 border border-dashed w-fit mx-auto px-3 py-1.5 rounded-md">
             {t("home.faq.stillHaveQuestion")}{" "}
             <Link
-              href="https://discord.com/invite/eMzE8F6Wqs"
+              href={`/${locale}/contact`}
               className="underline hover:text-primary"
-              target="_blank"
             >
-              {t("home.faq.askOnDiscord")}
+              {t("home.faq.contactCta")}
             </Link>{" "}
             <span>{t("home.faq.or")}</span>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="underline hover:text-primary"
             >
-              {t("home.faq.submitTicket")}
+              {t("home.faq.emailCta")}
             </Link>
           </p>
         </div>

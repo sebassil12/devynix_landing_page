@@ -2,529 +2,335 @@
   "meta": {
     "site": {
       "title": "Devynix",
-      "description": "Devynix — a feature-packed platform built for developers' needs."
+      "description": "Devynix — industry-focused technology products. We build specialized software for specific industries."
     },
     "home": {
       "title": "Devynix — Home"
     },
     "about": {
-      "title": "About Us — Devynix"
-    },
-    "blog": {
-      "title": "Blog — Devynix"
-    },
-    "blogDetail": {
-      "title": "Blog Detail — Devynix"
+      "title": "About — Devynix"
     },
     "contact": {
-      "title": "Contact Us — Devynix"
-    },
-    "portfolio": {
-      "title": "Portfolio — Devynix"
-    },
-    "pricing": {
-      "title": "Pricing — Devynix"
-    },
-    "landing": {
-      "title": "Devynix"
+      "title": "Contact — Devynix"
     },
     "notFound": {
-      "title": "Page Not Found — Devynix"
+      "title": "Page not found — Devynix",
+      "description": "The page you are looking for does not exist or has moved."
     }
   },
   "common": {
     "brand": "Devynix",
-    "actions": {
-      "signUp": "Sign Up",
-      "signIn": "Sign In",
-      "logIn": "Log in",
-      "register": "Register",
-      "accept": "Accept",
-      "cancel": "Cancel",
-      "revoke": "Revoke",
-      "submit": "Submit",
-      "close": "Close",
-      "learnMore": "Learn More",
-      "backToHome": "Go Back to Home",
-      "requestCallback": "Request a Callback",
-      "contactUsNow": "Contact us now",
-      "purchaseNow": "Get Started"
-    },
-    "states": {
-      "loading": "Loading…",
-      "empty": "Nothing to show yet",
-      "error": "Something went wrong. Please try again."
-    },
     "badges": {
       "new": "New",
       "popular": "Popular"
     }
   },
   "nav": {
-    "aboutUs": "About Us",
-    "blog": "Blog",
-    "portfolio": "Portfolio",
-    "dashboard": "Dashboard",
-    "pricing": "Pricing",
-    "contact": "Contact",
-    "features": "Features",
-    "documentation": "Documentation",
-    "support": "Support"
+    "aboutUs": "About us",
+    "contact": "Contact"
   },
   "announcement": {
     "badge": "New",
-    "message": "Frontend Pages Added",
+    "message": "New pages available",
     "dismiss": "Dismiss announcement"
-  },
-  "auth": {
-    "signUp": {
-      "title": "Create your Devynix account",
-      "submit": "Sign Up",
-      "haveAccount": "Already have an account?"
-    },
-    "fields": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "password": "Password"
-    }
-  },
-  "consents": {
-    "documents": {
-      "privacyPolicy": "Devynix Privacy Policy",
-      "termsAndConditions": "Devynix Terms and Conditions"
-    },
-    "labels": {
-      "privacyPolicy": "I have read and accept the Devynix Privacy Policy",
-      "termsAndConditions": "I have read and accept the Devynix Terms and Conditions"
-    },
-    "states": {
-      "granted": "Granted",
-      "revoked": "Revoked",
-      "pending": "Pending"
-    },
-    "grantedAt": "Accepted on {date}",
-    "revokedAt": "Revoked on {date}",
-    "version": "Version {version}",
-    "revoke": {
-      "action": "Revoke",
-      "confirm": "Are you sure you want to revoke this consent?",
-      "success": "Your consent has been revoked.",
-      "error": "We couldn't revoke your consent. Please try again.",
-      "alreadyRevoked": "This consent was already revoked.",
-      "notFound": "We couldn't find the consent you're trying to revoke."
-    },
-    "validation": {
-      "required": "You must accept the Terms and Conditions to continue."
-    }
-  },
-  "documents": {
-    "types": {
-      "charge": "Charge",
-      "subrogation": "Subrogation"
-    },
-    "signature": {
-      "signedBy": "Signed by",
-      "signedByName": "Signed by {name}",
-      "signedAt": "Signed on {date}",
-      "signedByOn": "Signed by {name} on {date}",
-      "unsigned": "Not signed",
-      "pending": "Pending signature",
-      "systemUser": "System"
-    }
-  },
-  "subrogations": {
-    "title": "Subrogation",
-    "charge": "Charge",
-    "signedBy": "Signed by"
-  },
-  "issues": {
-    "statusLabel": "Status",
-    "statuses": {
-      "open": "Open",
-      "inProgress": "In Progress",
-      "pending": "Pending",
-      "resolved": "Resolved",
-      "closed": "Closed",
-      "cancelled": "Cancelled"
-    }
   },
   "home": {
     "banner": {
-      "titleStrong": "A Feature-packed Platform",
-      "titleRest": "Built For Developers' Needs.",
-      "socialProof": "52,589+ developers & agencies building with Devynix",
-      "cta": "Log in"
+      "titleStrong": "Industry-focused",
+      "titleRest": "technology products.",
+      "socialProof": "Building specialized software for specific industries.",
+      "cta": "Learn More"
     },
     "clients": {
-      "title": "Over 45,000 clients and counting.",
-      "description": "Pellentesque varius semper odio non pretium. Nullam sagittis neque orci, eu elementum enim.",
-      "cta": "Request a Callback",
+      "title": "Trusted by organizations across industries.",
+      "description": "We focus on solving important problems in specific industries with specialized software.",
+      "cta": "Contact Us",
       "features": [
         {
-          "title": "Expert Advisor",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Industry-first approach",
+          "subtitle": "We start from real workflows and regulations, not from technology trends."
         },
         {
-          "title": "Effective Support",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Evidence-driven development",
+          "subtitle": "We validate ideas with real customers before scaling."
         },
         {
-          "title": "Low Fees",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Focused products",
+          "subtitle": "Each product has a clear customer, problem, and role in our portfolio."
         },
         {
-          "title": "Loan Facility",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "title": "Adaptable solutions",
+          "subtitle": "We pivot, retire, or double-down based on validated learning."
         }
       ]
     },
     "featureTabs": {
-      "heading": "Protect your focus.",
-      "cta": "Learn More",
+      "heading": "Built for specific industries.",
+      "cta": "See our products",
       "tabs": [
         {
-          "label": "Team Scheduling",
+          "label": "GeoNix",
           "items": [
             {
-              "title": "Combine teammate schedules",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Geospatial intelligence for land and environment",
+              "desc": "GIS and land-use data turned into decisions organizations can act on, without needing a GIS specialist to interpret it."
             },
             {
-              "title": "Factor in outside colleagues",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Works with the systems already in place",
+              "desc": "Integrates with existing ERPs, document systems, and data sources rather than replacing them."
             },
             {
-              "title": "Round robin pooling",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Built for how the sector reports",
+              "desc": "Designed around the traceability and reporting requirements public-sector adjacent organizations already answer to."
             }
           ]
         },
         {
-          "label": "Payments",
+          "label": "FinNix",
           "items": [
             {
-              "title": "Collect payments up front",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Personal finance that reflects real spending",
+              "desc": "Budgeting built around how money actually moves for individuals and micro-entrepreneurs, not around an idealized category tree."
             },
             {
-              "title": "Factor in outside colleagues",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Clarity before advice",
+              "desc": "Show where the money went first. Recommendations only where they change a decision."
             },
             {
-              "title": "Round robin pooling",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Built for Latin American realities",
+              "desc": "Multiple currencies, informal income, and irregular cash flow treated as the norm, not as edge cases."
             }
           ]
         },
         {
-          "label": "Embedding",
+          "label": "More coming",
           "items": [
             {
-              "title": "Embed anywhere",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "New verticals under evaluation",
+              "desc": "A product line opens once the problem is validated with real customers in that industry."
             },
             {
-              "title": "Factor in outside colleagues",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "How we choose",
+              "desc": "Discover, build, validate, then scale or pivot. A vertical earns a product by surviving that sequence."
             },
             {
-              "title": "Round robin pooling",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
+              "title": "Talk to us about your industry",
+              "desc": "If you work in a sector where focused software would create a durable advantage, we want the conversation."
             }
           ]
-        },
-        {
-          "label": "Workflows",
-          "items": [
-            {
-              "title": "Automate your workflow",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
-            },
-            {
-              "title": "Factor in outside colleagues",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
-            },
-            {
-              "title": "Round robin pooling",
-              "desc": "Factor in availability for required attendees, and skip checking for conflicts for optional attendees."
-            }
-          ]
-        }
-      ]
-    },
-    "team": {
-      "title": "Meet our team",
-      "description": "Our robust analytics offer rich insights into the information buyers want, informing where teams",
-      "members": [
-        {
-          "name": "Alex Martinez",
-          "position": "CEO & Co-Founder"
-        },
-        {
-          "name": "Jordan Nguyen",
-          "position": "CTO & Co-Founder"
-        },
-        {
-          "name": "Taylor Roberts",
-          "position": "Product Manager"
-        },
-        {
-          "name": "Morgan Patel",
-          "position": "Lead Developer"
-        }
-      ]
-    },
-    "contactBar": {
-      "message": "Save valuable time and effort spent searching for a solution.",
-      "cta": "Contact us now"
-    },
-    "reviews": {
-      "title": "Words from customers.",
-      "description": "Pellentesque varius semper odio non pretium.",
-      "previous": "Previous review",
-      "next": "Next review",
-      "counter": "{current} / {total}",
-      "items": [
-        {
-          "title": "Jenny Wilson",
-          "subtitle": "CEO & Head of Comp Inc.",
-          "review": "Devynix is great, UI-rich and up-to-date. Although it is pretty much complete, I suggest to improve a bit of documentation. Thanks & Highly recommended!"
-        },
-        {
-          "title": "Josh Cui",
-          "subtitle": "CEO & Head of Comp Inc.",
-          "review": "Devynix is great, UI-rich and up-to-date. Although it is pretty much complete, I suggest to improve a bit of documentation. Thanks & Highly recommended!"
-        },
-        {
-          "title": "Eminson Mendoza",
-          "subtitle": "CEO & Head of Comp Inc.",
-          "review": "Devynix is great, UI-rich and up-to-date. Although it is pretty much complete, I suggest to improve a bit of documentation. Thanks & Highly recommended!"
         }
       ]
     },
     "highlights": {
       "row1": [
-        "6 Theme Colors",
-        "NextAuth",
-        "Firebase",
-        "90+ Page Templates",
-        "45+ UI Components",
-        "Tailwind",
-        "3400+ Font Icons"
+        "Modular architecture",
+        "AI-ready components",
+        "Vertical SaaS patterns",
+        "GIS & geospatial expertise",
+        "Data-driven decision support",
+        "Tailwind CSS",
+        "Type-safe stack"
       ],
       "row2": [
-        "SWR",
-        "i18n React",
+        "Next.js App Router",
+        "React 19",
         "Flowbite React",
-        "Easy to Customize"
+        "Easy to customize"
       ],
       "row3": [
-        "Lots of Chart Options",
-        "Lots of Table Examples",
-        "Regular Updates",
-        "Detailed Documentation",
-        "Calendar Design",
-        "Dedicated Support"
+        "Analytics-friendly",
+        "Workflow-oriented design",
+        "Regular updates",
+        "Documentation-focused",
+        "Experiment-driven",
+        "Dedicated support"
       ]
+    },
+    "packages": {
+      "title": "Simple, transparent engagement.",
+      "description": "We focus on long-term product development, not one-off projects.",
+      "perOneTime": "",
+      "cta": "Contact Us",
+      "included": {
+        "fullSourceCode": "Full source code (when applicable)",
+        "documentation": "Documentation",
+        "saasUse": "SaaS-friendly",
+        "oneProjectStrong": "Focused",
+        "unlimitedProjectStrong": "Scalable",
+        "projectSuffix": "engagements",
+        "oneYearStrong": "Ongoing",
+        "technicalSupportSuffix": "support"
+      },
+      "tiers": [
+        {
+          "licenseType": "Product collaboration",
+          "licenseDesc": "Work with us on an existing or new Devynix product.",
+          "price": "Contact us"
+        },
+        {
+          "licenseType": "Product pilot",
+          "licenseDesc": "Short, focused engagement to validate a specific Devynix product in your context.",
+          "price": "Contact us"
+        },
+        {
+          "licenseType": "Strategic partnership",
+          "licenseDesc": "Long-term collaboration on a Devynix product line or vertical.",
+          "price": "Contact us"
+        }
+      ]
+    },
+    "about": {
+      "title": "About Devynix",
+      "description": "Devynix is a small technical team that identifies important problems in specific industries and solves them with focused software products. We are early: two products in the portfolio, and every claim on this page is one we can back.",
+      "points": [
+        {
+          "title": "Industry first",
+          "subtitle": "We start from real workflows and regulations, not from technology trends."
+        },
+        {
+          "title": "Evidence-driven",
+          "subtitle": "We validate a problem with real customers before we scale a product around it."
+        },
+        {
+          "title": "Adaptable",
+          "subtitle": "Products get created, pivoted, retired, or replaced as industries change."
+        }
+      ],
+      "cta": "More about us"
+    },
+    "contactBar": {
+      "message": "Looking for specialized software for your industry?",
+      "cta": "Contact us"
     },
     "faq": {
       "title": "Frequently asked questions",
       "stillHaveQuestion": "Still have a question?",
-      "askOnDiscord": "Ask On Discord",
+      "contactCta": "Contact us",
       "or": "or",
-      "submitTicket": "Submit A Ticket",
+      "emailCta": "Send us an email",
       "items": [
         {
-          "question": "What is included with my plan?",
-          "answer": "Tailor Devynix to your exact needs. Customize layouts, color schemes, and widgets effortlessly for a personalized user experience."
+          "question": "What industries do you focus on?",
+          "answer": "We focus on specific industries where software can create a strong competitive advantage, such as agriculture, environmental monitoring, logistics, manufacturing, and government-adjacent workflows."
         },
         {
-          "question": "Are there any recurring fees?",
-          "answer": "Unlock the true potential of your data with our advanced analytics tools. Gain valuable insights and make data-driven decisions with ease."
+          "question": "Do you build custom software?",
+          "answer": "We primarily build reusable products. We may take selective projects that help us learn about new industries, but we do not operate as a generic software agency."
         },
         {
-          "question": "Can I use Devynix on multiple projects?",
-          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+          "question": "How do you work with AI?",
+          "answer": "We use AI (including small language models, RAG, and predictive ML) where it creates measurable economic value, not as a marketing claim."
         },
         {
-          "question": "Can I customize Devynix to match my brand?",
-          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+          "question": "Can you work with our existing systems?",
+          "answer": "Yes. We design products and integrations that work with existing ERPs, document systems, and data sources, especially in Latin America."
         },
         {
-          "question": "Are there any restrictions on using Devynix?",
-          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+          "question": "How do you engage with clients?",
+          "answer": "Through focused pilots and experiments. We validate problem-solution fit before scaling, and we adapt when circumstances change."
         },
         {
           "question": "How can I get support?",
-          "answer": "Visualize complex data sets beautifully with our interactive graphs and charts. Quickly grasp trends and patterns for smarter analysis."
+          "answer": "You can reach us through the contact form or by email. For product-related questions, we provide dedicated support channels."
         }
       ]
-    },
-    "packages": {
-      "title": "Fair pricing for everyone.",
-      "description": "Our robust analytics offer rich insights into the information buyers want, informing where teams.",
-      "perOneTime": "/ one time pay",
-      "cta": "Get Started",
-      "included": {
-        "fullSourceCode": "Full source code",
-        "documentation": "Documentation",
-        "saasUse": "Use in SaaS app",
-        "oneProjectStrong": "One",
-        "unlimitedProjectStrong": "Unlimited",
-        "projectSuffix": "Project",
-        "oneYearStrong": "One Year",
-        "technicalSupportSuffix": "Technical Support"
-      },
-      "tiers": [
-        {
-          "licenseType": "Single Use",
-          "licenseDesc": "Use for single end product which end users can't be charged for.",
-          "price": "$49"
-        },
-        {
-          "licenseType": "Multiple Use",
-          "licenseDesc": "Use for unlimited end products end users can't be charged for.",
-          "price": "$89"
-        },
-        {
-          "licenseType": "Extended Use",
-          "licenseDesc": "Use for single end product which end users can be charged for.",
-          "price": "$299"
-        },
-        {
-          "licenseType": "Unlimited Use",
-          "licenseDesc": "Use in unlimited end products end users can be charged for.",
-          "price": "$499"
-        }
-      ]
-    },
-    "payments": {
-      "securedBy": "Secured payment with PayPal & Razorpay"
     },
     "purchase": {
-      "heading": "Focus on what truly matters—creating stunning, functional designs.",
-      "description": "Designed for ease of use and customization, Devynix helps you build professional products faster.",
-      "cta": "Register"
+      "heading": "Focus on what truly matters—solving real industry problems.",
+      "description": "Designed for experimentation and scale, Devynix helps you build specialized software products faster.",
+      "cta": "Get in Touch"
     }
   },
   "about": {
     "hero": {
       "title": "Get to know Devynix",
-      "lead": "Do you need a highly customizable and developer friendly premium platform packed with numerous features?",
+      "lead": "Do you need specialized software for your industry?",
       "brandPhrase": "Devynix",
-      "leadRest": "has everything you need. It is designed in accordance with industry standards and best practices to provide you.",
-      "primaryCta": "Create an Account",
-      "secondaryCta": "View Open Positions",
-      "titleSuffix": "Platform"
+      "leadRest": "focuses on solving important problems in specific industries through focused software products.",
+      "primaryCta": "Contact Us",
+      "secondaryCta": "See Our Products",
+      "titleSuffix": ""
     },
-    "achievement": {
-      "title": "A unique story in every number",
-      "stats": [
+    "setupProcess": {
+      "title": "How we work",
+      "steps": [
         {
-          "value": "2019",
-          "label": "When we founded Devynix"
+          "title": "Discover",
+          "subtitle": "Identify important problems in specific industries."
         },
         {
-          "value": "300k+",
-          "label": "Customers on Devynix"
+          "title": "Build",
+          "subtitle": "Create focused software solutions."
         },
         {
-          "value": "25k+",
-          "label": "Products built using Devynix"
+          "title": "Validate",
+          "subtitle": "Test with real customers and data."
+        },
+        {
+          "title": "Scale or pivot",
+          "subtitle": "Double down on what works, adapt when needed."
         }
       ]
     },
-    "setupProcess": {
-      "title": "The hassle-free setup process",
-      "steps": [
+    "achievement": {
+      "title": "Our portfolio today",
+      "stats": [
         {
-          "title": "Effective Support",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "value": "2",
+          "label": "Active products"
         },
         {
-          "title": "Expert Advisor",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "value": "2",
+          "label": "Industries served"
         },
         {
-          "title": "Low Fees",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
-        },
-        {
-          "title": "Loan Facility",
-          "subtitle": "Suspendisse vestibulum eu erat ac scelerisque."
+          "value": "LATAM",
+          "label": "Where we build"
         }
       ]
     }
   },
-  "blog": {
-    "breadcrumbTitle": "Latest blog & news",
-    "breadcrumbLink": "Blog Page",
-    "detailBreadcrumbLink": "Blog Detail",
-    "readMore": "Read More",
-    "relatedPosts": "Related Posts",
-    "comments": "Comments",
-    "commentsCount": "{count} Comments",
-    "reply": "Reply",
-    "postComment": "Post Comment",
-    "commentPlaceholder": "Write your comment here…",
-    "notFound": "We couldn't find that post."
-  },
-  "portfolio": {
-    "breadcrumbTitle": "Explore Our Latest Works",
-    "breadcrumbLink": "Portfolio"
-  },
-  "pricing": {
-    "breadcrumbTitle": "Choose Your Plan",
-    "breadcrumbLink": "Pricing Page"
-  },
   "contact": {
-    "breadcrumbTitle": "We'd love to hear from you",
-    "breadcrumbLink": "Contact Us",
+    "breadcrumbTitle": "We would love to hear from you",
+    "breadcrumbLink": "Contact",
     "reachOut": {
-      "title": "Reach Out Today",
-      "description": "Have questions or need assistance? We're just a message away."
+      "title": "Get in touch",
+      "description": "Questions about a product, or an industry problem you think we should look at? We are one message away."
     },
     "location": {
-      "title": "Our Location",
-      "description": "Visit us in person or find our contact details to connect with us directly."
+      "title": "Where we are",
+      "description": "We work with organizations across Latin America. Reach out and we will find a time to talk."
     },
     "form": {
-      "firstName": "First Name",
-      "firstNamePlaceholder": "Name",
-      "lastName": "Last Name",
-      "lastNamePlaceholder": "Last Name",
-      "phone": "Phone Number",
+      "firstName": "First name",
+      "firstNamePlaceholder": "First name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Last name",
+      "phone": "Phone",
       "phonePlaceholder": "xxx xxx xxxx",
       "email": "Email",
       "emailPlaceholder": "Email address",
-      "enquiryType": "Enquire related to",
+      "enquiryType": "Reason for contact",
       "message": "Message",
       "messagePlaceholder": "Write your message here…",
-      "submit": "Submit"
+      "submit": "Send"
     },
     "enquiryTypes": {
-      "general": "General Enquiry",
-      "other": "Other Enquiry"
+      "general": "General enquiry",
+      "other": "Other enquiry"
     }
   },
   "footer": {
     "columns": {
       "product": "Product",
-      "features": "Features",
       "resources": "Resources",
       "followUs": "Follow us"
     },
     "links": {
       "home": "Home",
-      "aboutUs": "About Us",
-      "pricing": "Pricing",
+      "aboutUs": "About us",
       "contact": "Contact",
-      "blog": "Blog",
-      "portfolio": "Portfolio",
-      "faq": "FAQ",
-      "privacyPolicy": "Privacy Policy",
-      "termsAndConditions": "Terms and Conditions"
+      "faq": "FAQ"
     },
     "social": {
       "facebook": "Facebook",
@@ -532,54 +338,12 @@
       "instagram": "Instagram"
     },
     "rights": "All rights reserved by Devynix.",
-    "producedBy": "Produced by",
+    "producedBy": "Built by",
     "producer": "Devynix"
   },
-  "landing": {
-    "banner": {
-      "titleTop": "Most Elegant",
-      "titleBottom": "Platform",
-      "stats": [
-        {
-          "value": "90+",
-          "label": "Demo Pages"
-        },
-        {
-          "value": "12+",
-          "label": "Apps"
-        },
-        {
-          "value": "45+",
-          "label": "UI Components"
-        }
-      ],
-      "primaryCta": "Login",
-      "secondaryCta": "Live Preview"
-    },
-    "features": {
-      "eyebrow": "Almost covered everything",
-      "title": "Other Amazing Features & Flexibility Provided"
-    },
-    "reviews": {
-      "title": "What our clients say"
-    },
-    "ticket": {
-      "title": "Haven't found an answer to your question?",
-      "description": "Connect with us either on Discord or email us",
-      "discordCta": "Ask on Discord",
-      "ticketCta": "Submit Ticket"
-    },
-    "header": {
-      "documentation": "Documentation",
-      "support": "Support",
-      "login": "Login",
-      "features": "Features",
-      "openMenu": "Open menu"
-    }
-  },
   "notFound": {
-    "heading": "Oops!",
-    "message": "The page you are looking for could not be found.",
-    "backToHome": "Go Back to Home"
+    "heading": "We cannot find that page",
+    "backToHome": "Go to homepage",
+    "contactCta": "Contact us"
   }
 }

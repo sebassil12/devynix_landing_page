@@ -22,7 +22,7 @@ const HeroText = () => {
                 <Button
                   color={"primary"}
                   as={Link}
-                  href={`/${locale}`}
+                  href={`/${locale}/contact`}
                   className="px-4 font-bold sm:w-fit w-full"
                 >
                   {t("about.hero.primaryCta")}
@@ -30,7 +30,7 @@ const HeroText = () => {
                 <Button
                   color={"outlineprimary"}
                   as={Link}
-                  href={`/${locale}`}
+                  href={`/${locale}#products`}
                   className="px-4 font-bold sm:w-fit w-full sm:mt-0 mt-4"
                 >
                   {t("about.hero.secondaryCta")}
