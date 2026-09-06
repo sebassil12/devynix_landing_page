@@ -29,6 +29,9 @@ importers:
       flowbite-react:
         specifier: 0.10.1
         version: 0.10.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@3.4.4)
+      impeccable:
+        specifier: ^4.0.3
+        version: 4.0.3
       lucide-react:
         specifier: ^0.474.0
         version: 0.474.0(react@19.2.8)
@@ -431,6 +434,36 @@ packages:
     engines: {node: '>=20.9.0'}
     cpu: [x64]
     os: [win32]
+
+  '@impeccable/cli-darwin-arm64@0.1.2':
+    resolution: {integrity: sha512-aqhLCxzbi2TAIyMXf2gsS5dzmdb0i1DKjovztulx0xWi2Q9W/WkpDXVoZ4GUhYXlykyQSKbiWzdGWZY4kgyHug==}
+    cpu: [arm64]
+    os: [darwin]
+    hasBin: true
+
+  '@impeccable/cli-darwin-x64@0.1.2':
+    resolution: {integrity: sha512-UkL4MNCsSKNcgmXEulr+QAnn1zF0mkJcpEsev7Y26bwkgtcPAPnf0g4aDKjX6ISM0QKMmncAzB2AUUK0HhcI+Q==}
+    cpu: [x64]
+    os: [darwin]
+    hasBin: true
+
+  '@impeccable/cli-linux-arm64@0.1.2':
+    resolution: {integrity: sha512-cLyQPpJ9fXzdrOLfHDzhPyDwjya2pP3fCwoBczJgFAdOdy3dNFXNUzWj+4e25zmyEdLKwf2zMvz3UDs2nXXR2Q==}
+    cpu: [arm64]
+    os: [linux]
+    hasBin: true
+
+  '@impeccable/cli-linux-x64@0.1.2':
+    resolution: {integrity: sha512-Ui5CSigBC/R9ZonI19F4MjASDnz4gm6IRCDGOtsOFqcYevqgtgVWoGDWLwCRJUmhZonT5fLPC2lwkPqnBW7QRQ==}
+    cpu: [x64]
+    os: [linux]
+    hasBin: true
+
+  '@impeccable/cli-windows-x64@0.1.2':
+    resolution: {integrity: sha512-9UXf7f+6F+P45rUBJP5TdPqR9RbLACvUbB2Rz5bpAgjhDDi+TJ0A6KPF1o2BOefbA6DZezuZvAQC2wxS1h1K5w==}
+    cpu: [x64]
+    os: [win32]
+    hasBin: true
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -1501,6 +1534,11 @@ packages:
   ignore@7.0.6:
     resolution: {integrity: sha512-BAg6QkE8W+TuQLrrw0Ugr7HegXduRuuj8/ti2kSOc+jz1dmx8/WNcjr6XGnq5YpDWxFwwaavqD0+jIUOKelTsw==}
     engines: {node: '>= 4'}
+
+  impeccable@4.0.3:
+    resolution: {integrity: sha512-aikZHpWbaAMputg+SQeEDYL4rPmS5p5MrfUovqWjEXNTRRVIMQ4k6E+grWf9G1feoB5gcN9LeQtjrQujEP70lg==}
+    engines: {node: '>=22.18.0'}
+    hasBin: true
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -2653,6 +2691,21 @@ snapshots:
     optional: true
 
   '@img/sharp-win32-x64@0.35.3':
+    optional: true
+
+  '@impeccable/cli-darwin-arm64@0.1.2':
+    optional: true
+
+  '@impeccable/cli-darwin-x64@0.1.2':
+    optional: true
+
+  '@impeccable/cli-linux-arm64@0.1.2':
+    optional: true
+
+  '@impeccable/cli-linux-x64@0.1.2':
+    optional: true
+
+  '@impeccable/cli-windows-x64@0.1.2':
     optional: true
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -3832,6 +3885,14 @@ snapshots:
   ignore@5.3.2: {}
 
   ignore@7.0.6: {}
+
+  impeccable@4.0.3:
+    optionalDependencies:
+      '@impeccable/cli-darwin-arm64': 0.1.2
+      '@impeccable/cli-darwin-x64': 0.1.2
+      '@impeccable/cli-linux-arm64': 0.1.2
+      '@impeccable/cli-linux-x64': 0.1.2
+      '@impeccable/cli-windows-x64': 0.1.2
 
   import-fresh@3.3.1:
     dependencies:
