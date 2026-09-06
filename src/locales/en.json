@@ -97,11 +97,6 @@
       "body": "Devynix is a technology company founded in 2025 in Ecuador. We identify important problems inside specific industries and solve them with focused software products, not with a generic platform looking for a use.",
       "founded": "Founded 2025",
       "country": "Ecuador"
-    },
-    "purchase": {
-      "heading": "Focus on what truly matters—solving real industry problems.",
-      "description": "Designed for experimentation and scale, Devynix helps you build specialized software products faster.",
-      "cta": "Get in Touch"
     }
   },
   "about": {
@@ -154,33 +149,15 @@
     }
   },
   "contact": {
-    "breadcrumbTitle": "We would love to hear from you",
-    "breadcrumbLink": "Contact",
-    "reachOut": {
-      "title": "Get in touch",
-      "description": "Questions about a product, or an industry problem you think we should look at? We are one message away."
+    "hero": {
+      "title": "We would love to hear from you",
+      "lead": "Questions about a product, or an industry problem you think we should look at? We are one message away."
     },
+    "whatsappCta": "Chat on WhatsApp",
+    "emailCta": "Email us instead",
     "location": {
       "title": "Where we are",
       "description": "We work with organizations across Latin America. Reach out and we will find a time to talk."
-    },
-    "form": {
-      "firstName": "First name",
-      "firstNamePlaceholder": "First name",
-      "lastName": "Last name",
-      "lastNamePlaceholder": "Last name",
-      "phone": "Phone",
-      "phonePlaceholder": "xxx xxx xxxx",
-      "email": "Email",
-      "emailPlaceholder": "Email address",
-      "enquiryType": "Reason for contact",
-      "message": "Message",
-      "messagePlaceholder": "Write your message here…",
-      "submit": "Send"
-    },
-    "enquiryTypes": {
-      "general": "General enquiry",
-      "other": "Other enquiry"
     }
   },
   "footer": {
@@ -197,8 +174,8 @@
     },
     "social": {
       "facebook": "Facebook",
-      "twitter": "Twitter",
-      "instagram": "Instagram"
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
     },
     "rights": "All rights reserved by Devynix.",
     "producedBy": "Built by",

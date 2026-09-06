@@ -2,8 +2,6 @@ import Archivement from "@/app/components/front-pages/aboutus/Archivement";
 import HeroText from "@/app/components/front-pages/aboutus/HeroText";
 import SetupProcess from "@/app/components/front-pages/aboutus/SetupProcess";
 import { FAQ } from "@/app/components/front-pages/homepage/FAQ";
-import PurchaseTemp from "@/app/components/front-pages/homepage/PurchaseTemp";
-import React from "react";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -18,13 +16,13 @@ export async function generateMetadata({
   return { title: dict.meta.about.title };
 }
 
-// Company story only: hero, how we work, portfolio figures, FAQ, CTA.
-//
-// Consequential fix (WU4, not a WU5 redesign): `FAQ` moved to a required
-// `copy`/`locale` prop pair in this work unit (design.md D7, `shared.faq`),
-// so this call site needs the dictionary awaited here too. The Macana shell
-// for this page (dropping `PurchaseTemp`, forbidden-claims audit, etc.) is
-// still WU5's job — untouched here.
+// Company story only: hero, how we work, portfolio figures, FAQ. Macana
+// shell (WU5): every band below now reads the same warp system, palette and
+// typography as the homepage bands (dict slices as props, no context — same
+// pattern `page.tsx`'s homepage bands use). `PurchaseTemp` is deleted
+// (design.md D5); its closing-CTA job is absorbed by the layout-level
+// `Fleco`, so this page keeps a working closing CTA without re-rendering
+// one here.
 const page = async ({
   params,
 }: {
@@ -35,11 +33,10 @@ const page = async ({
 
   return (
     <>
-      <HeroText />
-      <SetupProcess />
-      <Archivement />
+      <HeroText copy={dict.about.hero} locale={lang} />
+      <SetupProcess copy={dict.about.setupProcess} />
+      <Archivement copy={dict.about.achievement} />
       <FAQ copy={dict.shared.faq} locale={lang} />
-      <PurchaseTemp />
     </>
   );
 };

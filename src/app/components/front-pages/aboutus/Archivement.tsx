@@ -1,42 +1,36 @@
-"use client";
-import React from "react";
-import { useTranslation } from "@/i18n/provider";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
 
-const Archivement = () => {
-  const { t, tList } = useTranslation();
-  const stats = tList<{ value: string; label: string }>(
-    "about.achievement.stats"
-  );
-
-  return (
-    <>
-      <div className="dark:bg-dark border-t border-ld">
-        <div className="container-1218 mx-auto lg:py-24 py-12">
-          <div className="grid grid-cols-12 gap-6">
-            <div className="xl:col-span-5 col-span-12">
-              <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white">
-                {t("about.achievement.title")}
-              </h2>
-            </div>
-            <div className="xl:col-span-7 col-span-12">
-              <div className="flex flex-wrap lg:gap-8 gap-6">
-                {stats.map((stat) => (
-                  <div key={stat.value}>
-                    <h3 className="text-primary lg:text-64 text-5xl leading-tight font-normal">
-                      {stat.value}
-                    </h3>
-                    <span className="text-sm text-dark opacity-90">
-                      {stat.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+type ArchivementProps = {
+  copy: Dictionary["about"]["achievement"];
 };
+
+// `/aboutus`'s Macana shell (WU5). PRODUCT.md marks these figures
+// "true-but-placeholder"/"unverified" — kept unchanged, they are not one of
+// the forbidden claim types (no testimonials, client logos, team photos,
+// case studies, pricing, benchmarks, customer counts, or address). Server
+// component, no client interactivity — `page.tsx` passes this slice as a
+// prop.
+export function Archivement({ copy }: ArchivementProps) {
+  return (
+    <WarpBand>
+      <h2 className="max-w-[75ch] text-3xl font-medium text-macana-cotton lg:text-44">
+        {copy.title}
+      </h2>
+      <dl className="mt-warp-2 flex flex-wrap gap-warp-2 border-t border-macana-figure/30 pt-warp-half">
+        {copy.stats.map((stat) => (
+          <div key={stat.label}>
+            <dd className="text-5xl font-medium leading-tight text-macana-figure lg:text-64">
+              {stat.value}
+            </dd>
+            <dt className="mt-2 text-15 text-macana-cotton/80">
+              {stat.label}
+            </dt>
+          </div>
+        ))}
+      </dl>
+    </WarpBand>
+  );
+}
 
 export default Archivement;

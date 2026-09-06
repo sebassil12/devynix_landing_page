@@ -24,10 +24,24 @@ const columns = [
   },
 ];
 
+// ponytail: only these three profiles are real (PRODUCT.md) — no LinkedIn,
+// no X/Twitter. All three previously pointed at `href="/"`, a dead link.
 const socials = [
-  { key: "footer.social.facebook", img: "facebook" },
-  { key: "footer.social.twitter", img: "twitter" },
-  { key: "footer.social.instagram", img: "instagram" },
+  {
+    key: "footer.social.facebook",
+    img: "facebook",
+    href: "https://www.facebook.com/profile.php?id=61577856333772",
+  },
+  {
+    key: "footer.social.instagram",
+    img: "instagram",
+    href: "https://www.instagram.com/devynix12/",
+  },
+  {
+    key: "footer.social.tiktok",
+    img: "tiktok",
+    href: "https://www.tiktok.com/@devynix",
+  },
 ];
 
 export const Footer = () => {
@@ -75,7 +89,12 @@ export const Footer = () => {
                       placement="bottom"
                       className="shrink-0"
                     >
-                      <Link href="/" aria-label={t(social.key)}>
+                      <Link
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={t(social.key)}
+                      >
                         <Image
                           src={`/images/front-pages/background/${social.img}.svg`}
                           height={22}

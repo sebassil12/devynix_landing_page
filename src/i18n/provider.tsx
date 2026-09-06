@@ -28,7 +28,7 @@ export function TranslationProvider({
 }
 
 /**
- * t("contact.form.email") -> "Email"
+ * t("contact.whatsappCta") -> "Chat on WhatsApp"
  * t("consents.grantedAt", { date }) -> "Accepted on 3 Mar 2026"
  * t("pricing.tiers") on a non-string node returns the key, so a bad path is
  * visible in the UI instead of rendering "[object Object]" or empty.

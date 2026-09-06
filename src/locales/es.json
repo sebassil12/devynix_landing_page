@@ -97,22 +97,17 @@
       "body": "Devynix es una empresa de tecnología fundada en 2025 en Ecuador. Identificamos problemas importantes dentro de industrias específicas y los resolvemos con productos de software enfocados, no con una plataforma genérica que busca un uso.",
       "founded": "Fundada en 2025",
       "country": "Ecuador"
-    },
-    "purchase": {
-      "heading": "Enfócate en lo que de verdad importa: resolver problemas reales de la industria.",
-      "description": "Diseñado para la experimentación y la escala, Devynix te ayuda a construir productos de software especializados más rápido.",
-      "cta": "Contáctanos"
     }
   },
   "about": {
     "hero": {
       "title": "Conoce Devynix",
-      "lead": "¿Necesitas una plataforma premium, altamente personalizable y pensada para desarrolladores, repleta de funcionalidades?",
+      "titleSuffix": "",
+      "primaryCta": "Contáctanos",
+      "secondaryCta": "Ver nuestros productos",
+      "lead": "¿Necesitas software especializado para tu industria?",
       "brandPhrase": "Devynix",
-      "leadRest": "tiene todo lo que necesitas. Está diseñado conforme a los estándares del sector y las mejores prácticas para ofrecerte lo mejor.",
-      "primaryCta": "Crear una cuenta",
-      "secondaryCta": "Ver ofertas de empleo",
-      "titleSuffix": "la plataforma"
+      "leadRest": "se enfoca en resolver problemas importantes en industrias específicas mediante productos de software enfocados."
     },
     "achievement": {
       "title": "Nuestro portafolio hoy",
@@ -154,33 +149,15 @@
     }
   },
   "contact": {
-    "breadcrumbTitle": "Nos encantaría saber de ti",
-    "breadcrumbLink": "Contacto",
-    "reachOut": {
-      "title": "Contáctanos hoy",
-      "description": "¿Tienes preguntas o necesitas ayuda? Estamos a un mensaje de distancia."
+    "hero": {
+      "title": "Nos encantaría saber de ti",
+      "lead": "¿Tienes preguntas sobre un producto, o un problema de industria que creas que deberíamos ver? Estamos a un mensaje de distancia."
     },
+    "whatsappCta": "Chatear por WhatsApp",
+    "emailCta": "Escríbenos un correo",
     "location": {
-      "title": "Nuestra ubicación",
-      "description": "Visítanos en persona o consulta nuestros datos de contacto para hablar directamente con nosotros."
-    },
-    "form": {
-      "firstName": "Nombre",
-      "firstNamePlaceholder": "Nombre",
-      "lastName": "Apellidos",
-      "lastNamePlaceholder": "Apellidos",
-      "phone": "Teléfono",
-      "phonePlaceholder": "xxx xxx xxxx",
-      "email": "Correo electrónico",
-      "emailPlaceholder": "Dirección de correo electrónico",
-      "enquiryType": "Motivo de la consulta",
-      "message": "Mensaje",
-      "messagePlaceholder": "Escribe tu mensaje aquí…",
-      "submit": "Enviar"
-    },
-    "enquiryTypes": {
-      "general": "Consulta general",
-      "other": "Otra consulta"
+      "title": "Dónde estamos",
+      "description": "Trabajamos con organizaciones en toda América Latina. Escríbenos y encontraremos un momento para hablar."
     }
   },
   "footer": {
@@ -197,8 +174,8 @@
     },
     "social": {
       "facebook": "Facebook",
-      "twitter": "Twitter",
-      "instagram": "Instagram"
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
     },
     "rights": "Todos los derechos reservados por Devynix.",
     "producedBy": "Desarrollado por",

@@ -1,18 +1,13 @@
 import type { Dictionary } from "@/i18n/dictionaries";
-import { cn } from "@/lib/utils";
 import { WarpBand } from "./WarpBand";
 import { PRODUCTS } from "./products";
+import { WHATSAPP_HREF, EMAIL_HREF } from "./contact-links";
+import { ctaLinkVariants } from "./cta";
 import { PAGE_WIDTH, WARP, WARP_THREADS } from "./warp";
 
 type FlecoProps = {
   copy: Dictionary["shared"]["cta"];
 };
-
-// WhatsApp is the site's one real, working conversion path (PRODUCT.md,
-// whatsapp-conversion spec) — `wa.me` wants digits only, no `+`/spaces.
-const WHATSAPP_NUMBER = "593987877191";
-const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}`;
-const EMAIL_HREF = "mailto:devynixcorp@gmail.com";
 
 const MIN_STRAND = WARP;
 const MAX_STRAND = WARP * 2.5;
@@ -94,22 +89,11 @@ export function Fleco({ copy }: FlecoProps) {
             href={WHATSAPP_HREF}
             target="_blank"
             rel="noopener noreferrer"
-            className={cn(
-              "inline-block rounded-tw bg-macana-flash px-warp py-3",
-              // Flash fails AA at normal text size on pine (design.md D9,
-              // 3.9:1) — the label MUST stay >=18.66px/700 (AA-Large).
-              // Shrinking below that is a WCAG regression, not a style
-              // choice.
-              "text-[19px] font-bold text-macana-cotton",
-              "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure"
-            )}
+            className={ctaLinkVariants({ emphasis: "flash" })}
           >
             {copy.whatsappCta}
           </a>
-          <a
-            href={EMAIL_HREF}
-            className="text-15 font-medium text-macana-figure underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure"
-          >
+          <a href={EMAIL_HREF} className={ctaLinkVariants({ emphasis: "secondary" })}>
             {copy.emailCta}
           </a>
         </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
+import { EMAIL_HREF } from "@/app/components/front-pages/macana/contact-links";
 
 type FAQProps = {
   copy: Dictionary["shared"]["faq"];
@@ -20,6 +21,11 @@ type FAQProps = {
 // `@radix-ui/react-toast` is installed) — adding one would be a new
 // dependency, not a reuse, and would also cost the server-component/no-JS
 // guarantee design.md D8 already relies on for this band.
+//
+// Consequential fix (WU5): `copy.emailCta` ("send us an email"/"escríbenos
+// un correo") pointed at `/contact` instead of an actual email link — a
+// dead-labelled link on both `/contact` and `/aboutus`, the two pages WU5
+// owns. Now a real `mailto:` via the shared `EMAIL_HREF` constant.
 export function FAQ({ copy, locale }: FAQProps) {
   return (
     <WarpBand id="faq">
@@ -54,12 +60,12 @@ export function FAQ({ copy, locale }: FAQProps) {
           {copy.contactCta}
         </Link>{" "}
         {copy.or}{" "}
-        <Link
-          href={`/${locale}/contact`}
+        <a
+          href={EMAIL_HREF}
           className="underline underline-offset-4 hover:text-macana-figure"
         >
           {copy.emailCta}
-        </Link>
+        </a>
       </p>
     </WarpBand>
   );
