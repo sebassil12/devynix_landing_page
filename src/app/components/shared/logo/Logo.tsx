@@ -1,14 +1,14 @@
-'use client'
-import React from 'react';
-import Image from "next/image";
-import LogoIcon from '@public/images/logos/logo-icon.svg'
-import Link from 'next/link';
+"use client";
+import React from "react";
+import Link from "next/link";
+import { DevynixMark } from "@/app/components/front-pages/macana/DevynixMark";
+
 const Logo = () => {
   return (
-   <Link href={'/'}>
-      <Image src={LogoIcon} alt="logo" />
+    <Link href={"/"}>
+      <DevynixMark className="h-10 w-10" />
     </Link>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

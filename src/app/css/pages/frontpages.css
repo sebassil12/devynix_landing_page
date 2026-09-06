@@ -3,8 +3,14 @@
 }
 
 .container-1218 {
-    max-width: 1218px;
-    padding: 0 20px;
+    max-width: calc(var(--warp) * var(--warp-threads)); /* 1218px, unchanged */
+    padding-inline: var(--warp); /* was 20px */
+}
+
+@media (max-width: 767px) {
+    .container-1218 {
+        padding-inline: calc(var(--warp) / 2);
+    }
 }
 
 

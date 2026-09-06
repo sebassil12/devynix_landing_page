@@ -1,0 +1,7 @@
+/* Macana warp geometry, shared with `warp.ts` (DevynixMark). The page grid
+   unit and its thread count are declared once here and consumed by
+   `.container-1218` in frontpages.css — see design.md D1. */
+:root {
+  --warp: 42px;
+  --warp-threads: 29;
+}

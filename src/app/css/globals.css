@@ -5,6 +5,7 @@
 @import './theme/dark.css';
 @import './override/reboot.css';
 @import './layouts/rtl.css';
+@import './pages/macana.css';
 @import './pages/frontpages.css';
 
 @tailwind base;
