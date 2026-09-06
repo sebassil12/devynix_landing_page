@@ -24,7 +24,7 @@ export function MainBanner({ copy }: MainBannerProps) {
         <CorridorFigure data={CORRIDOR} copy={copy} />
       </div>
       <a
-        href="#products"
+        href="#method"
         className="mt-warp-2 inline-block rounded-tw bg-macana-figure px-warp py-3 font-bold text-macana-ground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure"
       >
         {copy.cta}

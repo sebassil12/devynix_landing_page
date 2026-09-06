@@ -51,141 +51,44 @@
       },
       "cta": "Ver cómo funciona el método"
     },
-    "clients": {
-      "title": "Organizaciones de distintos sectores confían en nosotros.",
-      "description": "Nos enfocamos en resolver problemas importantes de industrias específicas con software especializado.",
-      "cta": "Contáctanos",
-      "features": [
+    "metodo": {
+      "title": "Un método, en tres pasos.",
+      "steps": [
         {
-          "title": "La industria primero",
-          "subtitle": "Partimos de flujos de trabajo y normativas reales, no de tendencias tecnológicas."
+          "title": "El problema de la industria",
+          "body": "Cada industria funciona con flujos de trabajo y normas ya escritas. Empezamos ahí, dentro del problema, no con una tecnología que busca un uso."
         },
         {
-          "title": "Desarrollo basado en evidencia",
-          "subtitle": "Validamos las ideas con clientes reales antes de escalar."
+          "title": "El instrumento enfocado",
+          "body": "Cada producto responde al problema de una industria: un corredor, un currículo, un presupuesto — nunca una plataforma que intenta serlo todo."
         },
         {
-          "title": "Productos enfocados",
-          "subtitle": "Cada producto tiene un cliente, un problema y un rol claro dentro del portafolio."
-        },
-        {
-          "title": "Soluciones adaptables",
-          "subtitle": "Pivotamos, retiramos o reforzamos según el aprendizaje validado."
+          "title": "La medición",
+          "body": "Doce tramos monitoreados. Dieciocho actividades en siete fases. Una aplicación real, con datos reales. Avances que podemos mostrar, no prometer."
         }
-      ]
-    },
-    "featureTabs": {
-      "heading": "Creado para industrias específicas.",
-      "cta": "Ver nuestros productos",
-      "tabs": [
-        {
-          "label": "GeoNix",
-          "items": [
-            {
-              "title": "Inteligencia geoespacial para territorio y medio ambiente",
-              "desc": "Datos GIS y de uso del suelo convertidos en decisiones accionables, sin necesitar a un especialista en GIS para interpretarlos."
-            },
-            {
-              "title": "Funciona con los sistemas que ya existen",
-              "desc": "Se integra con los ERP, sistemas documentales y fuentes de datos actuales en lugar de reemplazarlos."
-            },
-            {
-              "title": "Pensado para cómo reporta el sector",
-              "desc": "Diseñado en torno a los requisitos de trazabilidad y reporte que ya deben cumplir las organizaciones vinculadas al sector público."
-            }
-          ]
-        },
-        {
-          "label": "FinNix",
-          "items": [
-            {
-              "title": "Finanzas personales que reflejan el gasto real",
-              "desc": "Presupuestos construidos según cómo se mueve el dinero de personas y microemprendedores, no según un árbol de categorías idealizado."
-            },
-            {
-              "title": "Claridad antes que consejos",
-              "desc": "Primero mostrar a dónde fue el dinero. Recomendaciones solo cuando cambian una decisión."
-            },
-            {
-              "title": "Pensado para la realidad latinoamericana",
-              "desc": "Múltiples monedas, ingresos informales y flujo de caja irregular tratados como la norma, no como casos excepcionales."
-            }
-          ]
-        },
-        {
-          "label": "Próximamente",
-          "items": [
-            {
-              "title": "Nuevos sectores en evaluación",
-              "desc": "Una línea de producto se abre cuando el problema está validado con clientes reales de esa industria."
-            },
-            {
-              "title": "Cómo elegimos",
-              "desc": "Descubrir, construir, validar y luego escalar o pivotar. Un sector se gana un producto al superar esa secuencia."
-            },
-            {
-              "title": "Cuéntanos sobre tu industria",
-              "desc": "Si trabajas en un sector donde el software enfocado generaría una ventaja duradera, queremos conversar."
-            }
-          ]
-        }
-      ]
-    },
-    "highlights": {
-      "row1": [
-        "Arquitectura modular",
-        "Componentes preparados para IA",
-        "Patrones de SaaS vertical",
-        "Experiencia en GIS y geoespacial",
-        "Soporte a decisiones basado en datos",
-        "Tailwind CSS",
-        "Stack con tipado seguro"
       ],
-      "row2": [
-        "Next.js App Router",
-        "React 19",
-        "Flowbite React",
-        "Fácil de personalizar"
-      ],
-      "row3": [
-        "Compatible con analítica",
-        "Diseño orientado a flujos de trabajo",
-        "Actualizaciones periódicas",
-        "Enfoque en documentación",
-        "Orientado a la experimentación",
-        "Soporte dedicado"
-      ]
+      "note": "Tres productos por ahora. El método se sostiene cuando se sumen más."
     },
-    "packages": {
-      "title": "Colaboración simple y transparente.",
-      "description": "Nos enfocamos en el desarrollo de producto a largo plazo, no en proyectos puntuales.",
-      "perOneTime": "",
-      "cta": "Contáctanos",
-      "included": {
-        "fullSourceCode": "Código fuente completo (cuando aplica)",
-        "documentation": "Documentación",
-        "saasUse": "Compatible con SaaS",
-        "oneProjectStrong": "Enfocadas",
-        "unlimitedProjectStrong": "Escalables",
-        "projectSuffix": "colaboraciones",
-        "oneYearStrong": "Continuo",
-        "technicalSupportSuffix": "soporte"
-      },
-      "tiers": [
+    "bandas": {
+      "title": "Tres bandas, una misma tela.",
+      "products": [
         {
-          "licenseType": "Colaboración de producto",
-          "licenseDesc": "Trabaja con nosotros en un producto Devynix existente o nuevo.",
-          "price": "Contáctanos"
+          "plate": "01",
+          "name": "GRIDCANOPY",
+          "claim": "Corredor de Cuenca: 12 tramos monitoreados, 3 urgentes, 7 que requieren acción — índice de riesgo 616.",
+          "proofLabel": "Abrir GridCanopy"
         },
         {
-          "licenseType": "Piloto de producto",
-          "licenseDesc": "Colaboración corta y acotada para validar un producto Devynix específico en tu contexto.",
-          "price": "Contáctanos"
+          "plate": "02",
+          "name": "GEOAI ACADEMY",
+          "claim": "Siete fases, dieciocho actividades del currículo de GeoAI.",
+          "proofLabel": "Abrir GeoAI Academy"
         },
         {
-          "licenseType": "Alianza estratégica",
-          "licenseDesc": "Colaboración de largo plazo en una línea de producto o vertical de Devynix.",
-          "price": "Contáctanos"
+          "plate": "03",
+          "name": "FINNIX",
+          "claim": "Una aplicación de finanzas personales en producción, que registra gasto real.",
+          "proofLabel": "Abrir FinNix"
         }
       ]
     },

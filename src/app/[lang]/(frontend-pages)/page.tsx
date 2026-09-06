@@ -1,11 +1,9 @@
 import { AboutDevynix } from "@/app/components/front-pages/homepage/AboutDevynix";
+import { Bandas } from "@/app/components/front-pages/homepage/Bandas";
 import ContactBar from "@/app/components/front-pages/homepage/ContactBar";
 import { FAQ } from "@/app/components/front-pages/homepage/FAQ";
-import FeatureTabs from "@/app/components/front-pages/homepage/FeatureTabs";
-import { Highlights } from "@/app/components/front-pages/homepage/Highlights";
 import MainBanner from "@/app/components/front-pages/homepage/MainBanner";
-import OurClients from "@/app/components/front-pages/homepage/OurClients";
-import { Packages } from "@/app/components/front-pages/homepage/Packages";
+import { Metodo } from "@/app/components/front-pages/homepage/Metodo";
 import PurchaseTemp from "@/app/components/front-pages/homepage/PurchaseTemp";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/config";
@@ -22,10 +20,10 @@ export async function generateMetadata({
 }
 
 // Section order mirrors the `home.*` key order in src/locales/*.json:
-// urdimbre -> clients -> featureTabs -> highlights -> packages -> about
-// -> contactBar -> faq -> purchase. `urdimbre` is a server band (design.md
-// D3) reading its copy from the awaited dictionary; the rest are unchanged
-// pending WU3-WU5.
+// urdimbre -> metodo -> bandas -> about -> contactBar -> faq -> purchase.
+// `urdimbre`, `metodo` and `bandas` are Macana server bands (design.md D3)
+// reading their copy from the awaited dictionary; the rest are unchanged
+// pending WU4/WU5.
 const page = async ({
   params,
 }: {
@@ -37,10 +35,8 @@ const page = async ({
   return (
     <>
       <MainBanner copy={dict.home.urdimbre} />
-      <OurClients />
-      <FeatureTabs />
-      <Highlights />
-      <Packages />
+      <Metodo copy={dict.home.metodo} />
+      <Bandas copy={dict.home.bandas} />
       <AboutDevynix />
       <ContactBar />
       <FAQ />

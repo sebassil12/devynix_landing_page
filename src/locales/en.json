@@ -51,141 +51,44 @@
       },
       "cta": "See how the method works"
     },
-    "clients": {
-      "title": "Trusted by organizations across industries.",
-      "description": "We focus on solving important problems in specific industries with specialized software.",
-      "cta": "Contact Us",
-      "features": [
+    "metodo": {
+      "title": "One method, in three steps.",
+      "steps": [
         {
-          "title": "Industry-first approach",
-          "subtitle": "We start from real workflows and regulations, not from technology trends."
+          "title": "The industry problem",
+          "body": "Every industry runs on workflows and rules already written. We start there, inside the problem, not with a technology looking for a use."
         },
         {
-          "title": "Evidence-driven development",
-          "subtitle": "We validate ideas with real customers before scaling."
+          "title": "The focused instrument",
+          "body": "Each product answers one industry's problem: a corridor, a curriculum, a budget — never a platform trying to do everything."
         },
         {
-          "title": "Focused products",
-          "subtitle": "Each product has a clear customer, problem, and role in our portfolio."
-        },
-        {
-          "title": "Adaptable solutions",
-          "subtitle": "We pivot, retire, or double-down based on validated learning."
+          "title": "The measurement",
+          "body": "Twelve monitored spans. Eighteen activities across seven phases. A shipping app with real data. Progress we can point to, not promise."
         }
-      ]
-    },
-    "featureTabs": {
-      "heading": "Built for specific industries.",
-      "cta": "See our products",
-      "tabs": [
-        {
-          "label": "GeoNix",
-          "items": [
-            {
-              "title": "Geospatial intelligence for land and environment",
-              "desc": "GIS and land-use data turned into decisions organizations can act on, without needing a GIS specialist to interpret it."
-            },
-            {
-              "title": "Works with the systems already in place",
-              "desc": "Integrates with existing ERPs, document systems, and data sources rather than replacing them."
-            },
-            {
-              "title": "Built for how the sector reports",
-              "desc": "Designed around the traceability and reporting requirements public-sector adjacent organizations already answer to."
-            }
-          ]
-        },
-        {
-          "label": "FinNix",
-          "items": [
-            {
-              "title": "Personal finance that reflects real spending",
-              "desc": "Budgeting built around how money actually moves for individuals and micro-entrepreneurs, not around an idealized category tree."
-            },
-            {
-              "title": "Clarity before advice",
-              "desc": "Show where the money went first. Recommendations only where they change a decision."
-            },
-            {
-              "title": "Built for Latin American realities",
-              "desc": "Multiple currencies, informal income, and irregular cash flow treated as the norm, not as edge cases."
-            }
-          ]
-        },
-        {
-          "label": "More coming",
-          "items": [
-            {
-              "title": "New verticals under evaluation",
-              "desc": "A product line opens once the problem is validated with real customers in that industry."
-            },
-            {
-              "title": "How we choose",
-              "desc": "Discover, build, validate, then scale or pivot. A vertical earns a product by surviving that sequence."
-            },
-            {
-              "title": "Talk to us about your industry",
-              "desc": "If you work in a sector where focused software would create a durable advantage, we want the conversation."
-            }
-          ]
-        }
-      ]
-    },
-    "highlights": {
-      "row1": [
-        "Modular architecture",
-        "AI-ready components",
-        "Vertical SaaS patterns",
-        "GIS & geospatial expertise",
-        "Data-driven decision support",
-        "Tailwind CSS",
-        "Type-safe stack"
       ],
-      "row2": [
-        "Next.js App Router",
-        "React 19",
-        "Flowbite React",
-        "Easy to customize"
-      ],
-      "row3": [
-        "Analytics-friendly",
-        "Workflow-oriented design",
-        "Regular updates",
-        "Documentation-focused",
-        "Experiment-driven",
-        "Dedicated support"
-      ]
+      "note": "Three products so far. The method holds as more join."
     },
-    "packages": {
-      "title": "Simple, transparent engagement.",
-      "description": "We focus on long-term product development, not one-off projects.",
-      "perOneTime": "",
-      "cta": "Contact Us",
-      "included": {
-        "fullSourceCode": "Full source code (when applicable)",
-        "documentation": "Documentation",
-        "saasUse": "SaaS-friendly",
-        "oneProjectStrong": "Focused",
-        "unlimitedProjectStrong": "Scalable",
-        "projectSuffix": "engagements",
-        "oneYearStrong": "Ongoing",
-        "technicalSupportSuffix": "support"
-      },
-      "tiers": [
+    "bandas": {
+      "title": "Three bands, one cloth.",
+      "products": [
         {
-          "licenseType": "Product collaboration",
-          "licenseDesc": "Work with us on an existing or new Devynix product.",
-          "price": "Contact us"
+          "plate": "01",
+          "name": "GRIDCANOPY",
+          "claim": "Cuenca corridor: 12 monitored spans, 3 urgent, 7 needing action — risk index 616.",
+          "proofLabel": "Open GridCanopy"
         },
         {
-          "licenseType": "Product pilot",
-          "licenseDesc": "Short, focused engagement to validate a specific Devynix product in your context.",
-          "price": "Contact us"
+          "plate": "02",
+          "name": "GEOAI ACADEMY",
+          "claim": "Seven phases, eighteen activities of GeoAI curriculum.",
+          "proofLabel": "Open GeoAI Academy"
         },
         {
-          "licenseType": "Strategic partnership",
-          "licenseDesc": "Long-term collaboration on a Devynix product line or vertical.",
-          "price": "Contact us"
+          "plate": "03",
+          "name": "FINNIX",
+          "claim": "A shipping personal finance app, tracking real spending.",
+          "proofLabel": "Open FinNix"
         }
       ]
     },
