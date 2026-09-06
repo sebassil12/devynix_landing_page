@@ -35,11 +35,21 @@
     "dismiss": "Dismiss announcement"
   },
   "home": {
-    "banner": {
-      "titleStrong": "Industry-focused",
-      "titleRest": "technology products.",
-      "socialProof": "Building specialized software for specific industries.",
-      "cta": "Learn More"
+    "urdimbre": {
+      "title": "The pattern exists before the cloth.",
+      "lead": "GridCanopy is already watching the Cuenca corridor: 12 spans tracked, 3 urgent, 7 needing action, corridor risk index 616 — drawn here as it happens, not captured in a screenshot.",
+      "table": {
+        "caption": "Cuenca corridor spans and status",
+        "colSpan": "Span",
+        "colStatus": "Status",
+        "colRisk": "Corridor risk index"
+      },
+      "status": {
+        "urgent": "Urgent",
+        "action": "Needs action",
+        "stable": "Stable"
+      },
+      "cta": "See how the method works"
     },
     "clients": {
       "title": "Trusted by organizations across industries.",

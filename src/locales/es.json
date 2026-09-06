@@ -35,11 +35,21 @@
     "dismiss": "Cerrar el aviso"
   },
   "home": {
-    "banner": {
-      "titleStrong": "Productos tecnológicos",
-      "titleRest": "enfocados en la industria.",
-      "socialProof": "Desarrollamos software especializado para industrias específicas.",
-      "cta": "Conocer más"
+    "urdimbre": {
+      "title": "El patrón existe antes que la tela.",
+      "lead": "GridCanopy ya vigila el corredor de Cuenca: 12 tramos monitoreados, 3 urgentes, 7 que requieren acción, con un índice de riesgo del corredor de 616 — trazado aquí en tiempo real, no capturado en una imagen.",
+      "table": {
+        "caption": "Tramos y estado del corredor de Cuenca",
+        "colSpan": "Tramo",
+        "colStatus": "Estado",
+        "colRisk": "Índice de riesgo del corredor"
+      },
+      "status": {
+        "urgent": "Urgente",
+        "action": "Requiere acción",
+        "stable": "Estable"
+      },
+      "cta": "Ver cómo funciona el método"
     },
     "clients": {
       "title": "Organizaciones de distintos sectores confían en nosotros.",

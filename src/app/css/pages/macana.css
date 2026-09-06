@@ -5,3 +5,61 @@
   --warp: 42px;
   --warp-threads: 29;
 }
+
+/* Band shell (design.md D3/D8): full-bleed pine ground with a decorative
+   warp-thread layer that weaves in once on scroll entry. */
+.macana-band {
+  isolation: isolate;
+}
+
+@keyframes warp-weave {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.macana-band__warp {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #ffbd59 0,
+    #ffbd59 2px,
+    transparent 2px,
+    transparent var(--warp)
+  );
+  opacity: 0.1;
+  pointer-events: none;
+  animation: warp-weave 900ms cubic-bezier(0, 0, 0.2, 1) both;
+  animation-timeline: view(block);
+  animation-range: entry 0% cover 30%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .macana-band__warp {
+    animation: none;
+  }
+}
+
+/* Shared feathered "ikat" edge (design.md D4): real SVG displacement via
+   `IkatEdge`'s filter defs, switched to the cheaper `ikat-lo` variant on
+   mobile. Never animated or transformed — see D4's hard rule. */
+.ikat-edge {
+  position: absolute;
+  right: 0;
+  bottom: calc(var(--warp) * -0.5);
+  left: 0;
+  height: var(--warp);
+  background: #ffbd59;
+  filter: url(#ikat-hi);
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .ikat-edge {
+    filter: url(#ikat-lo);
+  }
+}

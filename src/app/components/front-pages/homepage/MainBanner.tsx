@@ -1,108 +1,36 @@
-"use client";
-import React from "react";
-import user1 from "@public/images/profile/user-2.jpg";
-import user2 from "@public/images/profile/user-3.jpg";
-import user3 from "@public/images/profile/user-4.jpg";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { CORRIDOR } from "@/app/components/front-pages/macana/corridor";
+import { CorridorFigure } from "@/app/components/front-pages/macana/CorridorFigure";
+import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
 
-import tech1 from "@public/images/front-pages/technology/react.svg";
-import tech2 from "@public/images/front-pages/technology/flowbite.svg";
-import tech3 from "@public/images/front-pages/technology/nextjs.svg";
-import tech4 from "@public/images/front-pages/technology/typescript.svg";
-import tech5 from "@public/images/front-pages/technology/tailwind.svg";
-import tech6 from "@public/images/front-pages/technology/headless-ui.svg";
-import tech7 from "@public/images/front-pages/technology/shadcn.svg";
-import mainbanner from "@public/images/front-pages/background/main-banner.webp";
-import Image from "next/image";
-import { Button, Tooltip } from "flowbite-react";
-import Link from "next/link";
-import { useTranslation } from "@/i18n/provider";
-
-const MainBanner = () => {
-  const { t } = useTranslation();
-
-  const userImg = [{ user: user1 }, { user: user2 }, { user: user3 }];
-
-  // Product names — not translated on purpose.
-  const Technology = [
-    { tech: tech1, tooltip: "React" },
-    { tech: tech2, tooltip: "Flowbite React" },
-    { tech: tech3, tooltip: "Next.js" },
-    { tech: tech4, tooltip: "TypeScript" },
-    { tech: tech5, tooltip: "Tailwind CSS" },
-    { tech: tech6, tooltip: "Headless UI" },
-    { tech: tech7, tooltip: "shadcn/ui" },
-  ];
-
-  return (
-    <>
-      <div className="bg-lightgray dark:bg-darkgray">
-        <div className="container-1218 mx-auto sm:pt-10 pt-6 xl:pb-0 pb-10">
-          <div className="grid grid-cols-12 gap-30 items-center ">
-            <div className="xl:col-span-6 col-span-12 lg:text-start text-center">
-              <h1 className="lg:text-56 text-4xl text-dark dark:text-white font-medium lg:leading-[64px] leading-[50px]">
-                <b className="font-bold">{t("home.banner.titleStrong")}</b>{" "}
-                {t("home.banner.titleRest")}
-              </h1>
-              <div className="sm:flex text-center mx-auto block items-center gap-3 lg:justify-start justify-center py-6">
-                <div className="flex flex-row-reverse lg:justify-start justify-center ps-3">
-                  {userImg.map((item, index) => (
-                    <div className="-ms-3 h-10 w-10 relative z-5" key={index}>
-                      <Image
-                        src={item.user}
-                        className="border-2 border-white dark:border-darkborder rounded-full"
-                        alt="icon"
-                      />
-                    </div>
-                  ))}
-                </div>
-                <h5 className="text-17 text-darklink md:pt-0 pt-3">
-                  {t("home.banner.socialProof")}
-                </h5>
-              </div>
-              <ul className="flex flex-wrap lg:justify-start justify-center gap-5 pb-7 md:pt-4 ml-0">
-                {Technology.map((item, index) => (
-                  <Tooltip
-                    key={index}
-                    content={item.tooltip}
-                    className="!text-xs"
-                    placement="bottom"
-                  >
-                    <li className="md:h-14 md:w-14 h-10 w-10 bg-white dark:bg-darkmuted rounded-[16px] flex justify-center items-center shadow-elevation1">
-                      <Image
-                        src={item.tech}
-                        alt={item.tooltip}
-                        height={28}
-                        className="md:h-7 h-5"
-                      />
-                    </li>
-                  </Tooltip>
-                ))}
-              </ul>
-              <div className="flex lg:justify-start justify-center">
-                <Button
-                  color={"primary"}
-                  as={Link}
-                  href="#products"
-                  className="px-4 font-bold sm:w-fit w-full"
-                >
-                  {t("home.banner.cta")}
-                </Button>
-              </div>
-            </div>
-            <div className="lg:col-span-6 col-span-12 xl:block hidden">
-              <div className="min-w-[1300px] max-h-[700px] h-[calc(100vh_-_100px)] overflow-hidden ">
-                <Image
-                  src={mainbanner}
-                  className="rtl:scale-x-[-1]"
-                  alt="banner"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+type MainBannerProps = {
+  copy: Dictionary["home"]["urdimbre"];
 };
+
+// Band ① URDIMBRE — the homepage's focal moment (docs/homepage-brief-macana.md
+// §4): the real Cuenca corridor, drawn as an ikat figure rather than pasted
+// in as a screenshot. Server component, no client interactivity (design.md
+// D3): `page.tsx` awaits the dictionary and passes this slice as a prop.
+export function MainBanner({ copy }: MainBannerProps) {
+  return (
+    <WarpBand>
+      <h1 className="text-4xl font-medium text-macana-cotton lg:text-56 lg:leading-[64px]">
+        {copy.title}
+      </h1>
+      <p className="mt-warp max-w-[75ch] text-17 text-macana-cotton/90">
+        {copy.lead}
+      </p>
+      <div className="mt-warp-2">
+        <CorridorFigure data={CORRIDOR} copy={copy} />
+      </div>
+      <a
+        href="#products"
+        className="mt-warp-2 inline-block rounded-tw bg-macana-figure px-warp py-3 font-bold text-macana-ground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure"
+      >
+        {copy.cta}
+      </a>
+    </WarpBand>
+  );
+}
 
 export default MainBanner;

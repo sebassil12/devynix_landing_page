@@ -22,12 +22,21 @@ export async function generateMetadata({
 }
 
 // Section order mirrors the `home.*` key order in src/locales/*.json:
-// banner -> clients -> featureTabs -> highlights -> packages -> about
-// -> contactBar -> faq -> purchase.
-const page = () => {
+// urdimbre -> clients -> featureTabs -> highlights -> packages -> about
+// -> contactBar -> faq -> purchase. `urdimbre` is a server band (design.md
+// D3) reading its copy from the awaited dictionary; the rest are unchanged
+// pending WU3-WU5.
+const page = async ({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}) => {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
   return (
     <>
-      <MainBanner />
+      <MainBanner copy={dict.home.urdimbre} />
       <OurClients />
       <FeatureTabs />
       <Highlights />
