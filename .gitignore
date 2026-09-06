@@ -36,3 +36,6 @@ yarn-error.log*
 next-env.d.ts
 # Local AI runtime state
 .atl/
+
+# Impeccable local session state (question logs, hook cache, machine-local config)
+.impeccable/

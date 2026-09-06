@@ -1,0 +1,56 @@
+schema: spec-driven
+
+context: |
+  Next.js 16.3.3 (App Router), React 19.2, TypeScript 5, Tailwind 3.4.4
+  (pinned — v4 breaks flowbite-react 0.10.1), flowbite-react 0.10.1, pnpm.
+  Routes under /[lang] (en, es); src/locales/{en,es}.json are the only
+  source of visible strings (full parity required, same commit).
+  Canonical docs: docs/devynix-context.md, PRODUCT.md, memory/*.json.
+  Deploys to Vercel; Coolify VPS is a later target.
+
+strict_tdd: false
+
+testing:
+  status: no_test_runner_configured
+  reason: >
+    No test framework is installed or configured (no vitest/jest/playwright/
+    cypress dependency, no test script in package.json). Verification relies
+    on `npx tsc --noEmit`, `pnpm lint`, and `pnpm build`.
+  projects:
+    - path: .
+      stack: Next.js + TypeScript
+      test_command: null
+      framework: null
+      lint_command: "pnpm lint"
+      typecheck_command: "npx tsc --noEmit"
+      build_command: "pnpm build"
+      formatter_command: null
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Verify locale parity (en/es) impact for any user-facing copy change
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+    - Forecast against the 800-changed-line review budget per `delivery_strategy: auto-chain`
+  apply:
+    guidelines:
+      - Follow existing code patterns (App Router, container/presentational)
+      - Update both src/locales/en.json and es.json in the same commit for any copy change
+    tdd: false           # No test runner configured; strict_tdd is false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: "pnpm build"
+    typecheck_command: "npx tsc --noEmit"
+    lint_command: "pnpm lint"
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas

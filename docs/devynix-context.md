@@ -1,10 +1,14 @@
 # Devynix — Project Context
 
 The single context doc for this repo. Read it before changing anything; update it
-when something here stops being true. There is no separate spec, plan, or task tree,
-and this project does not need one.
+when something here stops being true.
 
-Last updated: 2026-09-05
+`PRODUCT.md` (repo root) holds confirmed product truth — audience, conversion, and
+the explicit list of facts that must never be fabricated. `docs/homepage-brief-macana.md`
+holds the locked visual brief. Spec-driven artifacts for the Macana redesign live under
+`openspec/changes/redesign-homepage-macana/`; this doc stays the entry point.
+
+Last updated: 2026-09-06
 
 **Skills kept (uncertain)** — pruned `.claude/skills/` down to this stack; these were
 left in place deliberately:
@@ -62,16 +66,26 @@ via Coolify is the later target.
   unsupported locale.
 - `src/app/[lang]/(frontend-pages)/layout.tsx` — announcement bar, header, footer.
 
-**Homepage order** — mirrors the `home.*` key order in the locale files:
+**Homepage order** — the six Macana bands:
 
 ```
-banner → clients → featureTabs → highlights → packages
-       → about → contactBar → faq → purchase
+① URDIMBRE → ② EL MÉTODO → ③ LAS BANDAS
+→ ④ DEVYNIX → ⑤ FAQ → ⑥ FLECO (in the shared layout)
 ```
 
-Components in `src/app/components/front-pages/homepage/`: `MainBanner`,
-`OurClients`, `FeatureTabs`, `Highlights`, `Packages`, `AboutDevynix`,
-`ContactBar`, `FAQ`, `PurchaseTemp`.
+Components in `src/app/components/front-pages/homepage/`: `MainBanner`, `Metodo`,
+`Bandas`, `AboutDevynix`, `FAQ`. The shared warp system lives in
+`front-pages/macana/`: `warp.ts`, `DevynixMark.tsx`, `WarpBand.tsx`, `IkatEdge.tsx`,
+`CorridorFigure.tsx`, `Fleco.tsx`, `corridor.ts`, `products.ts`, `contact-links.ts`,
+`cta.ts`.
+
+Deleted in the redesign: `OurClients`, `FeatureTabs`, `Packages`, `Highlights`,
+`ContactBar`, `PurchaseTemp`, `ContactMap`, `FrontBreadcrumb`.
+
+**The warp unit is the page grid unit.** `WARP` is 42px and `WARP_THREADS` is 29, so
+`.container-1218` keeps its name and its 1218px width literally true. `WARP_STROKE`
+(20) is derived from `MARK_STROKE_RATIO` (0.48), measured off the vector logo — not
+chosen. Never hardcode 42, 1218 or 20; import from `macana/warp.ts`.
 
 **Locales** — `src/locales/en.json` and `es.json` are the only source of visible
 strings. Currently 104 leaf keys each, full parity, nothing unresolved.
@@ -104,19 +118,27 @@ shows up instead of failing silently.
 
 ## Open backlog
 
-- **Contact form is dead** — `ContactForm.tsx` has no `<form>`, no handler, no
-  destination, and every CTA points at it. Pick: route handler + email provider,
-  a form service, or a `mailto:` link.
-- **Contact map shows New York** — `ContactMap.tsx` embeds
-  `q=newyork+(My%20Businnewyoess%20Name)`. Fix the location or drop the section.
-- **Missing brand facts** — founding year, whether there is a public address, real
-  support channels. `about.achievement` holds true-but-placeholder figures.
-- **Footer social links** all point at `href="/"`. Real profiles or delete the block.
+Resolved by the Macana redesign: the dead contact form (now a WhatsApp deep link to
+`+593 98 787 7191` plus `devynixcorp@gmail.com`), the New York map (`ContactMap`
+deleted — no public address exists), the missing brand facts (founded 2025; socials
+are Facebook, Instagram and TikTok only, no LinkedIn or X), the dead footer links,
+and the `Packages`/FAQ contradiction (`Packages` deleted).
+
+Still open:
+
 - **Announcement bar** still says "New pages available" and links to the homepage.
+- **Never visually verified**: the `.container-1218` padding change from 20px to one
+  warp unit (42px), which reaches all 16 consuming files; and a throttled-mobile paint
+  check for the `feTurbulence`/`feDisplacementMap` ikat filter. Neither has an
+  automated equivalent in this repo.
+- **`impeccable` sits in production `dependencies`** in `package.json`. It is a design
+  tool the site never imports at runtime; it belongs in `devDependencies`.
+- **`geoai.sebastiansilva.dev` has no SPA fallback rewrite** — deep links return
+  server 404s, so bands ① and ② can only link to its root URL until `/* → /index.html`
+  is added there.
 - **`next.config.mjs`** needs `output: 'standalone'` for the later Coolify deploy
   (inert on Vercel), and `reactStrictMode` back to `true`.
 - **Privacy policy / terms** — absent, while the contact form collects names, emails
   and phone numbers.
-- **`Packages` vs. FAQ contradiction** — the section sells pilots and partnerships
-  while `faq.items[1]` says Devynix is not a generic software agency.
-- **4 lint warnings** remain, all inherited template code, none load-bearing.
+- **98 lint warnings** remain, all inherited template code, none load-bearing and
+  none in redesigned files.
