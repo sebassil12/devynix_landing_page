@@ -92,61 +92,11 @@
         }
       ]
     },
-    "about": {
-      "title": "About Devynix",
-      "description": "Devynix is a small technical team that identifies important problems in specific industries and solves them with focused software products. We are early: two products in the portfolio, and every claim on this page is one we can back.",
-      "points": [
-        {
-          "title": "Industry first",
-          "subtitle": "We start from real workflows and regulations, not from technology trends."
-        },
-        {
-          "title": "Evidence-driven",
-          "subtitle": "We validate a problem with real customers before we scale a product around it."
-        },
-        {
-          "title": "Adaptable",
-          "subtitle": "Products get created, pivoted, retired, or replaced as industries change."
-        }
-      ],
-      "cta": "More about us"
-    },
-    "contactBar": {
-      "message": "Looking for specialized software for your industry?",
-      "cta": "Contact us"
-    },
-    "faq": {
-      "title": "Frequently asked questions",
-      "stillHaveQuestion": "Still have a question?",
-      "contactCta": "Contact us",
-      "or": "or",
-      "emailCta": "Send us an email",
-      "items": [
-        {
-          "question": "What industries do you focus on?",
-          "answer": "We focus on specific industries where software can create a strong competitive advantage, such as agriculture, environmental monitoring, logistics, manufacturing, and government-adjacent workflows."
-        },
-        {
-          "question": "Do you build custom software?",
-          "answer": "We primarily build reusable products. We may take selective projects that help us learn about new industries, but we do not operate as a generic software agency."
-        },
-        {
-          "question": "How do you work with AI?",
-          "answer": "We use AI (including small language models, RAG, and predictive ML) where it creates measurable economic value, not as a marketing claim."
-        },
-        {
-          "question": "Can you work with our existing systems?",
-          "answer": "Yes. We design products and integrations that work with existing ERPs, document systems, and data sources, especially in Latin America."
-        },
-        {
-          "question": "How do you engage with clients?",
-          "answer": "Through focused pilots and experiments. We validate problem-solution fit before scaling, and we adapt when circumstances change."
-        },
-        {
-          "question": "How can I get support?",
-          "answer": "You can reach us through the contact form or by email. For product-related questions, we provide dedicated support channels."
-        }
-      ]
+    "devynix": {
+      "title": "Devynix",
+      "body": "Devynix is a technology company founded in 2025 in Ecuador. We identify important problems inside specific industries and solve them with focused software products, not with a generic platform looking for a use.",
+      "founded": "Founded 2025",
+      "country": "Ecuador"
     },
     "purchase": {
       "heading": "Focus on what truly matters—solving real industry problems.",
@@ -258,5 +208,46 @@
     "heading": "We cannot find that page",
     "backToHome": "Go to homepage",
     "contactCta": "Contact us"
+  },
+  "shared": {
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "What does Devynix do?",
+          "answer": "Devynix builds focused technology products for specific industries — GeoNix for geospatial and land-use intelligence, and FinNix for personal finance. We are a product company, not a generic software agency."
+        },
+        {
+          "question": "Do you take on custom software projects?",
+          "answer": "No. We do not build bespoke software for hire. Our engineering effort goes into GeoNix and FinNix, and it grows as those products grow."
+        },
+        {
+          "question": "How do you work with AI?",
+          "answer": "We use AI — including small language models, RAG, and predictive ML — where it creates measurable value inside GeoNix or FinNix, not as a marketing claim."
+        },
+        {
+          "question": "Can GeoNix or FinNix fit our existing systems?",
+          "answer": "Both products are built to fit real data and workflow contexts in Latin America. We do not build custom integrations outside of GeoNix and FinNix themselves."
+        },
+        {
+          "question": "How do you decide what to build?",
+          "answer": "We confirm a real industry problem before committing engineering time to it. Each product exists because the problem behind it was validated first, not assumed."
+        },
+        {
+          "question": "How can I reach you?",
+          "answer": "The fastest way is WhatsApp. You can also email us — both routes reach the same team."
+        }
+      ],
+      "stillHaveQuestion": "Still have a question?",
+      "contactCta": "Contact us",
+      "or": "or",
+      "emailCta": "send us an email"
+    },
+    "cta": {
+      "title": "Start a conversation",
+      "lead": "Every conversation starts on WhatsApp — no form, no waiting for a reply.",
+      "whatsappCta": "Chat on WhatsApp",
+      "emailCta": "Email us instead"
+    }
   }
 }

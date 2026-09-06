@@ -92,61 +92,11 @@
         }
       ]
     },
-    "about": {
-      "title": "Sobre Devynix",
-      "description": "Devynix es un equipo técnico pequeño que identifica problemas importantes en industrias específicas y los resuelve con productos de software enfocados. Estamos empezando: dos productos en el portafolio y cada afirmación de esta página es una que podemos sostener.",
-      "points": [
-        {
-          "title": "La industria primero",
-          "subtitle": "Partimos de flujos de trabajo y normativas reales, no de tendencias tecnológicas."
-        },
-        {
-          "title": "Basados en evidencia",
-          "subtitle": "Validamos un problema con clientes reales antes de escalar un producto alrededor de él."
-        },
-        {
-          "title": "Adaptables",
-          "subtitle": "Los productos se crean, pivotan, retiran o reemplazan a medida que cambian las industrias."
-        }
-      ],
-      "cta": "Más sobre nosotros"
-    },
-    "contactBar": {
-      "message": "¿Buscas software especializado para tu industria?",
-      "cta": "Contáctanos"
-    },
-    "faq": {
-      "title": "Preguntas frecuentes",
-      "stillHaveQuestion": "¿Todavía tienes alguna duda?",
-      "contactCta": "Contáctanos",
-      "or": "o",
-      "emailCta": "Escríbenos un correo",
-      "items": [
-        {
-          "question": "¿En qué industrias se enfocan?",
-          "answer": "Nos enfocamos en industrias específicas donde el software puede crear una ventaja competitiva sólida, como agricultura, monitoreo ambiental, logística, manufactura y flujos de trabajo vinculados al sector público."
-        },
-        {
-          "question": "¿Desarrollan software a medida?",
-          "answer": "Desarrollamos principalmente productos reutilizables. Podemos tomar proyectos puntuales que nos ayuden a conocer nuevas industrias, pero no operamos como una agencia de software genérica."
-        },
-        {
-          "question": "¿Cómo trabajan con IA?",
-          "answer": "Usamos IA (incluidos modelos de lenguaje pequeños, RAG y ML predictivo) donde genera valor económico medible, no como argumento de marketing."
-        },
-        {
-          "question": "¿Pueden trabajar con nuestros sistemas actuales?",
-          "answer": "Sí. Diseñamos productos e integraciones que funcionan con los ERP, sistemas documentales y fuentes de datos existentes, especialmente en América Latina."
-        },
-        {
-          "question": "¿Cómo trabajan con sus clientes?",
-          "answer": "Mediante pilotos y experimentos acotados. Validamos el encaje problema-solución antes de escalar y nos adaptamos cuando cambian las circunstancias."
-        },
-        {
-          "question": "¿Cómo puedo obtener soporte?",
-          "answer": "Puedes contactarnos mediante el formulario de contacto o por correo electrónico. Para consultas sobre productos, ofrecemos canales de soporte dedicados."
-        }
-      ]
+    "devynix": {
+      "title": "Devynix",
+      "body": "Devynix es una empresa de tecnología fundada en 2025 en Ecuador. Identificamos problemas importantes dentro de industrias específicas y los resolvemos con productos de software enfocados, no con una plataforma genérica que busca un uso.",
+      "founded": "Fundada en 2025",
+      "country": "Ecuador"
     },
     "purchase": {
       "heading": "Enfócate en lo que de verdad importa: resolver problemas reales de la industria.",
@@ -258,5 +208,46 @@
     "heading": "No encontramos esa página",
     "backToHome": "Ir al inicio",
     "contactCta": "Contáctanos"
+  },
+  "shared": {
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿A qué se dedica Devynix?",
+          "answer": "Devynix construye productos de tecnología enfocados para industrias específicas: GeoNix para inteligencia geoespacial y de uso de suelo, y FinNix para finanzas personales. Somos una empresa de producto, no una agencia de software genérica."
+        },
+        {
+          "question": "¿Desarrollan software a medida para terceros?",
+          "answer": "No. No desarrollamos software a medida por encargo. Nuestro esfuerzo de ingeniería va hacia GeoNix y FinNix, y crece a medida que esos productos crecen."
+        },
+        {
+          "question": "¿Cómo trabajan con IA?",
+          "answer": "Usamos IA —incluidos modelos de lenguaje pequeños, RAG y ML predictivo— donde genera valor medible dentro de GeoNix o FinNix, no como argumento de marketing."
+        },
+        {
+          "question": "¿GeoNix o FinNix pueden adaptarse a nuestros sistemas actuales?",
+          "answer": "Ambos productos están construidos para encajar en contextos reales de datos y flujos de trabajo en América Latina. No desarrollamos integraciones a medida fuera de GeoNix y FinNix."
+        },
+        {
+          "question": "¿Cómo deciden qué construir?",
+          "answer": "Confirmamos un problema real de industria antes de dedicar tiempo de ingeniería. Cada producto existe porque el problema detrás fue validado primero, no asumido."
+        },
+        {
+          "question": "¿Cómo puedo contactarlos?",
+          "answer": "La vía más rápida es WhatsApp. También puedes escribirnos por correo: ambas rutas llegan al mismo equipo."
+        }
+      ],
+      "stillHaveQuestion": "¿Todavía tienes alguna duda?",
+      "contactCta": "Contáctanos",
+      "or": "o",
+      "emailCta": "escríbenos un correo"
+    },
+    "cta": {
+      "title": "Empecemos una conversación",
+      "lead": "Toda conversación empieza por WhatsApp — sin formulario, sin esperar una respuesta.",
+      "whatsappCta": "Chatear por WhatsApp",
+      "emailCta": "Escribir un correo"
+    }
   }
 }

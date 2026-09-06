@@ -1,63 +1,36 @@
-"use client";
-import Link from "next/link";
-import { Button } from "flowbite-react";
-import { Icon } from "@iconify/react";
-import { useTranslation } from "@/i18n/provider";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
 
-type Point = { title: string; subtitle: string };
-
-// Icon per point; the copy itself comes from the dictionary.
-const pointIcons = [
-  "tabler:target-arrow",
-  "tabler:flask",
-  "tabler:refresh",
-] as const;
-
-export const AboutDevynix = () => {
-  const { t, tList, locale } = useTranslation();
-  const points = tList<Point>("home.about.points");
-
-  return (
-    <div className="bg-lightgray dark:bg-darkgray lg:py-24 py-12">
-      <div className="container-1218 mx-auto">
-        <div className="max-w-[860px] mx-auto bg-white dark:bg-dark rounded-tw shadow-elevation2 lg:p-12 p-7">
-          <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white">
-            {t("home.about.title")}
-          </h2>
-          <p className="text-17 leading-[32px] text-darklink pt-6">
-            {t("home.about.description")}
-          </p>
-          <div className="grid grid-cols-12 gap-30 pt-10">
-            {points.map((point, index) => (
-              <div className="md:col-span-4 col-span-12" key={point.title}>
-                <div className="h-10 w-10 rounded-tw bg-lightprimary flex justify-center items-center mb-4">
-                  <Icon
-                    icon={pointIcons[index] ?? pointIcons[0]}
-                    height={22}
-                    className="text-primary"
-                  />
-                </div>
-                <h5 className="text-lg font-semibold text-dark dark:text-white">
-                  {point.title}
-                </h5>
-                <p className="text-base text-darklink leading-7 pt-2">
-                  {point.subtitle}
-                </p>
-              </div>
-            ))}
-          </div>
-          <Button
-            color={"primary"}
-            as={Link}
-            href={`/${locale}/aboutus`}
-            className="font-bold mt-10 sm:w-fit w-full"
-          >
-            {t("home.about.cta")}
-          </Button>
-        </div>
-      </div>
-    </div>
-  );
+type AboutDevynixProps = {
+  copy: Dictionary["home"]["devynix"];
 };
+
+// Band ④ DEVYNIX (docs/homepage-brief-macana.md §4): the only established
+// facts are founded 2025, Ecuador (PRODUCT.md) — no headcount, address,
+// customers, or revenue are claimed here or implied by `copy.founded` /
+// `copy.country`. Server component, no client interactivity (design.md D3):
+// `page.tsx` awaits the dictionary and passes this slice down as a prop.
+//
+// Declared deviation from design.md D7: the locale tree there lists an
+// `eyebrow` field for this band. Same precedent as WU2's `home.urdimbre` and
+// WU3's `home.metodo`/`home.bandas` — craft-floor bans a kicker/eyebrow above
+// a heading absolutely ("no brief earns it back"), so no `eyebrow` key is
+// added and the title carries the copy alone.
+export function AboutDevynix({ copy }: AboutDevynixProps) {
+  return (
+    <WarpBand id="devynix">
+      <h2 className="max-w-[75ch] text-3xl font-medium text-macana-cotton lg:text-44">
+        {copy.title}
+      </h2>
+      <p className="mt-warp max-w-[75ch] text-17 text-macana-cotton/90">
+        {copy.body}
+      </p>
+      <ul className="mt-warp-2 flex flex-wrap gap-warp-2 border-t border-macana-figure/30 pt-warp-half text-15 font-semibold text-macana-cotton">
+        <li>{copy.founded}</li>
+        <li>{copy.country}</li>
+      </ul>
+    </WarpBand>
+  );
+}
 
 export default AboutDevynix;

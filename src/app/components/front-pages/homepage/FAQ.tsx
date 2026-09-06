@@ -1,53 +1,68 @@
-"use client";
-import { Accordion } from "flowbite-react";
 import Link from "next/link";
-import { useTranslation } from "@/i18n/provider";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
 
-export const FAQ = () => {
-  const { t, tList, locale } = useTranslation();
-  const questions = tList<{ question: string; answer: string }>(
-    "home.faq.items"
-  );
-
-  return (
-    <>
-      <div className="dark:bg-dark" id="faq">
-        <div className="max-w-[800px] mx-auto px-5 lg:py-24 py-12">
-          <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white text-center mb-14">
-            {t("home.faq.title")}
-          </h2>
-          <Accordion className="shadow-none dark:shadow-none divide-y-1 divide-b-0 divided:border-ld !rounded-none flex flex-col gap-4">
-            {questions.map((item) => (
-              <Accordion.Panel key={item.question}>
-                <Accordion.Title className="focus:ring-0 px-6  text-lg text-ld py-5 border border-ld rounded-md !border-b-none">
-                  {item.question}
-                </Accordion.Title>
-                <Accordion.Content className="!p-0 px-0 pt-0 rounded-none">
-                  <p className="text-base text-darklink leading-7 border border-t-0 border-ld -mt-5 px-6 py-5 rounded-b-md">
-                    {item.answer}
-                  </p>
-                </Accordion.Content>
-              </Accordion.Panel>
-            ))}
-          </Accordion>
-          <p className="mt-14 text-sm font-medium justify-center text-darklink flex flex-wrap items-center gap-1 border border-dashed w-fit mx-auto px-3 py-1.5 rounded-md">
-            {t("home.faq.stillHaveQuestion")}{" "}
-            <Link
-              href={`/${locale}/contact`}
-              className="underline hover:text-primary"
-            >
-              {t("home.faq.contactCta")}
-            </Link>{" "}
-            <span>{t("home.faq.or")}</span>
-            <Link
-              href={`/${locale}/contact`}
-              className="underline hover:text-primary"
-            >
-              {t("home.faq.emailCta")}
-            </Link>
-          </p>
-        </div>
-      </div>
-    </>
-  );
+type FAQProps = {
+  copy: Dictionary["shared"]["faq"];
+  locale: string;
 };
+
+// Band ⑤ FAQ (homepage-bands spec). Reworded to drop the "not a generic
+// agency" / "pilots and experiments" contradiction that existed while
+// `Packages` still sold pilots on the homepage (`Packages` is deleted in
+// WU3). Shared across the homepage, `/contact`, and `/aboutus` (design.md
+// D7), so its copy now lives under `shared.faq`, not `home.faq` — rewording
+// the homepage no longer silently rewords `/aboutus`.
+//
+// Native `<details>`/`<summary>`: zero JavaScript, zero new dependency. Per
+// the task brief, `components.json` ships no Accordion primitive to reuse
+// (only `toast.tsx`/`toaster.tsx` exist under the `ui` alias, and only
+// `@radix-ui/react-toast` is installed) — adding one would be a new
+// dependency, not a reuse, and would also cost the server-component/no-JS
+// guarantee design.md D8 already relies on for this band.
+export function FAQ({ copy, locale }: FAQProps) {
+  return (
+    <WarpBand id="faq">
+      <h2 className="max-w-[75ch] text-3xl font-medium text-macana-cotton lg:text-44">
+        {copy.title}
+      </h2>
+      <div className="mt-warp-2 flex flex-col gap-4">
+        {copy.items.map((item) => (
+          <details
+            key={item.question}
+            className="group border-t border-macana-figure/30 pt-warp-half"
+          >
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-17 font-medium text-macana-cotton focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure [&::-webkit-details-marker]:hidden">
+              {item.question}
+              {/* CSS-drawn plus/minus toggle — no icon library, no unicode
+                  glyph standing in for one (craft-floor). */}
+              <span aria-hidden="true" className="relative h-4 w-4 shrink-0">
+                <span className="absolute left-0 top-1/2 h-[2px] w-4 -translate-y-1/2 bg-macana-figure" />
+                <span className="absolute left-1/2 top-0 h-4 w-[2px] -translate-x-1/2 bg-macana-figure transition-transform duration-200 group-open:rotate-90" />
+              </span>
+            </summary>
+            <p className="mt-2 text-15 text-macana-cotton/90">{item.answer}</p>
+          </details>
+        ))}
+      </div>
+      <p className="mt-warp-2 text-15 text-macana-cotton/80">
+        {copy.stillHaveQuestion}{" "}
+        <Link
+          href={`/${locale}/contact`}
+          className="underline underline-offset-4 hover:text-macana-figure"
+        >
+          {copy.contactCta}
+        </Link>{" "}
+        {copy.or}{" "}
+        <Link
+          href={`/${locale}/contact`}
+          className="underline underline-offset-4 hover:text-macana-figure"
+        >
+          {copy.emailCta}
+        </Link>
+      </p>
+    </WarpBand>
+  );
+}
+
+export default FAQ;

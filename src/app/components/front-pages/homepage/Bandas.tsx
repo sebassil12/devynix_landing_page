@@ -1,3 +1,4 @@
+import { cva } from "class-variance-authority";
 import Image from "next/image";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
@@ -5,6 +6,21 @@ import { PRODUCTS } from "@/app/components/front-pages/macana/products";
 import { CORRIDOR } from "@/app/components/front-pages/macana/corridor";
 import type { SpanStatus } from "@/app/components/front-pages/macana/corridor";
 import finnixScreenshot from "@public/images/projects/finnix.png";
+
+// Proof-link emphasis (primary vs. secondary) — replaces the earlier ad-hoc
+// ternary with a named variant, same axis Bandas already had.
+const proofLinkVariants = cva(
+  "mt-warp-half inline-block underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure",
+  {
+    variants: {
+      emphasis: {
+        primary: "font-bold text-macana-figure",
+        secondary: "text-13 font-medium text-macana-cotton/70",
+      },
+    },
+    defaultVariants: { emphasis: "primary" },
+  }
+);
 
 type BandasProps = {
   copy: Dictionary["home"]["bandas"];
@@ -67,7 +83,7 @@ export function Bandas({ copy }: BandasProps) {
         {PRODUCTS.map((product, index) => {
           const plate = copy.products[index];
           if (!plate) return null;
-          const isSecondaryLink = product.proof === "screenshot";
+          const emphasis = product.proof === "screenshot" ? "secondary" : "primary";
           return (
             <article
               key={product.id}
@@ -91,11 +107,7 @@ export function Bandas({ copy }: BandasProps) {
                 href={product.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={
-                  isSecondaryLink
-                    ? "mt-warp-half inline-block text-13 font-medium text-macana-cotton/70 underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure"
-                    : "mt-warp-half inline-block font-bold text-macana-figure underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-macana-figure"
-                }
+                className={proofLinkVariants({ emphasis })}
               >
                 {plate.proofLabel}
               </a>
