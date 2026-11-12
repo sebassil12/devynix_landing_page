@@ -66,24 +66,7 @@ const config: Config = {
   		margin: {
   			'30': '30px'
   		},
-  		spacing: {
-  			// Macana warp scale (design.md D1/D3): the page grid unit and its
-  			// integer multiples, tied to the same `--warp` custom property
-  			// `macana.css` declares.
-  			'warp-half': '21px',
-  			warp: '42px',
-  			'warp-2': '84px',
-  			'warp-3': '126px'
-  		},
   		colors: {
-  			// Macana palette (design.md D9) — measured hex values, no other
-  			// brand color is introduced for Macana surfaces.
-  			macana: {
-  				ground: '#0E2422',
-  				figure: '#FFBD59',
-  				cotton: '#F0EBE0',
-  				flash: '#D14338'
-  			},
   			cyan: {
   				'500': 'var(--color-primary)',
   				'600': 'var(--color-primary)',

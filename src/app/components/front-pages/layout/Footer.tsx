@@ -2,7 +2,7 @@
 import { Tooltip } from "flowbite-react";
 import Link from "next/link";
 import Image from "next/image";
-import { DevynixMark } from "@/app/components/front-pages/macana/DevynixMark";
+import FullLogo from "@public/images/logos/light-logo.svg";
 import Logo from "@/app/components/shared/logo/Logo";
 import { useTranslation } from "@/i18n/provider";
 
@@ -24,24 +24,10 @@ const columns = [
   },
 ];
 
-// ponytail: only these three profiles are real (PRODUCT.md) — no LinkedIn,
-// no X/Twitter. All three previously pointed at `href="/"`, a dead link.
 const socials = [
-  {
-    key: "footer.social.facebook",
-    img: "facebook",
-    href: "https://www.facebook.com/profile.php?id=61577856333772",
-  },
-  {
-    key: "footer.social.instagram",
-    img: "instagram",
-    href: "https://www.instagram.com/devynix12/",
-  },
-  {
-    key: "footer.social.tiktok",
-    img: "tiktok",
-    href: "https://www.tiktok.com/@devynix",
-  },
+  { key: "footer.social.facebook", img: "facebook" },
+  { key: "footer.social.twitter", img: "twitter" },
+  { key: "footer.social.instagram", img: "instagram" },
 ];
 
 export const Footer = () => {
@@ -54,7 +40,7 @@ export const Footer = () => {
           <div className="border-b border-darkborder lg:py-24 py-12">
             <div className="grid grid-cols-12 gap-30 ">
               <div className="lg:col-span-3 sm:col-span-6 col-span-12">
-                <DevynixMark className="mb-8 h-14 w-14" />
+                <Image src={FullLogo} alt="logo" className="mb-8" />
               </div>
               {columns.map((column) => (
                 <div
@@ -89,12 +75,7 @@ export const Footer = () => {
                       placement="bottom"
                       className="shrink-0"
                     >
-                      <Link
-                        href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={t(social.key)}
-                      >
+                      <Link href="/" aria-label={t(social.key)}>
                         <Image
                           src={`/images/front-pages/background/${social.img}.svg`}
                           height={22}

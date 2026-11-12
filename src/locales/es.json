@@ -35,79 +35,221 @@
     "dismiss": "Cerrar el aviso"
   },
   "home": {
-    "urdimbre": {
-      "title": "El patrón existe antes que la tela.",
-      "lead": "GridCanopy ya vigila el corredor de Cuenca: 12 tramos monitoreados, 3 urgentes, 7 que requieren acción, con un índice de riesgo del corredor de 616 — trazado aquí en tiempo real, no capturado en una imagen.",
-      "table": {
-        "caption": "Tramos y estado del corredor de Cuenca",
-        "colSpan": "Tramo",
-        "colStatus": "Estado",
-        "colRisk": "Índice de riesgo del corredor"
-      },
-      "status": {
-        "urgent": "Urgente",
-        "action": "Requiere acción",
-        "stable": "Estable"
-      },
-      "cta": "Ver cómo funciona el método"
+    "banner": {
+      "titleStrong": "Productos tecnológicos",
+      "titleRest": "enfocados en la industria.",
+      "socialProof": "Desarrollamos software especializado para industrias específicas.",
+      "cta": "Conocer más"
     },
-    "metodo": {
-      "title": "Un método, en tres pasos.",
-      "steps": [
+    "clients": {
+      "title": "Organizaciones de distintos sectores confían en nosotros.",
+      "description": "Nos enfocamos en resolver problemas importantes de industrias específicas con software especializado.",
+      "cta": "Contáctanos",
+      "features": [
         {
-          "title": "El problema de la industria",
-          "body": "Cada industria funciona con flujos de trabajo y normas ya escritas. Empezamos ahí, dentro del problema, no con una tecnología que busca un uso."
+          "title": "La industria primero",
+          "subtitle": "Partimos de flujos de trabajo y normativas reales, no de tendencias tecnológicas."
         },
         {
-          "title": "El instrumento enfocado",
-          "body": "Cada producto responde al problema de una industria: un corredor, un currículo, un presupuesto — nunca una plataforma que intenta serlo todo."
+          "title": "Desarrollo basado en evidencia",
+          "subtitle": "Validamos las ideas con clientes reales antes de escalar."
         },
         {
-          "title": "La medición",
-          "body": "Doce tramos monitoreados. Dieciocho actividades en siete fases. Una aplicación real, con datos reales. Avances que podemos mostrar, no prometer."
-        }
-      ],
-      "note": "Tres productos por ahora. El método se sostiene cuando se sumen más."
-    },
-    "bandas": {
-      "title": "Tres bandas, una misma tela.",
-      "products": [
-        {
-          "plate": "01",
-          "name": "GRIDCANOPY",
-          "claim": "Corredor de Cuenca: 12 tramos monitoreados, 3 urgentes, 7 que requieren acción — índice de riesgo 616.",
-          "proofLabel": "Abrir GridCanopy"
+          "title": "Productos enfocados",
+          "subtitle": "Cada producto tiene un cliente, un problema y un rol claro dentro del portafolio."
         },
         {
-          "plate": "02",
-          "name": "GEOAI ACADEMY",
-          "claim": "Siete fases, dieciocho actividades del currículo de GeoAI.",
-          "proofLabel": "Abrir GeoAI Academy"
-        },
-        {
-          "plate": "03",
-          "name": "FINNIX",
-          "claim": "Una aplicación de finanzas personales en producción, que registra gasto real.",
-          "proofLabel": "Abrir FinNix"
+          "title": "Soluciones adaptables",
+          "subtitle": "Pivotamos, retiramos o reforzamos según el aprendizaje validado."
         }
       ]
     },
-    "devynix": {
-      "title": "Devynix",
-      "body": "Devynix es una empresa de tecnología fundada en 2025 en Ecuador. Identificamos problemas importantes dentro de industrias específicas y los resolvemos con productos de software enfocados, no con una plataforma genérica que busca un uso.",
-      "founded": "Fundada en 2025",
-      "country": "Ecuador"
+    "featureTabs": {
+      "heading": "Creado para industrias específicas.",
+      "cta": "Ver nuestros productos",
+      "tabs": [
+        {
+          "label": "GeoNix",
+          "items": [
+            {
+              "title": "Inteligencia geoespacial para territorio y medio ambiente",
+              "desc": "Datos GIS y de uso del suelo convertidos en decisiones accionables, sin necesitar a un especialista en GIS para interpretarlos."
+            },
+            {
+              "title": "Funciona con los sistemas que ya existen",
+              "desc": "Se integra con los ERP, sistemas documentales y fuentes de datos actuales en lugar de reemplazarlos."
+            },
+            {
+              "title": "Pensado para cómo reporta el sector",
+              "desc": "Diseñado en torno a los requisitos de trazabilidad y reporte que ya deben cumplir las organizaciones vinculadas al sector público."
+            }
+          ]
+        },
+        {
+          "label": "FinNix",
+          "items": [
+            {
+              "title": "Finanzas personales que reflejan el gasto real",
+              "desc": "Presupuestos construidos según cómo se mueve el dinero de personas y microemprendedores, no según un árbol de categorías idealizado."
+            },
+            {
+              "title": "Claridad antes que consejos",
+              "desc": "Primero mostrar a dónde fue el dinero. Recomendaciones solo cuando cambian una decisión."
+            },
+            {
+              "title": "Pensado para la realidad latinoamericana",
+              "desc": "Múltiples monedas, ingresos informales y flujo de caja irregular tratados como la norma, no como casos excepcionales."
+            }
+          ]
+        },
+        {
+          "label": "Próximamente",
+          "items": [
+            {
+              "title": "Nuevos sectores en evaluación",
+              "desc": "Una línea de producto se abre cuando el problema está validado con clientes reales de esa industria."
+            },
+            {
+              "title": "Cómo elegimos",
+              "desc": "Descubrir, construir, validar y luego escalar o pivotar. Un sector se gana un producto al superar esa secuencia."
+            },
+            {
+              "title": "Cuéntanos sobre tu industria",
+              "desc": "Si trabajas en un sector donde el software enfocado generaría una ventaja duradera, queremos conversar."
+            }
+          ]
+        }
+      ]
+    },
+    "highlights": {
+      "row1": [
+        "Arquitectura modular",
+        "Componentes preparados para IA",
+        "Patrones de SaaS vertical",
+        "Experiencia en GIS y geoespacial",
+        "Soporte a decisiones basado en datos",
+        "Tailwind CSS",
+        "Stack con tipado seguro"
+      ],
+      "row2": [
+        "Next.js App Router",
+        "React 19",
+        "Flowbite React",
+        "Fácil de personalizar"
+      ],
+      "row3": [
+        "Compatible con analítica",
+        "Diseño orientado a flujos de trabajo",
+        "Actualizaciones periódicas",
+        "Enfoque en documentación",
+        "Orientado a la experimentación",
+        "Soporte dedicado"
+      ]
+    },
+    "packages": {
+      "title": "Colaboración simple y transparente.",
+      "description": "Nos enfocamos en el desarrollo de producto a largo plazo, no en proyectos puntuales.",
+      "perOneTime": "",
+      "cta": "Contáctanos",
+      "included": {
+        "fullSourceCode": "Código fuente completo (cuando aplica)",
+        "documentation": "Documentación",
+        "saasUse": "Compatible con SaaS",
+        "oneProjectStrong": "Enfocadas",
+        "unlimitedProjectStrong": "Escalables",
+        "projectSuffix": "colaboraciones",
+        "oneYearStrong": "Continuo",
+        "technicalSupportSuffix": "soporte"
+      },
+      "tiers": [
+        {
+          "licenseType": "Colaboración de producto",
+          "licenseDesc": "Trabaja con nosotros en un producto Devynix existente o nuevo.",
+          "price": "Contáctanos"
+        },
+        {
+          "licenseType": "Piloto de producto",
+          "licenseDesc": "Colaboración corta y acotada para validar un producto Devynix específico en tu contexto.",
+          "price": "Contáctanos"
+        },
+        {
+          "licenseType": "Alianza estratégica",
+          "licenseDesc": "Colaboración de largo plazo en una línea de producto o vertical de Devynix.",
+          "price": "Contáctanos"
+        }
+      ]
+    },
+    "about": {
+      "title": "Sobre Devynix",
+      "description": "Devynix es un equipo técnico pequeño que identifica problemas importantes en industrias específicas y los resuelve con productos de software enfocados. Estamos empezando: dos productos en el portafolio y cada afirmación de esta página es una que podemos sostener.",
+      "points": [
+        {
+          "title": "La industria primero",
+          "subtitle": "Partimos de flujos de trabajo y normativas reales, no de tendencias tecnológicas."
+        },
+        {
+          "title": "Basados en evidencia",
+          "subtitle": "Validamos un problema con clientes reales antes de escalar un producto alrededor de él."
+        },
+        {
+          "title": "Adaptables",
+          "subtitle": "Los productos se crean, pivotan, retiran o reemplazan a medida que cambian las industrias."
+        }
+      ],
+      "cta": "Más sobre nosotros"
+    },
+    "contactBar": {
+      "message": "¿Buscas software especializado para tu industria?",
+      "cta": "Contáctanos"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "stillHaveQuestion": "¿Todavía tienes alguna duda?",
+      "contactCta": "Contáctanos",
+      "or": "o",
+      "emailCta": "Escríbenos un correo",
+      "items": [
+        {
+          "question": "¿En qué industrias se enfocan?",
+          "answer": "Nos enfocamos en industrias específicas donde el software puede crear una ventaja competitiva sólida, como agricultura, monitoreo ambiental, logística, manufactura y flujos de trabajo vinculados al sector público."
+        },
+        {
+          "question": "¿Desarrollan software a medida?",
+          "answer": "Desarrollamos principalmente productos reutilizables. Podemos tomar proyectos puntuales que nos ayuden a conocer nuevas industrias, pero no operamos como una agencia de software genérica."
+        },
+        {
+          "question": "¿Cómo trabajan con IA?",
+          "answer": "Usamos IA (incluidos modelos de lenguaje pequeños, RAG y ML predictivo) donde genera valor económico medible, no como argumento de marketing."
+        },
+        {
+          "question": "¿Pueden trabajar con nuestros sistemas actuales?",
+          "answer": "Sí. Diseñamos productos e integraciones que funcionan con los ERP, sistemas documentales y fuentes de datos existentes, especialmente en América Latina."
+        },
+        {
+          "question": "¿Cómo trabajan con sus clientes?",
+          "answer": "Mediante pilotos y experimentos acotados. Validamos el encaje problema-solución antes de escalar y nos adaptamos cuando cambian las circunstancias."
+        },
+        {
+          "question": "¿Cómo puedo obtener soporte?",
+          "answer": "Puedes contactarnos mediante el formulario de contacto o por correo electrónico. Para consultas sobre productos, ofrecemos canales de soporte dedicados."
+        }
+      ]
+    },
+    "purchase": {
+      "heading": "Enfócate en lo que de verdad importa: resolver problemas reales de la industria.",
+      "description": "Diseñado para la experimentación y la escala, Devynix te ayuda a construir productos de software especializados más rápido.",
+      "cta": "Contáctanos"
     }
   },
   "about": {
     "hero": {
       "title": "Conoce Devynix",
-      "titleSuffix": "",
-      "primaryCta": "Contáctanos",
-      "secondaryCta": "Ver nuestros productos",
-      "lead": "¿Necesitas software especializado para tu industria?",
+      "lead": "¿Necesitas una plataforma premium, altamente personalizable y pensada para desarrolladores, repleta de funcionalidades?",
       "brandPhrase": "Devynix",
-      "leadRest": "se enfoca en resolver problemas importantes en industrias específicas mediante productos de software enfocados."
+      "leadRest": "tiene todo lo que necesitas. Está diseñado conforme a los estándares del sector y las mejores prácticas para ofrecerte lo mejor.",
+      "primaryCta": "Crear una cuenta",
+      "secondaryCta": "Ver ofertas de empleo",
+      "titleSuffix": "la plataforma"
     },
     "achievement": {
       "title": "Nuestro portafolio hoy",
@@ -149,15 +291,33 @@
     }
   },
   "contact": {
-    "hero": {
-      "title": "Nos encantaría saber de ti",
-      "lead": "¿Tienes preguntas sobre un producto, o un problema de industria que creas que deberíamos ver? Estamos a un mensaje de distancia."
+    "breadcrumbTitle": "Nos encantaría saber de ti",
+    "breadcrumbLink": "Contacto",
+    "reachOut": {
+      "title": "Contáctanos hoy",
+      "description": "¿Tienes preguntas o necesitas ayuda? Estamos a un mensaje de distancia."
     },
-    "whatsappCta": "Chatear por WhatsApp",
-    "emailCta": "Escríbenos un correo",
     "location": {
-      "title": "Dónde estamos",
-      "description": "Trabajamos con organizaciones en toda América Latina. Escríbenos y encontraremos un momento para hablar."
+      "title": "Nuestra ubicación",
+      "description": "Visítanos en persona o consulta nuestros datos de contacto para hablar directamente con nosotros."
+    },
+    "form": {
+      "firstName": "Nombre",
+      "firstNamePlaceholder": "Nombre",
+      "lastName": "Apellidos",
+      "lastNamePlaceholder": "Apellidos",
+      "phone": "Teléfono",
+      "phonePlaceholder": "xxx xxx xxxx",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Dirección de correo electrónico",
+      "enquiryType": "Motivo de la consulta",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí…",
+      "submit": "Enviar"
+    },
+    "enquiryTypes": {
+      "general": "Consulta general",
+      "other": "Otra consulta"
     }
   },
   "footer": {
@@ -174,8 +334,8 @@
     },
     "social": {
       "facebook": "Facebook",
-      "instagram": "Instagram",
-      "tiktok": "TikTok"
+      "twitter": "Twitter",
+      "instagram": "Instagram"
     },
     "rights": "Todos los derechos reservados por Devynix.",
     "producedBy": "Desarrollado por",
@@ -185,46 +345,5 @@
     "heading": "No encontramos esa página",
     "backToHome": "Ir al inicio",
     "contactCta": "Contáctanos"
-  },
-  "shared": {
-    "faq": {
-      "title": "Preguntas frecuentes",
-      "items": [
-        {
-          "question": "¿A qué se dedica Devynix?",
-          "answer": "Devynix construye productos de tecnología enfocados para industrias específicas: GeoNix para inteligencia geoespacial y de uso de suelo, y FinNix para finanzas personales. Somos una empresa de producto, no una agencia de software genérica."
-        },
-        {
-          "question": "¿Desarrollan software a medida para terceros?",
-          "answer": "No. No desarrollamos software a medida por encargo. Nuestro esfuerzo de ingeniería va hacia GeoNix y FinNix, y crece a medida que esos productos crecen."
-        },
-        {
-          "question": "¿Cómo trabajan con IA?",
-          "answer": "Usamos IA —incluidos modelos de lenguaje pequeños, RAG y ML predictivo— donde genera valor medible dentro de GeoNix o FinNix, no como argumento de marketing."
-        },
-        {
-          "question": "¿GeoNix o FinNix pueden adaptarse a nuestros sistemas actuales?",
-          "answer": "Ambos productos están construidos para encajar en contextos reales de datos y flujos de trabajo en América Latina. No desarrollamos integraciones a medida fuera de GeoNix y FinNix."
-        },
-        {
-          "question": "¿Cómo deciden qué construir?",
-          "answer": "Confirmamos un problema real de industria antes de dedicar tiempo de ingeniería. Cada producto existe porque el problema detrás fue validado primero, no asumido."
-        },
-        {
-          "question": "¿Cómo puedo contactarlos?",
-          "answer": "La vía más rápida es WhatsApp. También puedes escribirnos por correo: ambas rutas llegan al mismo equipo."
-        }
-      ],
-      "stillHaveQuestion": "¿Todavía tienes alguna duda?",
-      "contactCta": "Contáctanos",
-      "or": "o",
-      "emailCta": "escríbenos un correo"
-    },
-    "cta": {
-      "title": "Empecemos una conversación",
-      "lead": "Toda conversación empieza por WhatsApp — sin formulario, sin esperar una respuesta.",
-      "whatsappCta": "Chatear por WhatsApp",
-      "emailCta": "Escribir un correo"
-    }
   }
 }

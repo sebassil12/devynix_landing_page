@@ -35,68 +35,210 @@
     "dismiss": "Dismiss announcement"
   },
   "home": {
-    "urdimbre": {
-      "title": "The pattern exists before the cloth.",
-      "lead": "GridCanopy is already watching the Cuenca corridor: 12 spans tracked, 3 urgent, 7 needing action, corridor risk index 616 — drawn here as it happens, not captured in a screenshot.",
-      "table": {
-        "caption": "Cuenca corridor spans and status",
-        "colSpan": "Span",
-        "colStatus": "Status",
-        "colRisk": "Corridor risk index"
-      },
-      "status": {
-        "urgent": "Urgent",
-        "action": "Needs action",
-        "stable": "Stable"
-      },
-      "cta": "See how the method works"
+    "banner": {
+      "titleStrong": "Industry-focused",
+      "titleRest": "technology products.",
+      "socialProof": "Building specialized software for specific industries.",
+      "cta": "Learn More"
     },
-    "metodo": {
-      "title": "One method, in three steps.",
-      "steps": [
+    "clients": {
+      "title": "Trusted by organizations across industries.",
+      "description": "We focus on solving important problems in specific industries with specialized software.",
+      "cta": "Contact Us",
+      "features": [
         {
-          "title": "The industry problem",
-          "body": "Every industry runs on workflows and rules already written. We start there, inside the problem, not with a technology looking for a use."
+          "title": "Industry-first approach",
+          "subtitle": "We start from real workflows and regulations, not from technology trends."
         },
         {
-          "title": "The focused instrument",
-          "body": "Each product answers one industry's problem: a corridor, a curriculum, a budget — never a platform trying to do everything."
+          "title": "Evidence-driven development",
+          "subtitle": "We validate ideas with real customers before scaling."
         },
         {
-          "title": "The measurement",
-          "body": "Twelve monitored spans. Eighteen activities across seven phases. A shipping app with real data. Progress we can point to, not promise."
-        }
-      ],
-      "note": "Three products so far. The method holds as more join."
-    },
-    "bandas": {
-      "title": "Three bands, one cloth.",
-      "products": [
-        {
-          "plate": "01",
-          "name": "GRIDCANOPY",
-          "claim": "Cuenca corridor: 12 monitored spans, 3 urgent, 7 needing action — risk index 616.",
-          "proofLabel": "Open GridCanopy"
+          "title": "Focused products",
+          "subtitle": "Each product has a clear customer, problem, and role in our portfolio."
         },
         {
-          "plate": "02",
-          "name": "GEOAI ACADEMY",
-          "claim": "Seven phases, eighteen activities of GeoAI curriculum.",
-          "proofLabel": "Open GeoAI Academy"
-        },
-        {
-          "plate": "03",
-          "name": "FINNIX",
-          "claim": "A shipping personal finance app, tracking real spending.",
-          "proofLabel": "Open FinNix"
+          "title": "Adaptable solutions",
+          "subtitle": "We pivot, retire, or double-down based on validated learning."
         }
       ]
     },
-    "devynix": {
-      "title": "Devynix",
-      "body": "Devynix is a technology company founded in 2025 in Ecuador. We identify important problems inside specific industries and solve them with focused software products, not with a generic platform looking for a use.",
-      "founded": "Founded 2025",
-      "country": "Ecuador"
+    "featureTabs": {
+      "heading": "Built for specific industries.",
+      "cta": "See our products",
+      "tabs": [
+        {
+          "label": "GeoNix",
+          "items": [
+            {
+              "title": "Geospatial intelligence for land and environment",
+              "desc": "GIS and land-use data turned into decisions organizations can act on, without needing a GIS specialist to interpret it."
+            },
+            {
+              "title": "Works with the systems already in place",
+              "desc": "Integrates with existing ERPs, document systems, and data sources rather than replacing them."
+            },
+            {
+              "title": "Built for how the sector reports",
+              "desc": "Designed around the traceability and reporting requirements public-sector adjacent organizations already answer to."
+            }
+          ]
+        },
+        {
+          "label": "FinNix",
+          "items": [
+            {
+              "title": "Personal finance that reflects real spending",
+              "desc": "Budgeting built around how money actually moves for individuals and micro-entrepreneurs, not around an idealized category tree."
+            },
+            {
+              "title": "Clarity before advice",
+              "desc": "Show where the money went first. Recommendations only where they change a decision."
+            },
+            {
+              "title": "Built for Latin American realities",
+              "desc": "Multiple currencies, informal income, and irregular cash flow treated as the norm, not as edge cases."
+            }
+          ]
+        },
+        {
+          "label": "More coming",
+          "items": [
+            {
+              "title": "New verticals under evaluation",
+              "desc": "A product line opens once the problem is validated with real customers in that industry."
+            },
+            {
+              "title": "How we choose",
+              "desc": "Discover, build, validate, then scale or pivot. A vertical earns a product by surviving that sequence."
+            },
+            {
+              "title": "Talk to us about your industry",
+              "desc": "If you work in a sector where focused software would create a durable advantage, we want the conversation."
+            }
+          ]
+        }
+      ]
+    },
+    "highlights": {
+      "row1": [
+        "Modular architecture",
+        "AI-ready components",
+        "Vertical SaaS patterns",
+        "GIS & geospatial expertise",
+        "Data-driven decision support",
+        "Tailwind CSS",
+        "Type-safe stack"
+      ],
+      "row2": [
+        "Next.js App Router",
+        "React 19",
+        "Flowbite React",
+        "Easy to customize"
+      ],
+      "row3": [
+        "Analytics-friendly",
+        "Workflow-oriented design",
+        "Regular updates",
+        "Documentation-focused",
+        "Experiment-driven",
+        "Dedicated support"
+      ]
+    },
+    "packages": {
+      "title": "Simple, transparent engagement.",
+      "description": "We focus on long-term product development, not one-off projects.",
+      "perOneTime": "",
+      "cta": "Contact Us",
+      "included": {
+        "fullSourceCode": "Full source code (when applicable)",
+        "documentation": "Documentation",
+        "saasUse": "SaaS-friendly",
+        "oneProjectStrong": "Focused",
+        "unlimitedProjectStrong": "Scalable",
+        "projectSuffix": "engagements",
+        "oneYearStrong": "Ongoing",
+        "technicalSupportSuffix": "support"
+      },
+      "tiers": [
+        {
+          "licenseType": "Product collaboration",
+          "licenseDesc": "Work with us on an existing or new Devynix product.",
+          "price": "Contact us"
+        },
+        {
+          "licenseType": "Product pilot",
+          "licenseDesc": "Short, focused engagement to validate a specific Devynix product in your context.",
+          "price": "Contact us"
+        },
+        {
+          "licenseType": "Strategic partnership",
+          "licenseDesc": "Long-term collaboration on a Devynix product line or vertical.",
+          "price": "Contact us"
+        }
+      ]
+    },
+    "about": {
+      "title": "About Devynix",
+      "description": "Devynix is a small technical team that identifies important problems in specific industries and solves them with focused software products. We are early: two products in the portfolio, and every claim on this page is one we can back.",
+      "points": [
+        {
+          "title": "Industry first",
+          "subtitle": "We start from real workflows and regulations, not from technology trends."
+        },
+        {
+          "title": "Evidence-driven",
+          "subtitle": "We validate a problem with real customers before we scale a product around it."
+        },
+        {
+          "title": "Adaptable",
+          "subtitle": "Products get created, pivoted, retired, or replaced as industries change."
+        }
+      ],
+      "cta": "More about us"
+    },
+    "contactBar": {
+      "message": "Looking for specialized software for your industry?",
+      "cta": "Contact us"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "stillHaveQuestion": "Still have a question?",
+      "contactCta": "Contact us",
+      "or": "or",
+      "emailCta": "Send us an email",
+      "items": [
+        {
+          "question": "What industries do you focus on?",
+          "answer": "We focus on specific industries where software can create a strong competitive advantage, such as agriculture, environmental monitoring, logistics, manufacturing, and government-adjacent workflows."
+        },
+        {
+          "question": "Do you build custom software?",
+          "answer": "We primarily build reusable products. We may take selective projects that help us learn about new industries, but we do not operate as a generic software agency."
+        },
+        {
+          "question": "How do you work with AI?",
+          "answer": "We use AI (including small language models, RAG, and predictive ML) where it creates measurable economic value, not as a marketing claim."
+        },
+        {
+          "question": "Can you work with our existing systems?",
+          "answer": "Yes. We design products and integrations that work with existing ERPs, document systems, and data sources, especially in Latin America."
+        },
+        {
+          "question": "How do you engage with clients?",
+          "answer": "Through focused pilots and experiments. We validate problem-solution fit before scaling, and we adapt when circumstances change."
+        },
+        {
+          "question": "How can I get support?",
+          "answer": "You can reach us through the contact form or by email. For product-related questions, we provide dedicated support channels."
+        }
+      ]
+    },
+    "purchase": {
+      "heading": "Focus on what truly matters—solving real industry problems.",
+      "description": "Designed for experimentation and scale, Devynix helps you build specialized software products faster.",
+      "cta": "Get in Touch"
     }
   },
   "about": {
@@ -149,15 +291,33 @@
     }
   },
   "contact": {
-    "hero": {
-      "title": "We would love to hear from you",
-      "lead": "Questions about a product, or an industry problem you think we should look at? We are one message away."
+    "breadcrumbTitle": "We would love to hear from you",
+    "breadcrumbLink": "Contact",
+    "reachOut": {
+      "title": "Get in touch",
+      "description": "Questions about a product, or an industry problem you think we should look at? We are one message away."
     },
-    "whatsappCta": "Chat on WhatsApp",
-    "emailCta": "Email us instead",
     "location": {
       "title": "Where we are",
       "description": "We work with organizations across Latin America. Reach out and we will find a time to talk."
+    },
+    "form": {
+      "firstName": "First name",
+      "firstNamePlaceholder": "First name",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Last name",
+      "phone": "Phone",
+      "phonePlaceholder": "xxx xxx xxxx",
+      "email": "Email",
+      "emailPlaceholder": "Email address",
+      "enquiryType": "Reason for contact",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here…",
+      "submit": "Send"
+    },
+    "enquiryTypes": {
+      "general": "General enquiry",
+      "other": "Other enquiry"
     }
   },
   "footer": {
@@ -174,8 +334,8 @@
     },
     "social": {
       "facebook": "Facebook",
-      "instagram": "Instagram",
-      "tiktok": "TikTok"
+      "twitter": "Twitter",
+      "instagram": "Instagram"
     },
     "rights": "All rights reserved by Devynix.",
     "producedBy": "Built by",
@@ -185,46 +345,5 @@
     "heading": "We cannot find that page",
     "backToHome": "Go to homepage",
     "contactCta": "Contact us"
-  },
-  "shared": {
-    "faq": {
-      "title": "Frequently asked questions",
-      "items": [
-        {
-          "question": "What does Devynix do?",
-          "answer": "Devynix builds focused technology products for specific industries — GeoNix for geospatial and land-use intelligence, and FinNix for personal finance. We are a product company, not a generic software agency."
-        },
-        {
-          "question": "Do you take on custom software projects?",
-          "answer": "No. We do not build bespoke software for hire. Our engineering effort goes into GeoNix and FinNix, and it grows as those products grow."
-        },
-        {
-          "question": "How do you work with AI?",
-          "answer": "We use AI — including small language models, RAG, and predictive ML — where it creates measurable value inside GeoNix or FinNix, not as a marketing claim."
-        },
-        {
-          "question": "Can GeoNix or FinNix fit our existing systems?",
-          "answer": "Both products are built to fit real data and workflow contexts in Latin America. We do not build custom integrations outside of GeoNix and FinNix themselves."
-        },
-        {
-          "question": "How do you decide what to build?",
-          "answer": "We confirm a real industry problem before committing engineering time to it. Each product exists because the problem behind it was validated first, not assumed."
-        },
-        {
-          "question": "How can I reach you?",
-          "answer": "The fastest way is WhatsApp. You can also email us — both routes reach the same team."
-        }
-      ],
-      "stillHaveQuestion": "Still have a question?",
-      "contactCta": "Contact us",
-      "or": "or",
-      "emailCta": "send us an email"
-    },
-    "cta": {
-      "title": "Start a conversation",
-      "lead": "Every conversation starts on WhatsApp — no form, no waiting for a reply.",
-      "whatsappCta": "Chat on WhatsApp",
-      "emailCta": "Email us instead"
-    }
   }
 }

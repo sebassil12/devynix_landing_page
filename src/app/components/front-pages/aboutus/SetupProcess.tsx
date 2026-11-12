@@ -1,45 +1,71 @@
-import type { Dictionary } from "@/i18n/dictionaries";
-import { WarpBand } from "@/app/components/front-pages/macana/WarpBand";
+"use client";
+import React from "react";
+import { Icon } from "@iconify/react";
+import { useTranslation } from "@/i18n/provider";
 
-type SetupProcessProps = {
-  copy: Dictionary["about"]["setupProcess"];
-};
+const stepVisuals = [
+  {
+    icon: "tabler:building-store",
+    bgcolor: "bg-lightprimary",
+    color: "text-primary",
+  },
+  { icon: "tabler:chart-bubble", bgcolor: "bg-lighterror", color: "text-error" },
+  {
+    icon: "material-symbols:category-outline",
+    bgcolor: "bg-lightsuccess",
+    color: "text-success",
+  },
+  {
+    icon: "material-symbols:earthquake",
+    bgcolor: "bg-lightgray dark:bg-darkmuted",
+    color: "text-dark dark:text-lightgray",
+  },
+];
 
-// `/aboutus`'s Macana shell (WU5). The old version was a 4-up grid of
-// same-size icon+heading+text cards — exactly the scaffold craft-floor
-// refuses ("Cards are the lazy container"). Numbered steps instead, same
-// treatment `Metodo.tsx` (band ②) already uses for the homepage's own
-// problem→instrument→measurement steps. Server component, no client
-// interactivity — `page.tsx` passes this slice as a prop.
-export function SetupProcess({ copy }: SetupProcessProps) {
-  return (
-    <WarpBand>
-      <h2 className="max-w-[75ch] text-3xl font-medium text-macana-cotton lg:text-44">
-        {copy.title}
-      </h2>
-      <ol className="mt-warp-2 grid grid-cols-1 gap-warp-2 md:grid-cols-2 xl:grid-cols-4">
-        {copy.steps.map((step, index) => (
-          <li
-            key={step.title}
-            className="border-t border-macana-figure/30 pt-warp-half"
-          >
-            <span
-              aria-hidden="true"
-              className="text-13 font-bold tracking-wider text-macana-figure"
-            >
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <h3 className="mt-2 text-22 font-semibold text-macana-cotton">
-              {step.title}
-            </h3>
-            <p className="mt-2 text-15 text-macana-cotton/90">
-              {step.subtitle}
-            </p>
-          </li>
-        ))}
-      </ol>
-    </WarpBand>
+const SetupProcess = () => {
+  const { t, tList } = useTranslation();
+  const steps = tList<{ title: string; subtitle: string }>(
+    "about.setupProcess.steps"
   );
-}
+
+  return (
+    <>
+      <div className="dark:bg-dark">
+        <div className="container-1218 mx-auto lg:py-24 py-12">
+          <h2 className="sm:text-44 text-3xl font-bold !leading-[48px] text-dark dark:text-white text-center pb-12">
+            {t("about.setupProcess.title")}
+          </h2>
+          <div className="grid grid-cols-12 md:gap-30 gap-6">
+            {steps.map((item, index) => {
+              const visual = stepVisuals[index] ?? stepVisuals[0];
+              return (
+                <div
+                  className="xl:col-span-3 md:col-span-6 col-span-12"
+                  key={item.title}
+                >
+                  <div className={`${visual.bgcolor} p-30 rounded-tw`}>
+                    <div className="h-12 w-12 flex-shrink-0 flex items-center justify-center rounded-tw bg-white dark:bg-darkgray shadow-elevation4">
+                      <Icon
+                        icon={visual.icon}
+                        className={`${visual.color}`}
+                        height={24}
+                      />
+                    </div>
+                    <h4 className="font-bold text-dark dark:text-white py-5 text-22">
+                      {item.title}
+                    </h4>
+                    <p className="text-15 text-darklink  leading-6">
+                      {item.subtitle}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default SetupProcess;
