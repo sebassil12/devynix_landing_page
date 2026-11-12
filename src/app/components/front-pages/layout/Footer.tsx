@@ -2,7 +2,7 @@
 import { Tooltip } from "flowbite-react";
 import Link from "next/link";
 import Image from "next/image";
-import FullLogo from "@public/images/logos/light-logo.svg";
+import LogoMark from "@public/images/logos/devynix-mark.svg";
 import Logo from "@/app/components/shared/logo/Logo";
 import { useTranslation } from "@/i18n/provider";
 
@@ -40,7 +40,12 @@ export const Footer = () => {
           <div className="border-b border-darkborder lg:py-24 py-12">
             <div className="grid grid-cols-12 gap-30 ">
               <div className="lg:col-span-3 sm:col-span-6 col-span-12">
-                <Image src={FullLogo} alt="logo" className="mb-8" />
+                <Link href={`/${locale}`} className="mb-8 flex items-center gap-2">
+                  <Image src={LogoMark} alt="Devynix" width={40} height={40} />
+                  <span className="text-xl font-bold tracking-tight text-white">
+                    Devynix
+                  </span>
+                </Link>
               </div>
               {columns.map((column) => (
                 <div
